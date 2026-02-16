@@ -75,13 +75,13 @@ export default function Footer() {
                             <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">
                                 <MapPin size={20} />
                             </div>
-                            <span className="text-neutral-400">Head Office: Hazratganj, Lucknow, Uttar Pradesh, India</span>
+                            <span className="text-neutral-400">Head Office: Uma Krishna Complex, 628/ 52B, Murari Nagar, Shakti Nagar, Indira Nagar, Lucknow, Uttar Pradesh 226016</span>
                         </li>
                         <li className="flex items-center gap-4">
                             <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">
                                 <Phone size={20} />
                             </div>
-                            <a href="tel:+919999999999" className="hover:text-gold transition-colors">+91 99999 99999</a>
+                            <a href="tel:+91 7505188009" className="hover:text-gold transition-colors">+91 75051 88009</a>
                         </li>
                         <li className="flex items-center gap-4">
                             <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">

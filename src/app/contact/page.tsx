@@ -31,7 +31,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold text-lg mb-1">Head Office</h4>
-                                    <p className="text-gray-400">567/12, Kanpur Road, Near Phoenix Mall, Alambagh, Lucknow</p>
+                                    <p className="text-gray-400">Uma Krishna Complex, 628/ 52B, Murari Nagar, Shakti Nagar, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
                                 </div>
                             </div>
 
