@@ -39,7 +39,7 @@ export default function CTA() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                 >
-                    <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white font-bold text-lg px-12 py-6 shadow-lg shadow-red-600/30 uppercase tracking-widest">
+                    <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg px-6 md:px-12 py-6 shadow-lg shadow-red-600/30 uppercase tracking-widest w-full md:w-auto h-auto whitespace-normal md:whitespace-nowrap">
                         Book Your Free Demo Class Today
                     </Button>
                 </motion.div>

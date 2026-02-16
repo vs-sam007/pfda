@@ -50,6 +50,7 @@ const navLinks = [
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
     const pathname = usePathname();
 
     useEffect(() => {
@@ -149,22 +150,34 @@ export default function Navbar() {
                                 <div key={link.name} className="border-b border-white/5 last:border-0">
                                     {link.dropdown ? (
                                         <div className="py-3">
-                                            <div className="flex justify-between items-center text-xl font-bold uppercase tracking-wide text-neutral-400 mb-2">
+                                            <div
+                                                className="flex justify-between items-center text-xl font-bold uppercase tracking-wide text-neutral-400 mb-2 cursor-pointer"
+                                                onClick={() => setActiveMobileDropdown(activeMobileDropdown === link.name ? null : link.name)}
+                                            >
                                                 {link.name}
-                                                <ChevronDown className="w-5 h-5" />
+                                                <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeMobileDropdown === link.name ? "rotate-180" : ""}`} />
                                             </div>
-                                            <div className="pl-4 flex flex-col gap-2 border-l border-gold/20 ml-1">
-                                                {link.dropdown.map((subLink) => (
-                                                    <Link
-                                                        key={subLink.name}
-                                                        href={subLink.href}
-                                                        onClick={() => setIsOpen(false)}
-                                                        className="text-base text-neutral-400 py-1 hover:text-gold"
+                                            <AnimatePresence>
+                                                {activeMobileDropdown === link.name && (
+                                                    <motion.div
+                                                        initial={{ height: 0, opacity: 0 }}
+                                                        animate={{ height: "auto", opacity: 1 }}
+                                                        exit={{ height: 0, opacity: 0 }}
+                                                        className="pl-4 flex flex-col gap-2 border-l border-gold/20 ml-1 overflow-hidden"
                                                     >
-                                                        {subLink.name}
-                                                    </Link>
-                                                ))}
-                                            </div>
+                                                        {link.dropdown.map((subLink) => (
+                                                            <Link
+                                                                key={subLink.name}
+                                                                href={subLink.href}
+                                                                onClick={() => setIsOpen(false)}
+                                                                className="text-base text-neutral-400 py-1 hover:text-gold"
+                                                            >
+                                                                {subLink.name}
+                                                            </Link>
+                                                        ))}
+                                                    </motion.div>
+                                                )}
+                                            </AnimatePresence>
                                         </div>
                                     ) : (
                                         <Link
