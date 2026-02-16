@@ -7,6 +7,7 @@ import Testimonials from "@/components/home/Testimonials";
 import Updates from "@/components/home/Updates";
 import BranchesPreview from "@/components/home/BranchesPreview";
 import CTA from "@/components/home/CTA";
+import FAQ from "@/components/home/FAQ";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ResultsWall />
       <Testimonials />
       <Updates />
+      <FAQ />
       <BranchesPreview />
       <CTA />
     </main>

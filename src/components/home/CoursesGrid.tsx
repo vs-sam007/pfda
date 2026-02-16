@@ -21,12 +21,6 @@ const courses = [
         image: "/images/gallery8.jpg",
     },
     {
-        title: "AFCAT",
-        desc: "Air Force Common Admission",
-        details: "For Graduates",
-        image: "/images/1657188081910.png",
-    },
-    {
         title: "SSB Interview",
         desc: "Service Selection Board",
         details: "Personality Test",
@@ -39,10 +33,28 @@ const courses = [
         image: "/images/service4.jpg",
     },
     {
+        title: "AFCAT",
+        desc: "Air Force Common Admission",
+        details: "For Graduates",
+        image: "/images/1657188081910.png",
+    },
+    {
         title: "CAPF",
         desc: "Central Armed Police Forces",
         details: "For Graduates",
         image: "/images/CAPF-2020-1.webp",
+    },
+    {
+        title: "Sainik School",
+        desc: "Sainik School Entrance",
+        details: "For Class 6th & 9th",
+        image: "/images/sainic-1.jpg",
+    },
+    {
+        title: "Agniveer",
+        desc: "Agnipath Scheme",
+        details: "For 10th/12th Pass",
+        image: "/images/1707393182_indian-army.jpg",
     }
 ];
 
@@ -98,13 +110,6 @@ export default function CoursesGrid() {
                     ))}
                 </div>
 
-                <div className="mt-12 text-center">
-                    <Link href="/courses">
-                        <Button variant="outline" size="lg" className="border-gold text-gold hover:bg-gold hover:text-black uppercase tracking-widest">
-                            View All Programs
-                        </Button>
-                    </Link>
-                </div>
             </div>
         </section>
     );
