@@ -18,7 +18,7 @@ export default function Footer() {
                                 src="/images/logo.png"
                                 alt="PFDA Logo"
                                 fill
-                                className="object-contain"
+                                className="object-contain mix-blend-screen"
                             />
                         </div>
                         <div className="flex flex-col">

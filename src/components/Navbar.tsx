@@ -39,10 +39,10 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-nav py-3" : "bg-transparent py-5"
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-nav h-[72px]" : "bg-transparent h-20"
                 }`}
         >
-            <div className="container mx-auto px-4 flex justify-between items-center">
+            <div className="container mx-auto px-4 flex justify-between items-center h-full">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
                     <div className="relative w-12 h-12 transform group-hover:scale-105 transition-transform">
@@ -50,7 +50,7 @@ export default function Navbar() {
                             src="/images/logo.png"
                             alt="PFDA Logo"
                             fill
-                            className="object-contain"
+                            className="object-contain mix-blend-screen"
                         />
                     </div>
                     <div className="flex flex-col">
@@ -60,19 +60,21 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-8 h-full">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`text-sm font-bold uppercase tracking-wide transition-all duration-300 relative group py-2 ${pathname === link.href ? "text-gold" : "text-neutral-300 hover:text-white"
+                            className={`text-sm font-bold uppercase tracking-wide transition-colors duration-300 flex items-center h-full group ${pathname === link.href ? "text-gold" : "text-neutral-300 hover:text-white"
                                 }`}
                         >
-                            {link.name}
-                            <span className={`absolute bottom-0 left-0 h-0.5 bg-gold transition-all duration-300 ${pathname === link.href ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+                            <span className="relative">
+                                {link.name}
+                                <span className={`absolute -bottom-1 left-0 h-[2px] bg-gold transition-all duration-300 ${pathname === link.href ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+                            </span>
                         </Link>
                     ))}
-                    <Button variant="default" size="sm" className="ml-4">
+                    <Button variant="default" className="ml-4 self-center mt-0">
                         BOOK FREE DEMO
                     </Button>
                 </div>
