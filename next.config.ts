@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",   // 👈 YE ADD KARNA HAI
+
   images: {
+    unoptimized: true,   // 👈 YE BHI ADD KARO (IMPORTANT)
     remotePatterns: [
       {
         protocol: "https",
