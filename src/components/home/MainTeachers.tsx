@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Award, BookOpen, Star } from "lucide-react";
+import SectionHeading from "@/components/SectionHeading";
 
 const mainTeachers = [
     {
@@ -32,6 +33,9 @@ export default function MainTeachers() {
     return (
         <section className="py-16 bg-[#24332B] border-t border-white/5">
             <div className="container mx-auto px-4">
+                <div className="mb-12 text-center">
+                    <SectionHeading title="Management Desk" alignment="center" />
+                </div>
                 <div className="flex flex-col gap-8">
                     {mainTeachers.map((teacher, index) => (
                         <motion.div
