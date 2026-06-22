@@ -1,6 +1,59 @@
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import { CheckCircle, Award, Users, BookOpen } from "lucide-react";
+import FacultyCard from "@/components/FacultyCard";
+
+const facultiesList = [
+    {
+        name: "Amrish Sir",
+        role: "Chemistry Faculty",
+        experience: "10+ Years Experience",
+        qualification: "Ph.D From IIT BHU",
+        imageUrl: "/images/Amrish%20Sir.jpeg"
+    },
+    {
+        name: "Sonu Sir",
+        role: "Physics Faculty",
+        experience: "13+ Years Experience",
+        qualification: "B.Tech From AKTU",
+        imageUrl: "/images/Sonu%20Sir.jpeg"
+    },
+    {
+        name: "Vivek Sir",
+        role: "Mathematics Faculty",
+        experience: "6+ Years Experience",
+        qualification: "M.Tech From IIT Kanpur",
+        imageUrl: "/images/Vivek%20Sir.jpeg"
+    },
+    {
+        name: "Vipin Sir",
+        role: "G.S Faculty",
+        experience: "9+ Years Experience",
+        qualification: "Post Graduate in Geography",
+        imageUrl: "/images/Vipin%20Sir.jpeg"
+    },
+    {
+        name: "Sandeep Sharma",
+        role: "Maths & Reasoning Faculty",
+        experience: "12 Years Experience",
+        qualification: "MBA",
+        imageUrl: "/images/Sandeep%20Sir.jpeg"
+    },
+    {
+        name: "Dr. Imran Khan",
+        role: "Science Faculty",
+        experience: "15+ Years Experience",
+        qualification: "BHMS",
+        imageUrl: "/images/Imran%20Sir.jpeg"
+    },
+    {
+        name: "Miss Divya Thakur",
+        role: "Centre Manager",
+        experience: "5+ Years Experience",
+        qualification: "M.Sc From University Of Lucknow, G.K Faculty",
+        imageUrl: "/images/Divya%20Maam.jpeg"
+    }
+];
 
 export default function AboutPage() {
     return (
@@ -48,6 +101,23 @@ export default function AboutPage() {
                             alt="Director"
                             className="w-full rounded-2xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-500"
                         />
+                    </div>
+                </div>
+            </section>
+
+            {/* Faculties Section */}
+            <section className="py-20 bg-[#0a0f1c] border-t border-white/5">
+                <div className="container mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <SectionHeading title="Our Expert Faculties" alignment="center" />
+                        <p className="text-gray-400 max-w-2xl mx-auto text-lg mt-4">
+                            Learn from the best. Our faculty comprises ex-defence personnel and subject matter experts with years of experience.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {facultiesList.map((faculty, index) => (
+                            <FacultyCard key={index} {...faculty} />
+                        ))}
                     </div>
                 </div>
             </section>
