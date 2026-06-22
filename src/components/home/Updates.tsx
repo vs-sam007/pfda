@@ -19,7 +19,7 @@ export default function Updates() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-[#10172a] rounded-xl overflow-hidden border border-white/5 hover:border-gold/30 transition-all group"
+                            className="bg-[#24332B] rounded-xl overflow-hidden border border-white/5 hover:border-gold/30 transition-all group"
                         >
                             <div className="h-48 bg-gray-800 relative overflow-hidden">
                                 <Image

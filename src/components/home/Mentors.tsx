@@ -34,7 +34,7 @@ const mentors = [
 
 export default function Mentors() {
     return (
-        <section className="py-20 bg-gradient-to-b from-[#0a0f1c] to-[#10172a]">
+        <section className="py-20 bg-gradient-to-b from-[#1B2620] to-[#24332B]">
             <div className="container mx-auto px-4">
                 <SectionHeading title="Elite Mentors" subtitle="Learn From The Legends" />
 
@@ -46,7 +46,7 @@ export default function Mentors() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative overflow-hidden rounded-xl bg-[#0a0f1c] border border-white/5 hover:border-gold/50 transition-all text-center"
+                            className="group relative overflow-hidden rounded-xl bg-[#1B2620] border border-white/5 hover:border-gold/50 transition-all text-center"
                         >
                             <div className="h-80 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-500">
                                 <Image
@@ -56,13 +56,13 @@ export default function Mentors() {
                                     className="object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1c] via-transparent to-transparent opacity-90"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#1B2620] via-transparent to-transparent opacity-90"></div>
                                 <div className="absolute bottom-4 left-0 right-0 p-4">
                                     <h3 className="text-xl font-bold text-white group-hover:text-gold transition-colors">{mentor.name}</h3>
                                     <p className="text-sm text-gold font-medium uppercase tracking-wider">{mentor.role}</p>
                                 </div>
                             </div>
-                            <div className="p-4 bg-[#10172a] border-t border-white/10">
+                            <div className="p-4 bg-[#24332B] border-t border-white/10">
                                 <p className="text-gray-400 text-sm flex items-center justify-center gap-2">
                                     <UserCheck size={14} className="text-gold" />
                                     {mentor.specialty}

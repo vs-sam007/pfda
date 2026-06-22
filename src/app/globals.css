@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0a0f1c;
-  --color-primary-light: #10172a;
+  --color-primary: #1B2620;
+  --color-primary-light: #24332B;
   --color-military: #2e7d32;
   --color-military-dark: #1b5e20;
-  --color-gold: #c8a95b;
+  --color-gold: #FACC15;
   --color-gold-light: #e6c35c;
   --color-accent: #ff3b3b;
   --color-accent-hover: #d32f2f;
@@ -65,13 +65,13 @@
 
 @layer utilities {
   .glass-nav {
-    background: rgba(10, 15, 28, 0.85);
+    background: rgba(27, 38, 32, 0.85);
     backdrop-filter: blur(12px);
     border-bottom: none;
   }
 
   .glass-card {
-    background: rgba(16, 23, 42, 0.6);
+    background: rgba(36, 51, 43, 0.6);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
@@ -85,7 +85,7 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(to right, #c8a95b, #e6c35c);
+    background: linear-gradient(to right, #FACC15, #e6c35c);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

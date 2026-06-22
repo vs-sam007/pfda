@@ -36,7 +36,7 @@ export default function Mission() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
-                            className="bg-[#10172a]/50 backdrop-blur-sm border border-gold/10 p-8 rounded-xl hover:border-gold/30 transition-all group text-center"
+                            className="bg-[#24332B]/50 backdrop-blur-sm border border-gold/10 p-8 rounded-xl hover:border-gold/30 transition-all group text-center"
                         >
                             <div className="bg-gradient-to-br from-gold/10 to-transparent p-4 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                                 {feature.icon}

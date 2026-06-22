@@ -14,7 +14,7 @@ export default function BranchesPage() {
             <BranchesPreview />
 
             <section className="container mx-auto px-4 pb-20">
-                <div className="bg-[#10172a] p-8 rounded-xl border border-white/5 text-center">
+                <div className="bg-[#24332B] p-8 rounded-xl border border-white/5 text-center">
                     <h3 className="text-2xl font-bold text-white mb-4">Visit Us For A Campus Tour</h3>
                     <p className="text-gray-400 max-w-2xl mx-auto">
                         We invite parents and students to visit our campuses in Lucknow to see our facilities, meet the mentors, and understand our training methodology.

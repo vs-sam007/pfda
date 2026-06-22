@@ -58,7 +58,7 @@ export default function Testimonials() {
                     {[...testimonials, ...testimonials, ...testimonials].map((student, i) => (
                         <div
                             key={i}
-                            className="w-[350px] bg-[#10172a] rounded-xl p-6 border border-white/5 relative group shrink-0 hover:border-gold/30 transition-colors"
+                            className="w-[350px] bg-[#24332B] rounded-xl p-6 border border-white/5 relative group shrink-0 hover:border-gold/30 transition-colors"
                         >
                             <div className="flex text-gold mb-4">
                                 {[...Array(5)].map((_, idx) => (

@@ -15,7 +15,7 @@ const results = [
 
 export default function ResultsWall() {
     return (
-        <section className="py-20 bg-[#0a0f1c] relative overflow-hidden">
+        <section className="py-20 bg-[#1B2620] relative overflow-hidden">
             <div className="container mx-auto px-4 z-10 relative">
                 <SectionHeading title="Hall of Fame" subtitle="Our Recent Selections" />
 
@@ -27,7 +27,7 @@ export default function ResultsWall() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="relative w-64 h-80 bg-[#10172a] rounded-xl overflow-hidden shadow-2xl border border-gold/20 group hover:border-gold transition-all"
+                            className="relative w-64 h-80 bg-[#24332B] rounded-xl overflow-hidden shadow-2xl border border-gold/20 group hover:border-gold transition-all"
                         >
                             <Image
                                 src={result.image}

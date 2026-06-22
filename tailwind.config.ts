@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0a0f1c", // Army Deep Navy Black
-        secondary: "#d4af37", // Accent Gold
+        primary: "#1B2620", // Deep Army Green
+        secondary: "#FACC15", // Premium Yellow
         accent: "#ff3b3b", // CTA Red
         neutral: {
           50: "#f9fafb",
@@ -24,18 +24,18 @@ const config: Config = {
           800: "#1f2937",
           900: "#111827",
         },
-        background: "#0a0f1c",
+        background: "#1B2620",
         foreground: "#cbd5e1",
         navy: {
-          900: "#0a0f1c", // Deep Navy Black
-          800: "#10172a", // Card Background
-          700: "#1e293b", // Lighter Navy
+          900: "#1B2620", // Deep Army Green
+          800: "#24332B", // Card Background
+          700: "#2E4035", // Lighter Army Green
         },
         gold: {
-          DEFAULT: "#d4af37",
-          400: "#e6c35c",
-          500: "#d4af37",
-          600: "#b59230",
+          DEFAULT: "#FACC15",
+          400: "#FDE047",
+          500: "#FACC15",
+          600: "#EAB308",
         },
         red: {
           cta: "#ff3b3b",

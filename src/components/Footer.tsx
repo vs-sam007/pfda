@@ -72,19 +72,19 @@ export default function Footer() {
                     <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-gold pl-3">Contact Us</h3>
                     <ul className="space-y-5">
                         <li className="flex items-start gap-4">
-                            <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">
+                            <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <MapPin size={20} />
                             </div>
                             <span className="text-neutral-400">Head Office: Uma Krishna Complex, 628/ 52B, Murari Nagar, Shakti Nagar, Indira Nagar, Lucknow, Uttar Pradesh 226016</span>
                         </li>
                         <li className="flex items-center gap-4">
-                            <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">
+                            <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <Phone size={20} />
                             </div>
                             <a href="tel:+91 7505188009" className="hover:text-gold transition-colors">+91 75051 88009</a>
                         </li>
                         <li className="flex items-center gap-4">
-                            <div className="bg-[#10172a] p-2 rounded text-gold border border-gold/20">
+                            <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <Mail size={20} />
                             </div>
                             <a href="mailto:info@pfda.com" className="hover:text-gold transition-colors">info@pfda.com</a>

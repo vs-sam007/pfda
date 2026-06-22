@@ -106,7 +106,7 @@ export default function AboutPage() {
             </section>
 
             {/* Faculties Section */}
-            <section className="py-20 bg-[#0a0f1c] border-t border-white/5">
+            <section className="py-20 bg-[#1B2620] border-t border-white/5">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <SectionHeading title="Our Expert Faculties" alignment="center" />
@@ -123,7 +123,7 @@ export default function AboutPage() {
             </section>
 
             {/* Stats Section */}
-            <section className="py-16 bg-[#10172a] border-y border-white/5">
+            <section className="py-16 bg-[#24332B] border-y border-white/5">
                 <div className="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     <div className="flex flex-col items-center">
                         <Award className="text-gold w-10 h-10 mb-4" />

@@ -36,7 +36,7 @@ export default function FAQ() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-20 bg-[#0a0f1c] relative overflow-hidden">
+        <section className="py-20 bg-[#1B2620] relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 pointer-events-none"></div>
 
@@ -47,7 +47,7 @@ export default function FAQ() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className="bg-[#10172a] border border-white/5 rounded-xl overflow-hidden hover:border-gold/30 transition-colors"
+                            className="bg-[#24332B] border border-white/5 rounded-xl overflow-hidden hover:border-gold/30 transition-colors"
                         >
                             <button
                                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}

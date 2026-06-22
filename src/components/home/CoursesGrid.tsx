@@ -72,11 +72,11 @@ export default function CoursesGrid() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group relative overflow-hidden rounded-2xl bg-[#10172a] border border-gold/10 hover:border-gold/30 transition-all shadow-xl"
+                            className="group relative overflow-hidden rounded-2xl bg-[#24332B] border border-gold/10 hover:border-gold/30 transition-all shadow-xl"
                         >
                             {/* Image Overlay */}
                             <div className="h-48 overflow-hidden relative">
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#10172a] to-transparent z-10"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#24332B] to-transparent z-10"></div>
                                 <Image
                                     src={course.image}
                                     alt={course.title}
@@ -90,7 +90,7 @@ export default function CoursesGrid() {
                             </div>
 
                             <div className="p-6 relative z-20 -mt-10">
-                                <div className="bg-[#10172a] p-4 rounded-xl border border-white/5 shadow-2xl">
+                                <div className="bg-[#24332B] p-4 rounded-xl border border-white/5 shadow-2xl">
                                     <div className="flex items-start justify-between mb-2">
                                         <h3 className="text-2xl font-bold text-white group-hover:text-gold transition-colors">{course.title}</h3>
                                         <BookOpen className="text-gold/50 group-hover:text-gold transition-colors" size={24} />

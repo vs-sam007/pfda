@@ -30,7 +30,7 @@ const mainTeachers = [
 
 export default function MainTeachers() {
     return (
-        <section className="py-16 bg-[#10172a] border-t border-white/5">
+        <section className="py-16 bg-[#24332B] border-t border-white/5">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col gap-8">
                     {mainTeachers.map((teacher, index) => (
@@ -40,7 +40,7 @@ export default function MainTeachers() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="relative overflow-hidden rounded-2xl bg-[#0a0f1c] border border-white/10 hover:border-gold/50 transition-all duration-300 group flex flex-col md:flex-row items-stretch min-h-[250px]"
+                            className="relative overflow-hidden rounded-2xl bg-[#1B2620] border border-white/10 hover:border-gold/50 transition-all duration-300 group flex flex-col md:flex-row items-stretch min-h-[250px]"
                         >
                             {/* Decorative Background gradient */}
                             <div className="absolute inset-0 bg-gradient-to-r from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -52,7 +52,7 @@ export default function MainTeachers() {
                                     fill
                                     className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0a0f1c] via-[#0a0f1c]/60 to-transparent md:to-[#0a0f1c]/10"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#1B2620] via-[#1B2620]/60 to-transparent md:to-[#1B2620]/10"></div>
                             </div>
 
                             <div className="w-full md:w-2/3 p-8 md:p-12 relative z-10 flex flex-col justify-center">

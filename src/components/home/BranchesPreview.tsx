@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function BranchesPreview() {
     return (
-        <section className="py-20 bg-[#0a0f1c] relative">
+        <section className="py-20 bg-[#1B2620] relative">
             <div className="container mx-auto px-4">
                 <SectionHeading title="Our Centers" subtitle="Visit Us Today" />
 
@@ -18,7 +18,7 @@ export default function BranchesPreview() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-[#10172a] rounded-2xl overflow-hidden shadow-2xl border border-white/5 flex flex-col md:flex-row"
+                        className="bg-[#24332B] rounded-2xl overflow-hidden shadow-2xl border border-white/5 flex flex-col md:flex-row"
                     >
                         <div className="w-full md:w-1/2 h-64 md:h-auto bg-gray-800 relative">
                             <Image
@@ -51,7 +51,7 @@ export default function BranchesPreview() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-[#10172a] rounded-2xl overflow-hidden shadow-2xl border border-white/5 flex flex-col md:flex-row"
+                        className="bg-[#24332B] rounded-2xl overflow-hidden shadow-2xl border border-white/5 flex flex-col md:flex-row"
                     >
                         <div className="w-full md:w-1/2 h-64 md:h-auto bg-gray-800 md:order-2 relative">
                             <Image

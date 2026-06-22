@@ -42,7 +42,7 @@ const hallOfFameData = [
 
 export default function HallOfFame() {
     return (
-        <section className="py-16 bg-[#0a0f1c]">
+        <section className="py-16 bg-[#1B2620]">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <motion.div
@@ -78,7 +78,7 @@ export default function HallOfFame() {
                             <div className="absolute -top-10 -right-10 w-32 h-32 bg-gold/5 rounded-full blur-3xl group-hover:bg-gold/10 transition-colors"></div>
 
                             {/* Icon / Avatar Placeholder */}
-                            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#1a202c] to-[#0a0f1c] border border-gold/20 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden relative">
+                            <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#1a202c] to-[#1B2620] border border-gold/20 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden relative">
                                 {student.image ? (
                                     <Image
                                         src={student.image}

@@ -19,7 +19,7 @@ export default function CourseCard({
     href,
 }: CourseCardProps) {
     return (
-        <Card className="flex flex-col h-full hover:shadow-2xl transition-all duration-300 border-t-4 border-t-secondary bg-[#10172a] border-x-0 border-b-0 group hover:-translate-y-2">
+        <Card className="flex flex-col h-full hover:shadow-2xl transition-all duration-300 border-t-4 border-t-secondary bg-[#24332B] border-x-0 border-b-0 group hover:-translate-y-2">
             <CardHeader>
                 <CardTitle className="text-xl text-white font-bold group-hover:text-secondary transition-colors">{title}</CardTitle>
             </CardHeader>

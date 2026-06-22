@@ -78,9 +78,9 @@ export default function MobileBottomNav() {
                             const Icon = item.icon;
                             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
                             return (
-                                <Link key={item.name} href={item.href} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1e1b4b] relative pt-1">
+                                <Link key={item.name} href={item.href} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1B2620] relative pt-1">
                                     <Icon className={`w-6 h-6 mb-1 ${isActive ? "text-gold" : ""}`} />
-                                    <span className={`text-[10px] font-bold ${isActive ? "text-[#1e1b4b]" : ""}`}>{item.name}</span>
+                                    <span className={`text-[10px] font-bold ${isActive ? "text-[#1B2620]" : ""}`}>{item.name}</span>
                                     {isActive && <div className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-gold"></div>}
                                 </Link>
                             )
@@ -89,10 +89,10 @@ export default function MobileBottomNav() {
 
                     {/* Center Floating Action Button */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-6 flex flex-col items-center justify-center">
-                        <Link href="/contact" className="bg-[#1e1b4b] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
+                        <Link href="/contact" className="bg-[#1B2620] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
                             <Send className="w-6 h-6 ml-1" />
                         </Link>
-                        <span className="text-[10px] font-extrabold text-[#1e1b4b] mt-1.5 tracking-wider uppercase">Enquire</span>
+                        <span className="text-[10px] font-extrabold text-[#1B2620] mt-1.5 tracking-wider uppercase">Enquire</span>
                     </div>
 
                     {/* Right Items */}
@@ -101,18 +101,18 @@ export default function MobileBottomNav() {
                             const Icon = item.icon;
                             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
                             return (
-                                <Link key={item.name} href={item.href} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1e1b4b] relative pt-1">
+                                <Link key={item.name} href={item.href} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1B2620] relative pt-1">
                                     <Icon className={`w-6 h-6 mb-1 ${isActive ? "text-gold" : ""}`} />
-                                    <span className={`text-[10px] font-bold ${isActive ? "text-[#1e1b4b]" : ""}`}>{item.name}</span>
+                                    <span className={`text-[10px] font-bold ${isActive ? "text-[#1B2620]" : ""}`}>{item.name}</span>
                                     {isActive && <div className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-gold"></div>}
                                 </Link>
                             )
                         })}
                         
                         {/* More Button */}
-                        <button onClick={() => setIsMoreOpen(!isMoreOpen)} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1e1b4b] relative pt-1">
+                        <button onClick={() => setIsMoreOpen(!isMoreOpen)} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1B2620] relative pt-1">
                             {isMoreOpen ? <X className="w-6 h-6 mb-1 text-gold" /> : <Menu className="w-6 h-6 mb-1" />}
-                            <span className={`text-[10px] font-bold ${isMoreOpen ? "text-[#1e1b4b]" : ""}`}>More</span>
+                            <span className={`text-[10px] font-bold ${isMoreOpen ? "text-[#1B2620]" : ""}`}>More</span>
                             {isMoreOpen && <div className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-gold"></div>}
                         </button>
                     </div>

@@ -41,7 +41,7 @@ export default function CourseDetail({
                             {description}
                         </p>
 
-                        <div className="bg-[#10172a] rounded-xl p-8 border border-white/5 mb-12">
+                        <div className="bg-[#24332B] rounded-xl p-8 border border-white/5 mb-12">
                             <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
                                 <BookOpen className="text-gold" /> Syllabus The Covered
                             </h3>
@@ -55,7 +55,7 @@ export default function CourseDetail({
                             </div>
                         </div>
 
-                        <div className="bg-[#10172a] rounded-xl p-8 border border-white/5">
+                        <div className="bg-[#24332B] rounded-xl p-8 border border-white/5">
                             <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
                                 <Users className="text-gold" /> Eligibility Criteria
                             </h3>
@@ -72,7 +72,7 @@ export default function CourseDetail({
 
                     {/* Sidebar */}
                     <div className="lg:col-span-1">
-                        <div className="bg-[#10172a] rounded-xl p-8 border border-gold/20 sticky top-24">
+                        <div className="bg-[#24332B] rounded-xl p-8 border border-gold/20 sticky top-24">
                             <h3 className="text-2xl font-bold text-white mb-6 text-center">Batch Details</h3>
 
                             <div className="space-y-6 mb-8">

@@ -75,7 +75,7 @@ export default function FloatingMenu() {
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={`w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 relative z-10 ${
-                    isOpen ? "bg-[#1e1b4b] text-white rotate-90" : "bg-white text-[#1e1b4b] hover:scale-105"
+                    isOpen ? "bg-[#1B2620] text-white rotate-90" : "bg-white text-[#1B2620] hover:scale-105"
                 }`}
             >
                 {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
