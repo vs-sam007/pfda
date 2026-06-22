@@ -43,7 +43,6 @@ const navLinks = [
             { name: "Indiranagar", href: "/branches/indiranagar" },
         ]
     },
-    { name: "Student", href: "/student" },
     { name: "Contact", href: "/contact" },
 ];
 
