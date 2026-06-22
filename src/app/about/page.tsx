@@ -99,7 +99,7 @@ export default function AboutPage() {
                         <img
                             src="/images/Pathfinderimg.JPG"
                             alt="Director"
-                            className="w-full rounded-2xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-500"
+                            className="w-full rounded-2xl shadow-2xl relative z-10 md:grayscale md:hover:grayscale-0 transition-all duration-500"
                         />
                     </div>
                 </div>

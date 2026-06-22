@@ -48,7 +48,7 @@ export default function Mentors() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="group relative overflow-hidden rounded-xl bg-[#1B2620] border border-white/5 hover:border-gold/50 transition-all text-center"
                         >
-                            <div className="h-80 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all duration-500">
+                            <div className="h-80 overflow-hidden relative md:grayscale md:group-hover:grayscale-0 transition-all duration-500">
                                 <Image
                                     src={mentor.image}
                                     alt={mentor.name}

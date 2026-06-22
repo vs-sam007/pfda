@@ -50,7 +50,7 @@ export default function MainTeachers() {
                                     src={teacher.image}
                                     alt={teacher.name}
                                     fill
-                                    className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                                    className="object-cover object-top md:grayscale md:group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#1B2620] via-[#1B2620]/60 to-transparent md:to-[#1B2620]/10"></div>
                             </div>
