@@ -126,77 +126,8 @@ export default function Navbar() {
                     </Button>
                 </div>
 
-                {/* Mobile Toggle */}
-                <button
-                    className="md:hidden p-2 text-white"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    {isOpen ? <X className="text-gold" /> : <Menu className="text-white" />}
-                </button>
             </div>
 
-            {/* Mobile Menu Overlay */}
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "100vh" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-primary absolute w-full left-0 top-full overflow-hidden border-t border-white/10"
-                    >
-                        <div className="flex flex-col p-6 h-full pb-32 overflow-y-auto">
-                            {navLinks.map((link) => (
-                                <div key={link.name} className="border-b border-white/5 last:border-0">
-                                    {link.dropdown ? (
-                                        <div className="py-3">
-                                            <div
-                                                className="flex justify-between items-center text-xl font-bold uppercase tracking-wide text-neutral-400 mb-2 cursor-pointer"
-                                                onClick={() => setActiveMobileDropdown(activeMobileDropdown === link.name ? null : link.name)}
-                                            >
-                                                {link.name}
-                                                <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeMobileDropdown === link.name ? "rotate-180" : ""}`} />
-                                            </div>
-                                            <AnimatePresence>
-                                                {activeMobileDropdown === link.name && (
-                                                    <motion.div
-                                                        initial={{ height: 0, opacity: 0 }}
-                                                        animate={{ height: "auto", opacity: 1 }}
-                                                        exit={{ height: 0, opacity: 0 }}
-                                                        className="pl-4 flex flex-col gap-2 border-l border-gold/20 ml-1 overflow-hidden"
-                                                    >
-                                                        {link.dropdown.map((subLink) => (
-                                                            <Link
-                                                                key={subLink.name}
-                                                                href={subLink.href}
-                                                                onClick={() => setIsOpen(false)}
-                                                                className="text-base text-neutral-400 py-1 hover:text-gold"
-                                                            >
-                                                                {subLink.name}
-                                                            </Link>
-                                                        ))}
-                                                    </motion.div>
-                                                )}
-                                            </AnimatePresence>
-                                        </div>
-                                    ) : (
-                                        <Link
-                                            href={link.href}
-                                            onClick={() => setIsOpen(false)}
-                                            className={`block text-xl font-bold uppercase tracking-wide py-3 ${pathname === link.href ? "text-gold" : "text-neutral-400"
-                                                }`}
-                                        >
-                                            {link.name}
-                                        </Link>
-                                    )}
-                                </div>
-                            ))}
-                            <Button className="w-full mt-6" size="lg">
-                                BOOK FREE DEMO
-                            </Button>
-                        </div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
         </nav>
     );
 }
