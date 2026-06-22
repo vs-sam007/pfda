@@ -21,7 +21,7 @@ export default function Hero() {
                     src="/images/bg.jpg"
                     alt="Indian Army Cadets Training at Sunrise"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center scale-[1.15] md:scale-110 transform"
                     priority
                     quality={90}
                 />
