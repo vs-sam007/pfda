@@ -7,28 +7,40 @@ import Image from "next/image";
 
 const mentors = [
     {
-        name: "Col. R.K. Singh",
-        role: "Ex-Indian Army (Infantry)",
-        specialty: "SSB Interview & Psychology",
-        image: "/images/team-m-1.jpg", // Placeholder: Serious portrait
+        name: "MAJ. GEN. S.K. SINGH",
+        role: "Ex. Psychologist",
+        specialty: "Ex. Commandant, Kapurthala SSB",
+        image: "/images/sksingh.jpeg",
     },
     {
-        name: "Major S. Gupta",
-        role: "Ex-Indian Army (Artillery)",
-        specialty: "GTO Specialist",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop",
+        name: "Col. Ashok Pathak",
+        role: "Ex GTO",
+        specialty: "ALLAHABAD & BHOPAL SSB",
+        image: "/images/ashokpathak.jpeg",
     },
     {
-        name: "Gp Capt. A. Mishra",
-        role: "Ex-Indian Air Force",
-        specialty: "Interviewing Officer",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1976&auto=format&fit=crop",
+        name: "COL. PRAVEEN KUMAR",
+        role: "Ex. I.O.",
+        specialty: "Ex Instructor of NDA & IMA",
+        image: "/images/praveensrivastava.jpeg",
     },
     {
-        name: "Dr. P. Verma",
-        role: "Psychologist",
-        specialty: "Personality Development",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop",
+        name: "GP CPT. L.K. PANDEY",
+        role: "Ex Psychologist",
+        specialty: "Deputy President AFSB/SSB",
+        image: "/images/lkpandey.jpeg",
+    },
+    {
+        name: "GP. CAPT. A.K. SRIVASTAVA",
+        role: "Ex Psychologist",
+        specialty: "Varanasi 4AFSB, Mysore 2AFSB",
+        image: "/images/aksrivastava.jpeg",
+    },
+    {
+        name: "A.C. Sarvesh Tripathi",
+        role: "Ex Assistant Commandant",
+        specialty: "CRPF",
+        image: "/images/serveshtripathi.jpeg",
     }
 ];
 
@@ -38,7 +50,7 @@ export default function Mentors() {
             <div className="container mx-auto px-4">
                 <SectionHeading title="Elite Mentors" subtitle="Learn From The Legends" />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {mentors.map((mentor, index) => (
                         <motion.div
                             key={index}
@@ -48,12 +60,13 @@ export default function Mentors() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="group relative overflow-hidden rounded-xl bg-[#1B2620] border border-white/5 hover:border-gold/50 transition-all text-center"
                         >
-                            <div className="h-80 overflow-hidden relative md:grayscale md:group-hover:grayscale-0 transition-all duration-500">
+                            <div className="h-56 overflow-hidden relative md:grayscale md:group-hover:grayscale-0 transition-all duration-500">
                                 <Image
                                     src={mentor.image}
                                     alt={mentor.name}
                                     fill
-                                    className="object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
+                                    quality={100}
+                                    className="object-contain object-center transform group-hover:scale-105 transition-transform duration-700"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#1B2620] via-transparent to-transparent opacity-90"></div>

@@ -44,12 +44,14 @@
 }
 
 @layer base {
+  html,
   body {
     background-color: var(--color-primary);
     color: var(--color-text-body);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   h1,
@@ -65,9 +67,10 @@
 
 @layer utilities {
   .glass-nav {
-    background: rgba(27, 38, 32, 0.85);
+    background: rgba(27, 38, 32, 0.95);
     backdrop-filter: blur(12px);
     border-bottom: none;
+    box-shadow: 0 1px 0 0 #1B2620, 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   .glass-card {

@@ -52,6 +52,34 @@ const facultiesList = [
         experience: "5+ Years Experience",
         qualification: "M.Sc From University Of Lucknow, G.K Faculty",
         imageUrl: "/images/Divya%20Maam.jpeg"
+    },
+    {
+        name: "Mr. Rohit Gupta",
+        role: "Maths Faculty",
+        experience: "10+ Years Experience",
+        qualification: "M.Sc From Mathematics",
+        imageUrl: "/images/Rohit.jpeg"
+    },
+    {
+        name: "Awanendra Pratap Singh",
+        role: "Maths Faculty",
+        experience: "5 Years Experience",
+        qualification: "M.Sc from Mathematics",
+        imageUrl: "/images/Awanendra.jpeg"
+    },
+    {
+        name: "Vivek Pandey",
+        role: "English Faculty",
+        experience: "15+ Years Experience",
+        qualification: "M.A. In English",
+        imageUrl: "/images/Vivek.jpeg"
+    },
+    {
+        name: "Girish Shukla",
+        role: "Faculty of Science",
+        experience: "14+ Years Experience",
+        qualification: "M.Sc From Zoology",
+        imageUrl: "/images/Girish.jpeg"
     }
 ];
 

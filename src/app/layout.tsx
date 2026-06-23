@@ -15,14 +15,18 @@ export const metadata: Metadata = {
   keywords: ["defence coaching Lucknow", "NDA coaching Lucknow", "CDS coaching", "AFCAT coaching", "SSB interview preparation", "Path Finder Defence Academy"],
 };
 
+export const viewport = {
+  themeColor: "#1B2620",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.variable} suppressHydrationWarning>
+    <html lang="en" className="bg-primary" suppressHydrationWarning>
+      <body className={`${inter.variable} bg-primary antialiased`} suppressHydrationWarning>
         <Navbar />
         <main className="min-h-screen pt-0 md:pt-16">
           {children}

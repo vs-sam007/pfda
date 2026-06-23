@@ -16,6 +16,7 @@ interface CourseDetailProps {
     syllabus: string[];
     duration: string;
     batchTiming: string;
+    children?: React.ReactNode;
 }
 
 export default function CourseDetail({
@@ -27,6 +28,7 @@ export default function CourseDetail({
     syllabus,
     duration,
     batchTiming,
+    children
 }: CourseDetailProps) {
     return (
         <main className="bg-primary min-h-screen pb-20">
@@ -109,6 +111,8 @@ export default function CourseDetail({
                     </div>
                 </div>
             </section>
+            
+            {children}
         </main>
     );
 }

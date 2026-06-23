@@ -69,6 +69,7 @@ export default function Navbar() {
         <nav
             className={`hidden md:block fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "glass-nav h-[72px]" : "bg-transparent h-20"
                 }`}
+            style={{ borderBottom: 'none' }}
         >
             <div className="container mx-auto px-4 flex justify-between items-center h-full">
                 {/* Logo */}
