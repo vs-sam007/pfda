@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#050810] text-gray-300 pt-20 pb-10 border-t border-gold/20 relative overflow-hidden">
+        <footer className="bg-[#050810] text-gray-300 pt-20 pb-28 md:pb-10 border-t border-gold/20 relative overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-5 pointer-events-none"></div>
 
