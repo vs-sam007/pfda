@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Grid, Send, TrendingUp, Menu, X, Info, BookOpen, Image as ImageIcon } from "lucide-react";
+import { Home, Grid, Send, TrendingUp, Menu, X, Info, BookOpen, Image as ImageIcon, Video, MapPin, FileText } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function MobileBottomNav() {
@@ -20,9 +20,11 @@ export default function MobileBottomNav() {
     ];
 
     const moreItems = [
-        { name: "Gallery", href: "/gallery", icon: <ImageIcon className="w-5 h-5 text-[#4f46e5]" />, bg: "bg-[#eef2ff]", text: "text-[#3730a3]" },
+        { name: "Study Material", href: "/study-material", icon: <FileText className="w-5 h-5 text-[#059669]" />, bg: "bg-[#ecfdf5]", text: "text-[#047857]" },
+        { name: "Photo Gallery", href: "/gallery/photos", icon: <ImageIcon className="w-5 h-5 text-[#4f46e5]" />, bg: "bg-[#eef2ff]", text: "text-[#3730a3]" },
+        { name: "Video Gallery", href: "/gallery/videos", icon: <Video className="w-5 h-5 text-[#ec4899]" />, bg: "bg-[#fdf2f8]", text: "text-[#be185d]" },
         { name: "About Us", href: "/about", icon: <Info className="w-5 h-5 text-[#9333ea]" />, bg: "bg-[#f3e8ff]", text: "text-[#6b21a8]" },
-        { name: "Branches", href: "/branches", icon: <BookOpen className="w-5 h-5 text-[#e11d48]" />, bg: "bg-[#ffe4e6]", text: "text-[#9f1239]" },
+        { name: "Branches", href: "/branches", icon: <MapPin className="w-5 h-5 text-[#e11d48]" />, bg: "bg-[#ffe4e6]", text: "text-[#9f1239]" },
     ];
 
     return (
