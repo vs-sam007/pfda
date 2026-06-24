@@ -5,6 +5,13 @@ import FacultyCard from "@/components/FacultyCard";
 
 const facultiesList = [
     {
+        name: "Mr. Abhishek Awasthi Sir\n(Centre Head)",
+        role: "H.O.D English",
+        experience: "15+ Years Experience",
+        qualification: "Post Graduate From English",
+        imageUrl: "/images/Abhishek.jpeg"
+    },
+    {
         name: "Amrish Sir",
         role: "Chemistry Faculty",
         experience: "10+ Years Experience",
@@ -33,49 +40,49 @@ const facultiesList = [
         imageUrl: "/images/Vipin%20Sir.jpeg"
     },
     {
-        name: "Sandeep Sharma",
+        name: "Sandeep Sharma Sir",
         role: "Maths & Reasoning Faculty",
         experience: "12 Years Experience",
         qualification: "MBA",
         imageUrl: "/images/Sandeep%20Sir.jpeg"
     },
     {
-        name: "Dr. Imran Khan",
+        name: "Dr. Imran Khan Sir",
         role: "Science Faculty",
         experience: "15+ Years Experience",
         qualification: "BHMS",
         imageUrl: "/images/Imran%20Sir.jpeg"
     },
     {
-        name: "Miss Divya Thakur",
+        name: "Miss Divya Thakur Ma'am",
         role: "Centre Manager",
         experience: "5+ Years Experience",
         qualification: "M.Sc From University Of Lucknow, G.K Faculty",
         imageUrl: "/images/Divya%20Maam.jpeg"
     },
     {
-        name: "Mr. Rohit Gupta",
+        name: "Mr. Rohit Gupta Sir",
         role: "Maths Faculty",
         experience: "10+ Years Experience",
         qualification: "M.Sc From Mathematics",
         imageUrl: "/images/Rohit.jpeg"
     },
     {
-        name: "Awanendra Pratap Singh",
+        name: "Awanendra Pratap Singh Sir",
         role: "Maths Faculty",
         experience: "5 Years Experience",
         qualification: "M.Sc from Mathematics",
         imageUrl: "/images/Awanendra.jpeg"
     },
     {
-        name: "Vivek Pandey",
+        name: "Vivek Pandey Sir",
         role: "English Faculty",
         experience: "15+ Years Experience",
         qualification: "M.A. In English",
         imageUrl: "/images/Vivek.jpeg"
     },
     {
-        name: "Girish Shukla",
+        name: "Girish Shukla Sir",
         role: "Faculty of Science",
         experience: "14+ Years Experience",
         qualification: "M.Sc From Zoology",

@@ -31,7 +31,7 @@ export default function FacultyCard({
                 <div className="inline-block px-3 py-1 bg-[#FACC15] text-black text-xs font-bold rounded-full mb-3 shadow-lg">
                     {role}
                 </div>
-                <h3 className="text-xl font-bold text-white">{name}</h3>
+                <h3 className="text-xl font-bold text-white whitespace-pre-line">{name}</h3>
             </CardHeader>
             <CardContent className="text-center pb-8">
                 <p className="text-[#FACC15] font-medium text-sm mb-3">{qualification}</p>
