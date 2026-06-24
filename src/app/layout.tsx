@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeadPopup from "@/components/LeadPopup";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import FloatingCTA from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Footer />
         <LeadPopup />
         <FloatingWhatsApp />
+        <FloatingCTA />
         <MobileBottomNav />
       </body>
     </html>
