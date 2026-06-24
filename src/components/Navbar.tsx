@@ -31,6 +31,7 @@ const navLinks = [
         name: "Gallery",
         href: "/gallery",
         dropdown: [
+            { name: "Study Material", href: "/study-material" },
             { name: "Photo gallery", href: "/gallery/photos" },
             { name: "Video gallery", href: "/gallery/videos" },
         ]

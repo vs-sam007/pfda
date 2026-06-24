@@ -11,19 +11,19 @@ const posts = [
         title: "NDA 2 2024 Notification Out",
         date: "Oct 24, 2024",
         excerpt: "The Union Public Service Commission has released the notification for National Defence Academy & Naval Academy Examination (II), 2024.",
-        image: "https://images.unsplash.com/photo-1579912437766-79b76c8bdcfc?q=80&w=1974&auto=format&fit=crop"
+        image: "/images/gallery8.jpg"
     },
     {
         title: "Top 5 Tips for SSB Screening Test",
         date: "Sep 15, 2024",
         excerpt: "Screening is the first hurdle in the SSB interview. Learn how to master OIR and PPDT with these expert tips.",
-        image: "https://images.unsplash.com/photo-1544168190-79c11c140f59?q=80&w=1978&auto=format&fit=crop"
+        image: "/images/gallery1.jpg"
     },
     {
         title: "How to Prepare for CDS Maths",
         date: "Aug 10, 2024",
         excerpt: "Mathematics in CDS can be scoring if approached correctly. Here is a strategy to score 70+ marks in the Maths paper.",
-        image: "https://images.unsplash.com/photo-1599478473238-662885918735?q=80&w=1974&auto=format&fit=crop"
+        image: "/images/sainic-1.jpg"
     }
 ];
 
@@ -33,7 +33,7 @@ export default function BlogPage() {
             <PageHeader
                 title="Defence Updates"
                 subtitle="Latest News & Articles"
-                image="https://images.unsplash.com/photo-1589308001205-2d480de8b149?q=80&w=2070&auto=format&fit=crop"
+                image="/images/team-m-1.jpg"
             />
 
             <section className="container mx-auto px-4 py-20">

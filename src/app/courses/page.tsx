@@ -7,7 +7,7 @@ export default function CoursesPage() {
             <PageHeader
                 title="Our Courses"
                 subtitle="Shape Your Career In Defence"
-                image="https://images.unsplash.com/photo-1453491945771-a1e904948959?q=80&w=2070&auto=format&fit=crop"
+                image="/images/gallery8.jpg"
             />
             <CoursesGrid />
         </main>

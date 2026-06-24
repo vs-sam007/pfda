@@ -55,7 +55,7 @@ export default function BranchesPreview() {
                     >
                         <div className="w-full md:w-1/2 h-64 md:h-auto bg-gray-800 md:order-2 relative">
                             <Image
-                                src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1986&auto=format&fit=crop" // College campus
+                                src="/images/Pathfinderimg.JPG" // College campus
                                 alt="Indira Nagar Branch"
                                 fill
                                 className="object-cover"

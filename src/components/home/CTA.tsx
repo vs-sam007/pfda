@@ -9,7 +9,7 @@ export default function CTA() {
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1533473359331-0135ef1bcfb0?q=80&w=2070&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('/images/1707393182_indian-army.jpg')" }}
             >
                 <div className="absolute inset-0 bg-military-dark/90 mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-black/60"></div>

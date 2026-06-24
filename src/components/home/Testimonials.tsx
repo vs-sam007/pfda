@@ -22,13 +22,13 @@ export default function Testimonials() {
         {
             name: "Amit Kumar",
             role: "AFCAT 2024 Flying Branch",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1976&auto=format&fit=crop",
+            image: "/images/images.png",
             quote: "Joining PFDA was the best decision. The environment is motivating, and the focus on personality development is unique."
         },
         {
             name: "Vikram Batra",
             role: "TES 50 Army",
-            image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop",
+            image: "/images/images (1).png",
             quote: "From checking physical fitness to mock interviews, PFDA covers everything. I felt confident walking into my SSB."
         },
     ];

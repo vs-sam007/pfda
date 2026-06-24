@@ -9,7 +9,7 @@ export default function ResultsPage() {
             <PageHeader
                 title="Our Results"
                 subtitle="Hall of Fame"
-                image="https://images.unsplash.com/photo-1541961417166-3d6046e72ee8?q=80&w=2049&auto=format&fit=crop"
+                image="/images/team-m-1.jpg"
             />
 
             <div className="container mx-auto px-4 py-12">

@@ -20,10 +20,10 @@ export default function FacultyCard({
         <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 border-none bg-[#24332B] group hover:-translate-y-2">
             <div className="relative h-72 w-full bg-neutral-900 overflow-hidden">
                 <Image
-                    src={imageUrl || `https://images.unsplash.com/photo-${1500000000000 + name.length * 1000}?auto=format&fit=crop&w=400&q=80`}
+                    src={imageUrl || "/images/logo.png"}
                     alt={name}
                     fill
-                    className="object-cover object-top group-hover:scale-110 transition-transform duration-700"
+                    className="object-contain object-top group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#24332B] via-transparent to-transparent opacity-80"></div>
             </div>

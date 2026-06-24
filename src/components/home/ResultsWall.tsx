@@ -6,11 +6,11 @@ import Image from "next/image";
 
 // Mock data for results. In production, this would come from a database or CMS.
 const results = [
-    { name: "Rahul Singh", rank: "AIR 12", exam: "NDA 151", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1974&auto=format&fit=crop" },
-    { name: "Priya Sharma", rank: "AIR 45", exam: "CDS 2024", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop" },
-    { name: "Amit Kumar", rank: "AIR 08", exam: "AFCAT 2024", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1976&auto=format&fit=crop" },
-    { name: "Vikram Batra", rank: "Rec. Rec.", exam: "TES 50", image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=1998&auto=format&fit=crop" },
-    { name: "S. Yadav", rank: "AIR 99", exam: "NDA 151", image: "https://images.unsplash.com/photo-1542596594-649edbc13630?q=80&w=1974&auto=format&fit=crop" },
+    { name: "Rahul Singh", rank: "AIR 12", exam: "NDA 151", image: "/images/img-1.png" },
+    { name: "Priya Sharma", rank: "AIR 45", exam: "CDS 2024", image: "/images/img-1 (2).png" },
+    { name: "Amit Kumar", rank: "AIR 08", exam: "AFCAT 2024", image: "/images/images.png" },
+    { name: "Vikram Batra", rank: "Rec. Rec.", exam: "TES 50", image: "/images/images (1).png" },
+    { name: "S. Yadav", rank: "AIR 99", exam: "NDA 151", image: "/images/images.jpg" },
 ];
 
 export default function ResultsWall() {
@@ -33,7 +33,7 @@ export default function ResultsWall() {
                                 src={result.image}
                                 alt={result.name}
                                 fill
-                                className="object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                                className="object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity duration-300"
                                 sizes="(max-width: 768px) 50vw, 25vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>

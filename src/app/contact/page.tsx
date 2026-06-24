@@ -11,7 +11,7 @@ export default function ContactPage() {
             <PageHeader
                 title="Contact Us"
                 subtitle="Get In Touch"
-                image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                image="/images/nccSSB1.jpg"
             />
 
             <section className="container mx-auto px-4 py-20">

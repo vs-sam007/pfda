@@ -14,10 +14,10 @@ const mainTeachers = [
         icon: <BookOpen className="w-8 h-8 text-gold" />
     },
     {
-        title: "Centre Head",
-        name: "Mr. Rajeev Kumar Sir",
-        description: "Leading the institution with over 20 years of experience in defense coaching, focusing on holistic development and strategic preparation for all aspirants.",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop",
+        title: "Centre Head Indiranagar",
+        name: "Annad Krishna Chauhan",
+        description: "M.A. (Ancient History) | A dedicated General Studies educator, he focuses on building a strong foundation in history, current affairs, and general awareness. His clear explanations and structured teaching approach help students develop both knowledge and analytical understanding essential for competitive exams.",
+        image: "/images/Anand.jpeg",
         icon: <Star className="w-8 h-8 text-gold" />
     }
 ];
@@ -47,7 +47,7 @@ export default function MainTeachers() {
                                     src={teacher.image}
                                     alt={teacher.name}
                                     fill
-                                    className="object-cover object-top 2xl:grayscale 2xl:group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                                    className="object-contain object-top 2xl:grayscale 2xl:group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t 2xl:bg-gradient-to-r from-[#1B2620] via-[#1B2620]/60 to-transparent 2xl:to-[#1B2620]/10"></div>
                             </div>

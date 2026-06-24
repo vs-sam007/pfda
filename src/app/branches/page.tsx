@@ -7,7 +7,7 @@ export default function BranchesPage() {
             <PageHeader
                 title="Our Branches"
                 subtitle="State-of-the-Art Infrastructure"
-                image="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+                image="/images/team-m-1.jpg"
             />
 
             {/* Reusing Home Components for Consistency */}

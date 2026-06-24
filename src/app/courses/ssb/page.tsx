@@ -6,7 +6,7 @@ export default function SSBPage() {
         <CourseDetail
             title="SSB Interview"
             subtitle="Service Selection Board"
-            image="https://images.unsplash.com/photo-1541961417166-3d6046e72ee8?q=80&w=2049&auto=format&fit=crop"
+            image="/images/nda.jpeg"
             description="The SSB Interview is a 5-day evaluation process that assesses a candidate's personality, intelligence, and compatibility for a career in the armed forces. It is not just a test of knowledge but a test of your personality. At PFDA, we have the best psychological and GTO ground training facilities in India to help you discover your inner officer."
             eligibility={[
                 "Qualified in written exam (NDA, CDS, AFCAT, etc.)",

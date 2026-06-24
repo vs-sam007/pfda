@@ -5,7 +5,7 @@ export default function CDSPage() {
         <CourseDetail
             title="CDS Coaching"
             subtitle="Combined Defence Services"
-            image="https://images.unsplash.com/photo-1599478473238-662885918735?q=80&w=1974&auto=format&fit=crop"
+            image="/images/gallery8.jpg"
             description="The Combined Defence Services Examination (CDS) is conducted by the Union Public Service Commission (UPSC) for recruitment into the Indian Military Academy, Officers Training Academy, Indian Naval Academy and Indian Air Force Academy. Our comprehensive CDS coaching program covers all aspects of the written examination and prepares you for the challenges ahead."
             eligibility={[
                 "Age Limit: 19 to 25 years (varies by academy)",
