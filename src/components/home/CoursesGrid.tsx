@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, BookOpen } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const courses = [
     {
@@ -59,9 +60,10 @@ const courses = [
 ];
 
 export default function CoursesGrid() {
+    const router = useRouter();
     return (
-        <section className="py-20 bg-[#060910]">
-            <div className="container mx-auto px-4">
+        <section className="py-20 relative overflow-hidden bg-primary">
+            <div className="container mx-auto px-4 relative z-10">
                 <SectionHeading title="Our Courses" subtitle="Choose Your Path" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,12 +100,10 @@ export default function CoursesGrid() {
                                     <p className="text-gray-400 text-sm mb-1">{course.desc}</p>
                                     <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-6">{course.details}</p>
 
-                                    <Link href={`/courses/${course.title.toLowerCase().split(' ')[0]}`} className="block">
-                                        <Button className="w-full bg-white/5 hover:bg-gold hover:text-black border border-white/10 group-hover:border-gold/50 transition-all flex items-center justify-between group-hover:font-bold">
-                                            Enroll Now
-                                            <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
-                                        </Button>
-                                    </Link>
+                                    <Button onClick={() => router.push(`/courses/${course.title.toLowerCase().split(' ')[0]}`)} className="w-full bg-white/5 hover:bg-gold hover:text-black border border-white/10 group-hover:border-gold/50 transition-all flex items-center justify-between group-hover:font-bold">
+                                        Enroll Now
+                                        <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                                    </Button>
                                 </div>
                             </div>
                         </motion.div>

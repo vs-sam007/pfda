@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { useDemoModal } from "./DemoModalProvider";
+import { useRouter } from "next/navigation";
 
 const stats = [
     { label: "Selections", value: "1000+" },
@@ -13,6 +15,9 @@ const stats = [
 ];
 
 export default function Hero() {
+    const { openDemoModal } = useDemoModal();
+    const router = useRouter();
+
     return (
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
             {/* Background Image */}
@@ -72,14 +77,12 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.8 }}
                     className="flex flex-col sm:flex-row gap-4 mb-20"
                 >
-                    <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg shadow-red-900/30 border-0 text-lg px-8">
+                    <Button onClick={openDemoModal} size="lg" className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg shadow-red-900/30 border-0 text-lg px-8">
                         Book Free Demo
                     </Button>
-                    <Link href="/courses">
-                        <Button size="lg" variant="outline" className="text-lg px-8 bg-black/30 backdrop-blur-sm border-gold text-gold hover:bg-gold hover:text-black">
-                            Explore Courses
-                        </Button>
-                    </Link>
+                    <Button onClick={() => router.push('/courses')} size="lg" variant="outline" className="text-lg px-8 bg-black/30 backdrop-blur-sm border-gold text-gold hover:bg-gold hover:text-black">
+                        Explore Courses
+                    </Button>
                 </motion.div>
 
                 {/* Animated Stats */}

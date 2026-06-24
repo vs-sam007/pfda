@@ -7,6 +7,7 @@ import LeadPopup from "@/components/LeadPopup";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import FloatingCTA from "@/components/FloatingCTA";
 import MobileBottomNav from "@/components/MobileBottomNav";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -61,6 +62,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export const viewport = {
@@ -78,7 +89,7 @@ const jsonLd = {
   "description": "Path Finder Defence Academy is the best NDA coaching institute in Lucknow, offering expert training for NDA, CDS, AFCAT, SSB, CAPF, Sainik School and Agniveer exams.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Uma Krishna Complex, 628/52B, Murari Nagar, Shakti Nagar, Indira Nagar",
+    "streetAddress": "Uma Krishna Complex, Murari Nagar",
     "addressLocality": "Lucknow",
     "addressRegion": "Uttar Pradesh",
     "postalCode": "226016",
@@ -117,6 +128,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-primary" suppressHydrationWarning>
       <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-GK60V0X9Y7"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GK60V0X9Y7');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

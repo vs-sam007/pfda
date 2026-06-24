@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
+import { useDemoModal } from "@/components/DemoModalProvider";
 
 export default function CTA() {
+    const { openDemoModal } = useDemoModal();
+
     return (
         <section className="py-24 relative overflow-hidden flex items-center justify-center">
             {/* Background Image with Overlay */}
@@ -39,7 +42,7 @@ export default function CTA() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                 >
-                    <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg px-6 md:px-12 py-6 shadow-lg shadow-red-600/30 uppercase tracking-widest w-full md:w-auto h-auto whitespace-normal md:whitespace-nowrap">
+                    <Button onClick={openDemoModal} size="lg" className="bg-red-600 hover:bg-red-700 text-white font-bold text-base md:text-lg px-6 md:px-12 py-6 shadow-lg shadow-red-600/30 uppercase tracking-widest w-full md:w-auto h-auto whitespace-normal md:whitespace-nowrap">
                         Book Your Free Demo Class Today
                     </Button>
                 </motion.div>

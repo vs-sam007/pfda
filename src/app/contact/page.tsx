@@ -67,7 +67,7 @@ export default function ContactPage() {
                                 <div className="flex flex-col">
                                     <h4 className="text-white font-bold text-lg mb-1">Alambagh Branch (Head Office)</h4>
                                     <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2">
-                                        567/12, Kanpur Road, Near Phoenix Mall, Alambagh, Lucknow
+                                        Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005
                                     </a>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                                 <div className="flex flex-col">
                                     <h4 className="text-white font-bold text-lg mb-1">Indira Nagar Branch</h4>
                                     <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2">
-                                        B-Block, Near Munshipulia Metro Station, Indira Nagar, Lucknow
+                                        Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016
                                     </a>
                                 </div>
                             </div>
@@ -147,6 +147,9 @@ export default function ContactPage() {
                                         <option value="CDS">CDS</option>
                                         <option value="AFCAT">AFCAT</option>
                                         <option value="SSB Interview">SSB Interview</option>
+                                        <option value="CAPF">CAPF</option>
+                                        <option value="Agniveer">Agniveer</option>
+                                        <option value="Sainik School">Sainik School</option>
                                         <option value="Foundation">Foundation</option>
                                     </select>
                                 </div>

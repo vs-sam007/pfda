@@ -114,6 +114,9 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                                 <option value="CDS">CDS</option>
                                 <option value="AFCAT">AFCAT</option>
                                 <option value="SSB Interview">SSB Interview</option>
+                                <option value="CAPF">CAPF</option>
+                                <option value="Agniveer">Agniveer</option>
+                                <option value="Sainik School">Sainik School</option>
                                 <option value="Foundation">Foundation</option>
                             </select>
                         </div>

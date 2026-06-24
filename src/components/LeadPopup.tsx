@@ -150,7 +150,11 @@ export default function LeadPopup() {
                                                 <option>NDA</option>
                                                 <option>CDS</option>
                                                 <option>AFCAT</option>
-                                                <option>SSB</option>
+                                                <option>SSB Interview</option>
+                                                <option>CAPF</option>
+                                                <option>Agniveer</option>
+                                                <option>Sainik School</option>
+                                                <option>Foundation</option>
                                             </select>
                                         </div>
                                     </div>

@@ -35,7 +35,7 @@ export default function BranchesPreview() {
                             <div className="space-y-4 mb-8">
                                 <div className="flex items-start gap-3 text-gray-400">
                                     <MapPin className="text-gold shrink-0 mt-1" size={18} />
-                                    <p className="text-sm">567/12, Kanpur Road, Near Phoenix Mall, Alambagh, Lucknow</p>
+                                    <p className="text-sm">Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005</p>
                                 </div>
                                 <div className="flex items-center gap-3 text-gray-400">
                                     <Phone className="text-gold shrink-0" size={18} />
@@ -68,7 +68,7 @@ export default function BranchesPreview() {
                             <div className="space-y-4 mb-8">
                                 <div className="flex items-start gap-3 text-gray-400">
                                     <MapPin className="text-gold shrink-0 mt-1" size={18} />
-                                    <p className="text-sm">B-Block, Near Munshipulia Metro Station, Indira Nagar, Lucknow</p>
+                                    <p className="text-sm">Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016</p>
                                 </div>
                                 <div className="flex items-center gap-3 text-gray-400">
                                     <Phone className="text-gold shrink-0" size={18} />

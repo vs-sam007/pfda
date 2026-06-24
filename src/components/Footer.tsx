@@ -77,8 +77,8 @@ export default function Footer() {
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-white font-bold text-sm mb-1">Alambagh Branch (Head Office)</span>
-                                <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold transition-colors text-sm">
-                                    567/12, Kanpur Road, Near Phoenix Mall, Alambagh, Lucknow
+                                <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors block text-neutral-400 text-sm">
+                                    Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005
                                 </a>
                             </div>
                         </li>
@@ -88,8 +88,8 @@ export default function Footer() {
                             </div>
                             <div className="flex flex-col">
                                 <span className="text-white font-bold text-sm mb-1">Indira Nagar Branch</span>
-                                <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold transition-colors text-sm">
-                                    B-Block, Near Munshipulia Metro Station, Indira Nagar, Lucknow
+                                <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold transition-colors block text-sm">
+                                    Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016
                                 </a>
                             </div>
                         </li>

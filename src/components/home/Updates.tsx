@@ -26,7 +26,7 @@ export default function Updates() {
             title: "Complete SSB Interview Preparation Guide",
             date: "May 12, 2025",
             slug: "/blog/ssb-interview-guide",
-            image: "/images/gallery7.jpg",
+            image: "/images/nccSSB1.jpg",
             badge: "SSB Guide"
         }
     ];

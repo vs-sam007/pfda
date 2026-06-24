@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                         If you have any questions about this Privacy Policy, please contact us at:<br/>
                         <strong>Email:</strong> info@pathfinderdefenceacademy.co.in<br/>
                         <strong>Phone:</strong> +91 75051 88009<br/>
-                        <strong>Address:</strong> Uma Krishna Complex, 628/ 52B, Murari Nagar, Shakti Nagar, Indira Nagar, Lucknow, Uttar Pradesh 226016
+                        <strong>Address:</strong> Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016
                     </p>
                 </div>
             </section>
