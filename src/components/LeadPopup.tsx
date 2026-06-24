@@ -20,15 +20,34 @@ export default function LeadPopup() {
         setIsOpen(false);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // Simulate API call
-        setTimeout(() => {
+        const formData = new FormData(e.currentTarget);
+        
+        const data = {
+            name: formData.get("name"),
+            phone: formData.get("phone"),
+            course: formData.get("course"),
+            education: formData.get("education"),
+            message: `Lead Popup Form - Education: ${formData.get("education")}`, // Optional, to pass extra info
+            formType: "demo",
+        };
+
+        try {
+            await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+            
+            // Show success animation anyway
             setIsSubmitted(true);
             setTimeout(() => {
                 handleClose();
             }, 2000);
-        }, 1000);
+        } catch (error) {
+            console.error(error);
+        }
     };
 
     return (
@@ -88,6 +107,7 @@ export default function LeadPopup() {
                                             <User size={18} />
                                         </div>
                                         <input
+                                            name="name"
                                             required
                                             type="text"
                                             placeholder="Full Name"
@@ -101,6 +121,7 @@ export default function LeadPopup() {
                                             <Phone size={18} />
                                         </div>
                                         <input
+                                            name="phone"
                                             required
                                             type="tel"
                                             placeholder="Mobile Number"
@@ -114,7 +135,7 @@ export default function LeadPopup() {
                                             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-gold transition-colors">
                                                 <GraduationCap size={18} />
                                             </div>
-                                            <select className="w-full bg-[#1e293b] border border-gray-700/50 rounded-lg pl-10 pr-4 py-3 text-white focus:border-gold/50 focus:ring-1 focus:ring-gold/50 focus:outline-none appearance-none transition-all cursor-pointer">
+                                            <select name="education" className="w-full bg-[#1e293b] border border-gray-700/50 rounded-lg pl-10 pr-4 py-3 text-white focus:border-gold/50 focus:ring-1 focus:ring-gold/50 focus:outline-none appearance-none transition-all cursor-pointer">
                                                 <option>Class 11th</option>
                                                 <option>Class 12th</option>
                                                 <option>Graduate</option>
@@ -125,7 +146,7 @@ export default function LeadPopup() {
                                             <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-gold transition-colors">
                                                 <BookOpen size={18} />
                                             </div>
-                                            <select className="w-full bg-[#1e293b] border border-gray-700/50 rounded-lg pl-10 pr-4 py-3 text-white focus:border-gold/50 focus:ring-1 focus:ring-gold/50 focus:outline-none appearance-none transition-all cursor-pointer">
+                                            <select name="course" className="w-full bg-[#1e293b] border border-gray-700/50 rounded-lg pl-10 pr-4 py-3 text-white focus:border-gold/50 focus:ring-1 focus:ring-gold/50 focus:outline-none appearance-none transition-all cursor-pointer">
                                                 <option>NDA</option>
                                                 <option>CDS</option>
                                                 <option>AFCAT</option>

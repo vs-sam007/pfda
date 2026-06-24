@@ -39,10 +39,10 @@ export default function BranchesPreview() {
                                 </div>
                                 <div className="flex items-center gap-3 text-gray-400">
                                     <Phone className="text-gold shrink-0" size={18} />
-                                    <p className="text-sm">+91 99999 88888</p>
+                                    <p className="text-sm">+91 75051 88009</p>
                                 </div>
                             </div>
-                            <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-black">Get Directions</Button>
+                            <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="w-full text-center border border-gold text-gold hover:bg-gold hover:text-black font-bold py-3 rounded-lg transition-colors">Get Directions</a>
                         </div>
                     </motion.div>
 
@@ -75,7 +75,7 @@ export default function BranchesPreview() {
                                     <p className="text-sm">+91 99999 77777</p>
                                 </div>
                             </div>
-                            <Button variant="outline" className="w-full border-gold text-gold hover:bg-gold hover:text-black">Get Directions</Button>
+                            <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="w-full text-center border border-gold text-gold hover:bg-gold hover:text-black font-bold py-3 rounded-lg transition-colors">Get Directions</a>
                         </div>
                     </motion.div>
                 </div>

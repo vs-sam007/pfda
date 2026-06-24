@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import { CheckCircle, Award, Users, BookOpen } from "lucide-react";
 import FacultyCard from "@/components/FacultyCard";
+
+export const metadata: Metadata = {
+    title: "About Path Finder Defence Academy | Best Defence Academy in Lucknow",
+    description: "Know about Path Finder Defence Academy (PFDA) — the best defence academy in Lucknow. Top defence coaching institute in Uttar Pradesh with NDA & SSB preparation, physical training, hostel facility. 15+ years, 1000+ selections.",
+    keywords: ["best defence academy in Lucknow", "top defence coaching institute in Uttar Pradesh", "defence academy with NDA and SSB preparation", "NDA coaching with physical training", "defence coaching with hostel facility"],
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/about" },
+};
 
 const facultiesList = [
     {
@@ -104,10 +112,10 @@ export default function AboutPage() {
                     <div>
                         <SectionHeading title="Who We Are" alignment="left" />
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            Path Finder Defence Academy (PFDA) is Lucknow's premier institute dedicated to training aspirants for the Indian Armed Forces. Established with a vision to serve the nation by grooming young minds, we have consistently produced top rankers in NDA, CDS, AFCAT, and other defence examinations.
+                            Path Finder Defence Academy (PFDA) is the best defence academy in Lucknow, dedicated to training aspirants for the Indian Armed Forces. As the top defence coaching institute in Uttar Pradesh, we have consistently produced top rankers in NDA, CDS, AFCAT, CAPF, and other defence examinations conducted by UPSC, with over 1000+ successful selections to our credit.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                            Under the guidance of retired defence officers and expert faculty, we provide a holistic environment that nurtures not just academic excellence but also physical fitness and character development – the core "Officer Like Qualities" (OLQs).
+                            Under the guidance of retired defence officers and expert faculty, we provide a holistic defence coaching environment that nurtures academic excellence, physical fitness, and character development. Our academy offers NDA coaching with physical training, SSB interview preparation by ex-SSB panel members, and defence coaching with hostel facility — making us a complete defence exam preparation institute in Lucknow, conveniently located near Alambagh and Indiranagar.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6">
@@ -133,7 +141,7 @@ export default function AboutPage() {
                         <div className="absolute inset-0 bg-gold/10 transform translate-x-4 translate-y-4 rounded-2xl"></div>
                         <img
                             src="/images/Pathfinderimg.JPG"
-                            alt="Director"
+                            alt="Path Finder Defence Academy campus — best defence coaching institute in Lucknow"
                             className="w-full rounded-2xl shadow-2xl relative z-10 md:grayscale md:hover:grayscale-0 transition-all duration-500"
                         />
                     </div>

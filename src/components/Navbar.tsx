@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, Phone, MapPin, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui/Button";
+import { useDemoModal } from "./DemoModalProvider";
 
 import Image from "next/image";
 
@@ -44,6 +45,7 @@ const navLinks = [
             { name: "Indiranagar", href: "/branches/indiranagar" },
         ]
     },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
 ];
 
@@ -52,6 +54,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [activeMobileDropdown, setActiveMobileDropdown] = useState<string | null>(null);
     const pathname = usePathname();
+    const { openDemoModal } = useDemoModal();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -123,7 +126,7 @@ export default function Navbar() {
                             )}
                         </div>
                     ))}
-                    <Button variant="default" className="ml-4 self-center mt-0">
+                    <Button variant="default" className="ml-4 self-center mt-0" onClick={openDemoModal}>
                         BOOK FREE DEMO
                     </Button>
                 </div>

@@ -7,18 +7,18 @@ import { Shield, Target, Users } from "lucide-react";
 const features = [
     {
         icon: <Shield className="w-12 h-12 text-gold" />,
-        title: "Iron Discipline",
-        description: "We instill military-grade discipline from day one, forming the bedrock of officer qualities.",
+        title: "UPSC-Focused Training",
+        description: "Our NDA and CDS coaching is aligned with the latest UPSC exam patterns. We cover NDA Maths, GAT, and CDS General Knowledge with structured study plans designed for maximum results.",
     },
     {
         icon: <Target className="w-12 h-12 text-gold" />,
-        title: "Laser Focus",
-        description: "Our curriculum is hyper-focused on exam patterns, ensuring every hour spent yields results.",
+        title: "Complete Defence Preparation",
+        description: "From NDA written exam coaching to SSB interview preparation, AFCAT, CAPF and Agniveer — we offer end-to-end defence exam preparation under one roof in Lucknow.",
     },
     {
         icon: <Users className="w-12 h-12 text-gold" />,
         title: "Officer Like Qualities",
-        description: "Beyond academics, we groom your personality to match the high standards of the armed forces.",
+        description: "Beyond academics, we develop OLQs through physical training, GTO practice, and personality development — the core qualities assessed by the Service Selection Board.",
     },
 ];
 

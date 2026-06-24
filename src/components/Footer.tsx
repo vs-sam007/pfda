@@ -75,7 +75,23 @@ export default function Footer() {
                             <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <MapPin size={20} />
                             </div>
-                            <span className="text-neutral-400">Head Office: Uma Krishna Complex, 628/ 52B, Murari Nagar, Shakti Nagar, Indira Nagar, Lucknow, Uttar Pradesh 226016</span>
+                            <div className="flex flex-col">
+                                <span className="text-white font-bold text-sm mb-1">Alambagh Branch (Head Office)</span>
+                                <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold transition-colors text-sm">
+                                    567/12, Kanpur Road, Near Phoenix Mall, Alambagh, Lucknow
+                                </a>
+                            </div>
+                        </li>
+                        <li className="flex items-start gap-4">
+                            <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
+                                <MapPin size={20} />
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-white font-bold text-sm mb-1">Indira Nagar Branch</span>
+                                <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-gold transition-colors text-sm">
+                                    B-Block, Near Munshipulia Metro Station, Indira Nagar, Lucknow
+                                </a>
+                            </div>
                         </li>
                         <li className="flex items-center gap-4">
                             <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
@@ -87,14 +103,25 @@ export default function Footer() {
                             <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <Mail size={20} />
                             </div>
-                            <a href="mailto:info@pfda.com" className="hover:text-gold transition-colors">info@pfda.com</a>
+                            <div className="flex flex-col gap-1">
+                                <a href="mailto:director@pathfinderdefenceacademy.co.in" className="hover:text-gold transition-colors break-all">director@pathfinderdefenceacademy.co.in</a>
+                                <a href="mailto:info@pathfinderdefenceacademy.co.in" className="hover:text-gold transition-colors break-all">info@pathfinderdefenceacademy.co.in</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 mt-16 pt-8 border-t border-white/5 text-center text-neutral-500 text-sm">
-                <p>&copy; {new Date().getFullYear()} Path Finder Defence Academy. All rights reserved.</p>
+            <div className="container mx-auto px-4 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-neutral-500 text-sm">
+                <div className="text-center md:text-left">
+                    <p className="mb-2">&copy; {new Date().getFullYear()} Path Finder Defence Academy. All rights reserved.</p>
+                    <p className="text-xs text-neutral-600">Defence Academy near Alambagh, Indiranagar, Lucknow, Uttar Pradesh</p>
+                </div>
+                <div className="flex flex-wrap justify-center gap-4 text-xs">
+                    <Link href="/privacy-policy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+                    <Link href="/terms-conditions" className="hover:text-gold transition-colors">Terms & Conditions</Link>
+                    <Link href="/refund-policy" className="hover:text-gold transition-colors">Refund Policy</Link>
+                </div>
             </div>
         </footer>
     );

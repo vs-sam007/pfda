@@ -45,7 +45,7 @@ export default function CourseDetail({
 
                         <div className="bg-[#24332B] rounded-xl p-8 border border-white/5 mb-12">
                             <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                                <BookOpen className="text-gold" /> Syllabus The Covered
+                                <BookOpen className="text-gold" /> Syllabus Covered
                             </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {syllabus.map((item, index) => (

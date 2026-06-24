@@ -5,9 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, Grid, Send, TrendingUp, Menu, X, Info, BookOpen, Image as ImageIcon, Video, MapPin, FileText } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useDemoModal } from "./DemoModalProvider";
 
 export default function MobileBottomNav() {
     const pathname = usePathname();
+    const { openDemoModal } = useDemoModal();
     const [isMoreOpen, setIsMoreOpen] = useState(false);
 
     const navItems = [
@@ -25,6 +27,7 @@ export default function MobileBottomNav() {
         { name: "Video Gallery", href: "/gallery/videos", icon: <Video className="w-5 h-5 text-[#ec4899]" />, bg: "bg-[#fdf2f8]", text: "text-[#be185d]" },
         { name: "About Us", href: "/about", icon: <Info className="w-5 h-5 text-[#9333ea]" />, bg: "bg-[#f3e8ff]", text: "text-[#6b21a8]" },
         { name: "Branches", href: "/branches", icon: <MapPin className="w-5 h-5 text-[#e11d48]" />, bg: "bg-[#ffe4e6]", text: "text-[#9f1239]" },
+        { name: "Blog", href: "/blog", icon: <BookOpen className="w-5 h-5 text-[#ea580c]" />, bg: "bg-[#ffedd5]", text: "text-[#c2410c]" },
     ];
 
     return (
@@ -91,9 +94,9 @@ export default function MobileBottomNav() {
 
                     {/* Center Floating Action Button */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-6 flex flex-col items-center justify-center">
-                        <Link href="/contact" className="bg-[#1B2620] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
+                        <button onClick={openDemoModal} className="bg-[#1B2620] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
                             <Send className="w-6 h-6 ml-1" />
-                        </Link>
+                        </button>
                         <span className="text-[10px] font-extrabold text-[#1B2620] mt-1.5 tracking-wider uppercase">Enquire</span>
                     </div>
 

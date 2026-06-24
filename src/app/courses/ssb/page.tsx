@@ -1,23 +1,31 @@
 import CourseDetail from "@/components/CourseDetail";
 import SectionHeading from "@/components/SectionHeading";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "SSB Interview Coaching in Lucknow | SSB Screening, Psychology & GTO Training | PFDA",
+    description: "Best SSB interview preparation in Lucknow at PFDA. Training by ex-SSB psychologists & GTOs. Complete SSB screening test, psychology test (TAT, WAT, SRT), GTO tasks & personal interview coaching.",
+    keywords: ["SSB interview preparation", "SSB screening test", "SSB psychology test", "SSB GTO tasks", "SSB interview questions", "NDA SSB coaching in Lucknow", "SSB coaching Lucknow"],
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/ssb" },
+};
 
 export default function SSBPage() {
     return (
         <CourseDetail
-            title="SSB Interview"
-            subtitle="Service Selection Board"
+            title="SSB Interview Coaching"
+            subtitle="Service Selection Board — 5-Day Assessment"
             image="/images/nda.jpeg"
-            description="The SSB Interview is a 5-day evaluation process that assesses a candidate's personality, intelligence, and compatibility for a career in the armed forces. It is not just a test of knowledge but a test of your personality. At PFDA, we have the best psychological and GTO ground training facilities in India to help you discover your inner officer."
+            description="The SSB Interview is a 5-day personality assessment process conducted by the Service Selection Board to evaluate candidates for a career in the Indian Armed Forces. It tests your intelligence, personality, and Officer Like Qualities (OLQs) through psychological tests, group testing, and personal interviews. Path Finder Defence Academy provides the most authentic SSB interview preparation in Lucknow with an expert panel that includes ex-SSB psychologists, ex-GTOs, and ex-interviewing officers from actual Service Selection Boards. Our SSB coaching covers the complete process — from SSB screening test (OIR + PPDT) to SSB psychology tests, SSB GTO tasks, personal interview, and conference preparation."
             eligibility={[
-                "Qualified in written exam (NDA, CDS, AFCAT, etc.)",
-                "Or Direct Entry (TES, TGC, SSC Tech, NCC Special Entry)"
+                "Qualified in written exam (NDA, CDS, AFCAT, CAPF conducted by UPSC)",
+                "Or Direct Entry (TES, TGC, SSC Tech, NCC Special Entry, JAG Entry)"
             ]}
             syllabus={[
-                "Screening Test (OIR + PPDT)",
-                "Psychological Tests (TAT, WAT, SRT, SD)",
-                "GTO Tasks (Group Discussion, GPE, Snake Race, etc.)",
-                "Personal Interview",
-                "Conference"
+                "SSB Screening Test — OIR (Officer Intelligence Rating) + PPDT (Picture Perception & Discussion Test)",
+                "SSB Psychology Tests — TAT (Thematic Apperception Test), WAT (Word Association Test), SRT (Situation Reaction Test), Self Description",
+                "SSB GTO Tasks — Group Discussion, GPE (Group Planning Exercise), PGT, HGT, Command Task, Snake Race, Lecturette",
+                "Personal Interview — In-depth assessment by Interviewing Officer",
+                "Conference — Final board assessment"
             ]}
             duration="14 Days / 21 Days"
             batchTiming="Full Day Training (8 AM - 5 PM)"
@@ -90,7 +98,7 @@ export default function SSBPage() {
                                         {panel.role}
                                     </p>
                                     <p className="text-gray-200 italic text-sm md:text-base leading-relaxed">
-                                        "{panel.quote}"
+                                        &quot;{panel.quote}&quot;
                                     </p>
                                 </div>
                             </div>

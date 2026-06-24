@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
+import { useDemoModal } from "./DemoModalProvider";
 
 export default function FloatingCTA() {
+    const { openDemoModal } = useDemoModal();
     return (
         <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -15,13 +17,13 @@ export default function FloatingCTA() {
             <div className="absolute inset-0 rounded-full bg-gold opacity-75 animate-ping"></div>
             
             {/* The actual button */}
-            <Link 
-                href="/contact" 
+            <button 
+                onClick={openDemoModal}
                 className="relative bg-[#e11d48] text-white font-bold tracking-wide uppercase px-5 py-3 md:px-6 md:py-4 rounded-full shadow-2xl flex items-center gap-2 border-2 border-white/20 transition-transform hover:scale-105"
             >
                 <Calendar className="w-5 h-5" />
                 <span className="text-sm md:text-base">Book Free Demo Now</span>
-            </Link>
+            </button>
         </motion.div>
     );
 }

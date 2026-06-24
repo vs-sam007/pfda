@@ -8,7 +8,7 @@ import Image from "next/image";
 const stats = [
     { label: "Selections", value: "1000+" },
     { label: "Students", value: "5000+" },
-    { label: "Expert Mentors", value: "10+" },
+    { label: "Expert Mentors", value: "40+" },
     { label: "Branches in Lucknow", value: "2" },
 ];
 
@@ -51,9 +51,9 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg"
                 >
-                    India's Most Trusted <br />
+                    Best NDA & Defence <br />
                     <span className="text-gold">
-                        Defence Career Academy
+                        Coaching in Lucknow
                     </span>
                 </motion.h1>
 
@@ -63,7 +63,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.6 }}
                     className="text-lg md:text-xl text-[#cbd5e1] mb-10 max-w-2xl font-light drop-shadow-md"
                 >
-                    Your Journey From Aspirant To Officer Starts Here 🇮🇳
+                    Expert NDA, CDS, AFCAT & SSB Coaching by Ex-Defence Officers — Your Journey From Aspirant To Officer Starts Here 🇮🇳
                 </motion.p>
 
                 <motion.div
