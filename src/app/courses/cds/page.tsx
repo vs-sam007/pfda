@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "CDS Coaching in Lucknow | Combined Defence Services Exam Preparation | PFDA",
     description: "Best CDS coaching in Lucknow at Path Finder Defence Academy. Complete Combined Defence Services exam preparation for IMA, OTA, INA & AFA. Expert faculty, mock tests & SSB training. UPSC CDS preparation.",
     keywords: ["CDS coaching in Lucknow", "CDS exam preparation", "Combined Defence Services coaching", "CDS maths preparation", "CDS English preparation", "defence exam after graduation"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/cds" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/cds/" },
 };
 
 export default function CDSPage() {

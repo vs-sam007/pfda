@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Complete SSB Interview Preparation Guide — Screening to Conference | PFDA",
     description: "Master SSB interview preparation with this complete guide. Learn about SSB screening test, psychology tests (TAT, WAT, SRT), GTO tasks, personal interview & conference. Expert tips from ex-SSB officers at PFDA Lucknow.",
     keywords: ["SSB interview preparation", "SSB screening test", "SSB psychology test", "SSB GTO tasks", "SSB interview questions", "how to clear SSB interview"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/ssb-interview-guide" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/ssb-interview-guide/" },
 };
 
 export default function SSBInterviewGuide() {

@@ -1,4 +1,12 @@
 import PageHeader from "@/components/PageHeader";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "NDA Coaching in Alambagh Lucknow | Head Office | Path Finder Defence Academy",
+    description: "Visit Path Finder Defence Academy (PFDA) Head Office in Alambagh, Lucknow. Best coaching for NDA, CDS, AFCAT & SSB near Singar Nagar Metro Station. Hostel & ground facility.",
+    keywords: ["NDA coaching in Alambagh", "defence academy Alambagh Lucknow", "NDA coaching near Singar Nagar Metro", "best NDA institute Alambagh", "PFDA Alambagh head office"],
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/branches/alambagh/" },
+};
 
 export default function AlambaghBranchPage() {
     return (

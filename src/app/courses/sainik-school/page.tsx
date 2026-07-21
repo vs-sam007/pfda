@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Sainik School Coaching in Lucknow | Sainik School Entrance Exam Preparation | PFDA",
     description: "Best Sainik School entrance coaching in Lucknow at Path Finder Defence Academy. Prepare for AISSEE for Class 6th & 9th admission. Expert coaching with mock tests and physical training.",
     keywords: ["Sainik School coaching Lucknow", "AISSEE preparation", "Sainik School entrance exam coaching", "defence coaching for young students"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/sainik-school" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/sainik-school/" },
 };
 
 export default function SainikSchoolPage() {

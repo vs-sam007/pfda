@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Agniveer Coaching in Lucknow | Agnipath Scheme Preparation | Path Finder Defence Academy",
     description: "Best Agniveer coaching in Lucknow at PFDA. Complete Agnipath scheme preparation for Indian Army, Navy & Air Force. Physical fitness training, written exam coaching & mock tests for Agniveer recruitment.",
     keywords: ["Agniveer coaching Lucknow", "Agnipath scheme coaching", "Indian Army Agniveer preparation", "How to join Indian Army after 12th", "Agniveer exam preparation"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/agniveer" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/agniveer/" },
 };
 
 export default function AgniveerPage() {

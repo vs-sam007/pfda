@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "SSB Interview Coaching in Lucknow | SSB Screening, Psychology & GTO Training | PFDA",
     description: "Best SSB interview preparation in Lucknow at PFDA. Training by ex-SSB psychologists & GTOs. Complete SSB screening test, psychology test (TAT, WAT, SRT), GTO tasks & personal interview coaching.",
     keywords: ["SSB interview preparation", "SSB screening test", "SSB psychology test", "SSB GTO tasks", "SSB interview questions", "NDA SSB coaching in Lucknow", "SSB coaching Lucknow"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/ssb" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/ssb/" },
 };
 
 export default function SSBPage() {

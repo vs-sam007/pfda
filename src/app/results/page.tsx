@@ -2,6 +2,14 @@ import PageHeader from "@/components/PageHeader";
 import ResultsWall from "@/components/home/ResultsWall";
 import HallOfFame from "@/components/HallOfFame";
 import { Award, Star } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "1000+ Defence Exam Selections & Hall of Fame | NDA, CDS, SSB Results | PFDA",
+    description: "Witness the Hall of Fame at Path Finder Defence Academy. Over 1000+ selections in NDA written exams, SSB interviews, CDS, AFCAT & Air Force. Lucknow's top selection institute.",
+    keywords: ["NDA selections Lucknow", "best defence academy results", "SSB recommended students Lucknow", "PFDA selections", "NDA coaching top results"],
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/results/" },
+};
 
 export default function ResultsPage() {
     return (

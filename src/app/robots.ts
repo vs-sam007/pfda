@@ -7,8 +7,8 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/private/',
+            disallow: ['/private/', '/*__next*'],
         },
-        sitemap: 'https://pfda.in/sitemap.xml',
+        sitemap: 'https://pathfinderdefenceacademy.com/sitemap.xml',
     }
 }

@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+
+export const metadata: Metadata = {
+    title: "Video Gallery | Path Finder Defence Academy",
+    description: "Watch training videos, SSB interview guidance, classroom sessions, and success stories of Path Finder Defence Academy cadets.",
+    alternates: {
+        canonical: "https://pathfinderdefenceacademy.com/gallery/videos/",
+    },
+};
 
 export default function VideosPage() {
     return (

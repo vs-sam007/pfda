@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Best NDA Coaching in Lucknow — Why PFDA Leads the Way | Path Finder Defence Academy",
     description: "Discover why Path Finder Defence Academy is rated the best NDA coaching in Lucknow. Affordable fees, expert faculty, hostel facility, physical training & 1000+ selections. Top defence coaching institute in Uttar Pradesh.",
     keywords: ["best NDA coaching in Lucknow", "best NDA coaching institute for beginners", "top defence coaching institute in Uttar Pradesh", "affordable NDA coaching in Lucknow", "NDA coaching with physical training", "defence coaching with hostel facility"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/best-nda-coaching-lucknow" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/best-nda-coaching-lucknow/" },
 };
 
 export default function BestNDACoachingLucknow() {

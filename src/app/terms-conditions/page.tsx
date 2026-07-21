@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Terms and Conditions | Path Finder Defence Academy",
     description: "Terms and Conditions for Path Finder Defence Academy.",
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/terms-conditions" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/terms-conditions/" },
 };
 
 export default function TermsConditionsPage() {

@@ -30,8 +30,52 @@ export default function CourseDetail({
     batchTiming,
     children
 }: CourseDetailProps) {
+    const courseJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": title,
+        "description": description,
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Path Finder Defence Academy",
+            "sameAs": "https://pathfinderdefenceacademy.com"
+        },
+        "timeRequired": duration
+    };
+
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": `What are the eligibility criteria for ${title}?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": eligibility.join("; ")
+                }
+            },
+            {
+                "@type": "Question",
+                "name": `What syllabus topics are covered in ${title}?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": syllabus.join(", ")
+                }
+            }
+        ]
+    };
+
     return (
         <main className="bg-primary min-h-screen pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
             <PageHeader title={title} subtitle={subtitle} image={image} />
 
             <section className="container mx-auto px-4 py-20">

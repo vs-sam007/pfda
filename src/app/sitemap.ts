@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { route: '/gallery/videos', priority: 0.8 },
         { route: '/study-material', priority: 0.8 },
         { route: '/branches', priority: 0.8 },
+        { route: '/branches/alambagh', priority: 0.8 },
+        { route: '/branches/indiranagar', priority: 0.8 },
         { route: '/contact', priority: 0.8 },
         { route: '/blog', priority: 0.9 },
         { route: '/blog/how-to-crack-nda', priority: 0.7 },
@@ -35,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     return routes.map(({ route, priority }) => ({
-        url: `${baseUrl}${route}`,
+        url: `${baseUrl}${route}/`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: priority,

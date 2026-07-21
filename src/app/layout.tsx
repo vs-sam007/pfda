@@ -12,8 +12,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Path Finder Defence Academy | Best NDA Coaching in Lucknow | Defence Coaching Institute",
-  description: "Path Finder Defence Academy (PFDA) is the best NDA coaching in Lucknow. Expert training for NDA, CDS, AFCAT, SSB, CAPF, Agniveer & Sainik School by Ex-Defence Mentors. Top defence coaching institute in Uttar Pradesh with hostel facility & physical training.",
+  title: "Path Finder Defence Academy | Best NDA Coaching in Lucknow",
+  description: "PFDA is the best NDA coaching institute in Lucknow. Expert preparation for NDA, CDS, AFCAT, SSB & Sainik School by Ex-Defence Mentors with hostel facility.",
   keywords: [
     "NDA coaching in Lucknow",
     "best NDA coaching in Lucknow",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     description: "Lucknow's premier defence coaching institute with 1000+ selections. Expert training for NDA, CDS, AFCAT, SSB by Ex-Defence Mentors.",
   },
   alternates: {
-    canonical: "https://pathfinderdefenceacademy.com",
+    canonical: "https://pathfinderdefenceacademy.com/",
   },
   robots: {
     index: true,
@@ -64,8 +64,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },

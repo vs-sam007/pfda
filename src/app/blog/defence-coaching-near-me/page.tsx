@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Defence Coaching Near Me in Lucknow — Locations & Guide | PFDA",
     description: "Looking for NDA coaching near Alambagh or Indiranagar in Lucknow? Find the best defence academy near you. PFDA has 2 centres in Lucknow — Alambagh & Indiranagar. Defence coaching in Uttar Pradesh.",
     keywords: ["NDA coaching near Alambagh Lucknow", "defence academy near me", "NDA coaching near Indiranagar", "defence coaching in Uttar Pradesh", "NDA coaching in North India"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/defence-coaching-near-me" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/defence-coaching-near-me/" },
 };
 
 export default function DefenceCoachingNearMe() {
