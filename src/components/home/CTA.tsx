@@ -8,7 +8,7 @@ export default function CTA() {
     const { openDemoModal } = useDemoModal();
 
     return (
-        <section className="py-24 relative overflow-hidden flex items-center justify-center">
+        <section className="py-12 relative overflow-hidden flex items-center justify-center">
             {/* Background Image with Overlay */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"

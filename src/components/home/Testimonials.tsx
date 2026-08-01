@@ -5,57 +5,48 @@ import SectionHeading from "@/components/SectionHeading";
 import { Star, Play } from "lucide-react";
 import Image from "next/image";
 
+import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
+
 export default function Testimonials() {
     const testimonials = [
         {
             name: "Rahul Singh",
             role: "NDA 151 Recommended",
-            image: "/images/img-1.png",
+            image: "/images/Abhishek.jpeg",
             quote: "PFDA transformed my life. The discipline and rigorous training helped me clear my SSB in the first attempt. Forever grateful."
         },
         {
             name: "Priya Sharma",
             role: "CDS 2024 OTA",
-            image: "/images/img-1 (2).png",
+            image: "/images/team-m-1.jpg",
             quote: "The mentors at PFDA are exceptional. Their guidance on GTO tasks and psychology tests was spot on. Highly recommended!"
         },
         {
             name: "Amit Kumar",
             role: "AFCAT 2024 Flying Branch",
-            image: "/images/images.png",
+            image: "/images/Rohit.jpeg",
             quote: "Joining PFDA was the best decision. The environment is motivating, and the focus on personality development is unique."
         },
         {
             name: "Vikram Batra",
             role: "TES 50 Army",
-            image: "/images/images (1).png",
+            image: "/images/Girish.jpeg",
             quote: "From checking physical fitness to mock interviews, PFDA covers everything. I felt confident walking into my SSB."
         },
     ];
 
     return (
-        <section className="py-20 bg-[#050810] overflow-hidden">
+        <section className="py-12 bg-[#050810] overflow-hidden">
             <div className="container mx-auto px-4 mb-10">
                 <SectionHeading title="Cadet Stories" subtitle="What Our Students Say" />
             </div>
 
             <div className="relative w-full">
-                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#050810] to-transparent z-10"></div>
-                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#050810] to-transparent z-10"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#050810] to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#050810] to-transparent z-10 pointer-events-none"></div>
 
-                <motion.div
-                    className="flex gap-8 w-max"
-                    animate={{ x: [0, -1000] }}
-                    transition={{
-                        x: {
-                            repeat: Infinity,
-                            repeatType: "loop",
-                            duration: 20,
-                            ease: "linear",
-                        },
-                    }}
-                >
-                    {[...testimonials, ...testimonials, ...testimonials].map((student, i) => (
+                <InfiniteSlider gap={32} speedOnHover={20}>
+                    {testimonials.map((student, i) => (
                         <div
                             key={i}
                             className="w-[350px] bg-[#24332B] rounded-xl p-6 border border-white/5 relative group shrink-0 hover:border-gold/30 transition-colors"
@@ -89,7 +80,7 @@ export default function Testimonials() {
                             </div>
                         </div>
                     ))}
-                </motion.div>
+                </InfiniteSlider>
             </div>
         </section>
     );

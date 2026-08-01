@@ -15,7 +15,7 @@ const results = [
 
 export default function ResultsWall() {
     return (
-        <section className="py-20 bg-[#1B2620] relative overflow-hidden">
+        <section className="py-12 bg-[#1B2620] relative overflow-hidden">
             <div className="container mx-auto px-4 z-10 relative">
                 <SectionHeading title="Hall of Fame" subtitle="Our Recent Selections" />
 

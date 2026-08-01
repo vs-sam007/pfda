@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Award, BookOpen, Star } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import { TextRoll } from "@/components/motion-primitives/text-roll";
 
 const mainTeachers = [
     {
@@ -24,7 +25,7 @@ const mainTeachers = [
 
 export default function MainTeachers() {
     return (
-        <section className="py-16 bg-[#24332B] border-t border-white/5">
+        <section className="py-10 bg-[#24332B] border-t border-white/5">
             <div className="container mx-auto px-4">
                 <div className="mb-12 text-center">
                     <SectionHeading title="Management Desk" alignment="center" />
@@ -59,7 +60,9 @@ export default function MainTeachers() {
                                     </div>
                                     <div>
                                         <span className="text-gold text-sm font-bold uppercase tracking-wider block mb-1">
-                                            {teacher.title}
+                                            <TextRoll className="inline-block">
+                                                {teacher.title}
+                                            </TextRoll>
                                         </span>
                                         <h3 className="text-3xl font-bold text-white group-hover:text-gold transition-colors">
                                             {teacher.name}

@@ -127,19 +127,19 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             <h3 className="text-lg font-bold text-white mb-6 border-b border-white/5 pb-4">Popular Topics</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <Link href="/blog/how-to-crack-nda" className="group flex items-start gap-3">
+                                    <Link href="/blog/how-to-crack-nda/" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
                                         <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">How to Crack NDA Exam in First Attempt</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog/ssb-interview-guide" className="group flex items-start gap-3">
+                                    <Link href="/blog/ssb-interview-guide/" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
                                         <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">Complete SSB Interview Preparation Guide</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog/nda-vs-cds" className="group flex items-start gap-3">
+                                    <Link href="/blog/nda-vs-cds/" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
                                         <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">NDA vs CDS — Which Defence Exam Should You Choose?</span>
                                     </Link>

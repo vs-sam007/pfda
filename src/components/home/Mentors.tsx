@@ -7,46 +7,46 @@ import Image from "next/image";
 
 const mentors = [
     {
-        name: "MAJ. GEN. S.K. SINGH",
+        name: "Maj. Gen. S.K. Singh",
         role: "Ex. Psychologist",
         specialty: "Ex. Commandant, Kapurthala SSB",
         image: "/images/sksingh.jpeg",
     },
     {
-        name: "Col. Ashok Pathak",
-        role: "Ex GTO",
-        specialty: "ALLAHABAD & BHOPAL SSB",
-        image: "/images/ashokpathak.jpeg",
-    },
-    {
-        name: "COL. PRAVEEN KUMAR",
+        name: "Col. Praveen Kumar",
         role: "Ex. I.O.",
-        specialty: "Ex Instructor of NDA & IMA",
+        specialty: "Ex. Instructor of NDA & IMA",
         image: "/images/praveensrivastava.jpeg",
     },
     {
-        name: "GP CPT. L.K. PANDEY",
-        role: "Ex Psychologist",
-        specialty: "Deputy President AFSB/SSB",
-        image: "/images/lkpandey.jpeg",
-    },
-    {
-        name: "GP. CAPT. A.K. SRIVASTAVA",
-        role: "Ex Psychologist",
-        specialty: "Varanasi 4AFSB, Mysore 2AFSB",
+        name: "Gp. Capt. A.K. Srivastava",
+        role: "Ex. Psychologist",
+        specialty: "Varanasi 4 AFSB, Mysore 2 AFSB",
         image: "/images/aksrivastava.jpeg",
     },
     {
-        name: "A.C. Sarvesh Tripathi",
-        role: "Ex Assistant Commandant",
+        name: "Asst. Comdt. Sarvesh Tripathi",
+        role: "Ex. Assistant Commandant",
         specialty: "CRPF",
         image: "/images/serveshtripathi.jpeg",
+    },
+    {
+        name: "Col. Ashok Pathak",
+        role: "Ex. GTO",
+        specialty: "Allahabad & Bhopal SSB",
+        image: "/images/ashokpathak.jpeg",
+    },
+    {
+        name: "Gp. Capt. L.K. Pandey",
+        role: "Ex. Psychologist",
+        specialty: "Deputy President AFSB/SSB",
+        image: "/images/lkpandey.jpeg",
     }
 ];
 
 export default function Mentors() {
     return (
-        <section className="py-20 bg-gradient-to-b from-[#1B2620] to-[#24332B]">
+        <section className="py-12 bg-gradient-to-b from-[#1B2620] to-[#24332B]">
             <div className="container mx-auto px-4">
                 <SectionHeading title="Elite Mentors" subtitle="Learn From The Legends" />
 

@@ -59,11 +59,11 @@ export default function Footer() {
                 <div>
                     <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-gold pl-3">Our Courses</h3>
                     <ul className="space-y-3">
-                        <li><Link href="/courses/nda" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>NDA</Link></li>
-                        <li><Link href="/courses/cds" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>CDS</Link></li>
-                        <li><Link href="/courses/afcat" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>AFCAT</Link></li>
-                        <li><Link href="/courses/ssb" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>SSB Interview</Link></li>
-                        <li><Link href="/courses/agniveer" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Agniveer</Link></li>
+                        <li><Link href="/courses/nda/" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>NDA</Link></li>
+                        <li><Link href="/courses/cds/" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>CDS</Link></li>
+                        <li><Link href="/courses/afcat/" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>AFCAT</Link></li>
+                        <li><Link href="/courses/ssb-interview-coaching-lucknow/" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>SSB Interview</Link></li>
+                        <li><Link href="/courses/agniveer/" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Agniveer</Link></li>
                     </ul>
                 </div>
 

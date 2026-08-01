@@ -66,7 +66,7 @@ export default function FAQ() {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-20 bg-[#1B2620] relative overflow-hidden">
+        <section className="py-12 bg-[#1B2620] relative overflow-hidden">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"

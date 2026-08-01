@@ -13,6 +13,34 @@ const materials = [
         description: "Fully solved revised edition covering all essential mathematical concepts and shortcuts required for the CDS Entrance Examination. Includes solved papers.",
         image: "/images/cds-math-book.jpg",
         tags: ["CDS", "Mathematics", "Fully Solved"],
+    },
+    {
+        title: "The Text Book of Geography & History",
+        author: "Team Pathfinder Defence Academy",
+        description: "Comprehensive textbook covering all essential geography and history concepts required for NDA, CDS, IMU-CET and other defence exams.",
+        image: "/Study material/WhatsApp Image 2026-07-31 at 20.26.34.jpeg",
+        tags: ["Geography", "History", "NDA/CDS"],
+    },
+    {
+        title: "The Text Book of General Science",
+        author: "Team Pathfinder Defence Academy",
+        description: "In-depth coverage of physics, chemistry, and biology tailored specifically for the NDA, CDS, and other defence competitive exams.",
+        image: "/Study material/WhatsApp Image 2026-07-31 at 20.26.35 (1).jpeg",
+        tags: ["General Science", "NDA/CDS", "Sciences"],
+    },
+    {
+        title: "The Text Book of Indian Polity, Economy & General Awareness",
+        author: "Team Pathfinder Defence Academy",
+        description: "Extensive guide covering the Indian constitution, economy, and general awareness topics essential for defence aspirants.",
+        image: "/Study material/WhatsApp Image 2026-07-31 at 20.26.36.jpeg",
+        tags: ["Polity", "Economy", "General Awareness"],
+    },
+    {
+        title: "Complete Defence Study Kit",
+        author: "Team Pathfinder Defence Academy",
+        description: "A comprehensive set of all required textbooks including Maths, English, Science, Polity, and Geography for NDA, CDS, AFCAT, and other defence entrance examinations.",
+        image: "/Study material/WhatsApp Image 2026-07-31 at 20.26.34 (1).jpeg",
+        tags: ["Complete Kit", "All Subjects", "Best Value"],
     }
 ];
 

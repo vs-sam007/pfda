@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function BranchesPreview() {
     return (
-        <section className="py-20 bg-[#1B2620] relative">
+        <section className="py-12 bg-[#1B2620] relative">
             <div className="container mx-auto px-4">
                 <SectionHeading title="Our Centers" subtitle="Visit Us Today" />
 

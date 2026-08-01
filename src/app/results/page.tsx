@@ -1,5 +1,4 @@
 import PageHeader from "@/components/PageHeader";
-import ResultsWall from "@/components/home/ResultsWall";
 import HallOfFame from "@/components/HallOfFame";
 import { Award, Star } from "lucide-react";
 import type { Metadata } from "next";
@@ -30,8 +29,7 @@ export default function ResultsPage() {
                 </div>
             </div>
 
-            <HallOfFame />
-            <ResultsWall />
+            <HallOfFame showMoreSelections={true} />
         </main>
     );
 }

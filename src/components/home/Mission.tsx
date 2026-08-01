@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import { Shield, Target, Users } from "lucide-react";
+import { Spotlight } from "@/components/motion-primitives/spotlight";
+import { TextLoop } from "@/components/motion-primitives/text-loop";
 
 const features = [
     {
@@ -24,7 +26,7 @@ const features = [
 
 export default function Mission() {
     return (
-        <section className="py-20 relative bg-primary overflow-hidden">
+        <section className="py-12 relative bg-primary overflow-hidden">
             <div className="container mx-auto px-4 relative z-10">
                 <SectionHeading title="Our Mission" subtitle="Serving the Nation" />
 
@@ -51,19 +53,43 @@ export default function Mission() {
                     ))}
                 </div>
 
-                <div className="bg-gradient-to-r from-military-dark to-military/80 rounded-2xl p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-                    <motion.h3
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        className="text-3xl md:text-5xl font-bold text-white mb-6 font-serif italic relative z-10"
-                    >
-                        "One Officer From Every Family"
-                    </motion.h3>
-                    <p className="text-xl text-white/90 max-w-3xl mx-auto relative z-10">
-                        Our vision is to empower every household with the pride of serving the motherland. We are not just an academy; we are a nursery for patriots.
-                    </p>
+                <div className="bg-gradient-to-r from-military-dark to-military/80 rounded-2xl p-[1px] text-center relative overflow-hidden shadow-2xl">
+                    <Spotlight
+                        className="from-gold/50 via-gold/20 to-transparent blur-3xl"
+                        size={300}
+                    />
+                    <div className="bg-[#1B2620]/90 backdrop-blur-sm rounded-2xl p-10 md:p-16 relative z-10 w-full h-full flex flex-col justify-center items-center">
+                        <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none"></div>
+                        <motion.h3
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="text-3xl md:text-5xl font-bold text-white mb-6 font-serif italic relative z-10"
+                        >
+                            "One Officer From Every{" "}
+                            <TextLoop
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 150,
+                                    damping: 19,
+                                    mass: 1.2,
+                                }}
+                                interval={2.5}
+                                variants={{
+                                    initial: { y: -20, rotateX: -90, opacity: 0, filter: "blur(4px)" },
+                                    animate: { y: 0, rotateX: 0, opacity: 1, filter: "blur(0px)" },
+                                    exit: { y: 20, rotateX: 90, opacity: 0, filter: "blur(4px)" },
+                                }}
+                            >
+                                <span>Family"</span>
+                                <span>Village"</span>
+                                <span>City"</span>
+                            </TextLoop>
+                        </motion.h3>
+                        <p className="text-xl text-white/90 max-w-3xl mx-auto relative z-10">
+                            Our vision is to empower every household with the pride of serving the motherland. We are not just an academy; we are a nursery for patriots.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

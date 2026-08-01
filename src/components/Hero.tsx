@@ -7,6 +7,11 @@ import Image from "next/image";
 import { useDemoModal } from "./DemoModalProvider";
 import { useRouter } from "next/navigation";
 
+import { TextShimmerWave } from "@/components/motion-primitives/text-shimmer-wave";
+import { TextEffect } from "@/components/motion-primitives/text-effect";
+import { GlowEffect } from "@/components/motion-primitives/glow-effect";
+import { Magnetic } from "@/components/motion-primitives/magnetic";
+
 const stats = [
     { label: "Selections", value: "1000+" },
     { label: "Students", value: "5000+" },
@@ -46,21 +51,30 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-gold/30 text-gold text-xs font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-md">
-                        Path Finder Defence Academy
+                        <TextShimmerWave className="inline-block" duration={1.5}>
+                            Path Finder Defence Academy
+                        </TextShimmerWave>
                     </span>
                 </motion.div>
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg"
-                >
-                    Best NDA & Defence <br />
+                <div className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg">
+                    <TextEffect
+                        per='char'
+                        delay={0.5}
+                        variants={{
+                            container: { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.05 } } },
+                            item: { hidden: { opacity: 0, rotateX: 90, y: 10 }, visible: { opacity: 1, rotateX: 0, y: 0, transition: { duration: 0.2 } } }
+                        }}
+                    >
+                        Best NDA & Defence
+                    </TextEffect>
+                    <br />
                     <span className="text-gold">
-                        Coaching in Lucknow
+                        <TextEffect per='char' delay={1.5}>
+                            Coaching in Lucknow
+                        </TextEffect>
                     </span>
-                </motion.h1>
+                </div>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -75,14 +89,22 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
-                    className="flex flex-col sm:flex-row gap-4 mb-20"
+                    className="flex flex-col sm:flex-row gap-8 mb-20"
                 >
-                    <Button onClick={openDemoModal} size="lg" className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg shadow-red-900/30 border-0 text-lg px-8">
-                        Book Free Demo
-                    </Button>
-                    <Button onClick={() => router.push('/courses')} size="lg" variant="outline" className="text-lg px-8 bg-black/30 backdrop-blur-sm border-gold text-gold hover:bg-gold hover:text-black">
-                        Explore Courses
-                    </Button>
+                    <div className="relative group">
+                        <div className="absolute -inset-1 opacity-50 group-hover:opacity-100 transition duration-500 rounded-lg blur">
+                           <GlowEffect colors={['#FF5733', '#33FF57', '#3357FF', '#F1C40F']} mode='colorShift' blur='soft' duration={3} scale={0.9} />
+                        </div>
+                        <Button onClick={openDemoModal} size="lg" className="relative bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white shadow-lg border-0 text-lg px-8">
+                            Book Free Demo
+                        </Button>
+                    </div>
+
+                    <Magnetic intensity={0.2} springOptions={{ bounce: 0.1 }} actionArea='global' range={200}>
+                        <Button onClick={() => router.push('/courses')} size="lg" variant="outline" className="text-lg px-8 bg-black/30 backdrop-blur-sm border-gold text-gold hover:bg-gold hover:text-black">
+                            Explore Courses
+                        </Button>
+                    </Magnetic>
                 </motion.div>
 
                 {/* Animated Stats */}

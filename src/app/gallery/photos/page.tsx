@@ -5,15 +5,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const images = [
-    "/images/classroom-1.jpg",
-    "/images/classroom-2.jpg",
-    "/images/classroom-3.jpg",
-    "/images/classroom-4.jpg",
-    "/images/gallery1.jpg",
-    "/images/gallery8.jpg",
-    "/images/team-m-1.jpg",
-    "/images/CAPF-2020-1.webp",
-    "/images/1707393182_indian-army.jpg",
+    // Photo Gallery Folder
+    "/photo gallery/WhatsApp Image 2026-07-31 at 20.26.34 (1).jpeg",
+    "/photo gallery/WhatsApp Image 2026-07-31 at 20.26.34 (2).jpeg",
+    "/photo gallery/WhatsApp Image 2026-07-31 at 20.26.35 (2).jpeg",
+    "/photo gallery/WhatsApp Image 2026-07-31 at 20.26.35.jpeg",
+
+    // SSB Activities Folder
+    "/ssb activities/WhatsApp Image 2025-12-02 at 5.23.56 PM.jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.43 PM (2).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.44 PM (1).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.48 PM.jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.49 PM (1).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.49 PM.jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.50 PM (1).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.50 PM (2).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.51 PM (1).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.51 PM (2).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.52 PM (2).jpeg",
+    "/ssb activities/WhatsApp Image 2026-03-28 at 7.07.52 PM.jpeg",
 ];
 
 export default function GalleryPage() {

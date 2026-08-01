@@ -32,7 +32,7 @@ export default function Updates() {
     ];
 
     return (
-        <section className="py-20 bg-[#060910]">
+        <section className="py-12 bg-[#060910]">
             <div className="container mx-auto px-4">
                 <SectionHeading title="Defence Updates" subtitle="Stay Informed" />
 

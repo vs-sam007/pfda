@@ -17,14 +17,16 @@ const navLinks = [
         name: "Courses",
         href: "/courses",
         dropdown: [
-            { name: "NDA", href: "/courses/nda" },
-            { name: "CDS", href: "/courses/cds" },
-            { name: "SSB", href: "/courses/ssb" },
-            { name: "NDA Foundation", href: "/courses/foundation" },
-            { name: "AFCAT", href: "/courses/afcat" },
-            { name: "CAPF", href: "/courses/capf" },
-            { name: "Sainik School", href: "/courses/sainik-school" },
-            { name: "Agniveer", href: "/courses/agniveer" },
+            { name: "NDA", href: "/courses/nda/" },
+            { name: "CDS", href: "/courses/cds/" },
+            { name: "SSB Interview", href: "/courses/ssb-interview-coaching-lucknow/" },
+            { name: "NDA Foundation", href: "/courses/nda-foundation-course-lucknow/" },
+            { name: "AFCAT", href: "/courses/afcat/" },
+            { name: "CAPF", href: "/courses/capf/" },
+            { name: "Sainik School", href: "/courses/sainik-school-coaching-lucknow/" },
+            { name: "Agniveer", href: "/courses/agniveer/" },
+            { name: "RIMC", href: "/courses/rimc-coaching-lucknow/" },
+            { name: "RMS", href: "/courses/rms-coaching-lucknow/" },
         ]
     },
     { name: "Results", href: "/results" },
@@ -34,7 +36,6 @@ const navLinks = [
         dropdown: [
             { name: "Study Material", href: "/study-material" },
             { name: "Photo gallery", href: "/gallery/photos" },
-            { name: "Video gallery", href: "/gallery/videos" },
         ]
     },
     {
