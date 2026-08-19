@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Privacy Policy | Path Finder Defence Academy",
     description: "Privacy Policy for Path Finder Defence Academy. Learn how we collect, use, and protect your personal information.",
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/privacy-policy/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

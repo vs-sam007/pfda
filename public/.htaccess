@@ -1,30 +1,30 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Redirect non-www to www (optional but good for SEO canonicalization)
-    # RewriteCond %{HTTP_HOST} ^pathfinderdefenceacademy\.com [NC]
-    # RewriteRule ^(.*)$ https://www.pathfinderdefenceacademy.com/$1 [L,R=301]
-
-    # 1. Force HTTPS
+    # 1. Force HTTPS and non-www (Single redirect to avoid chains)
+    RewriteCond %{HTTP_HOST} ^www\.pathfinderdefenceacademy\.com [NC,OR]
     RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    RewriteRule ^(.*)$ https://pathfinderdefenceacademy.com/$1 [L,R=301]
 
-    # 2. Redirect non-trailing-slash to trailing-slash
-    # Exclude actual files (like images, .css, .js)
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_URI} !(.*)/$
-    RewriteRule ^(.*)$ /$1/ [L,R=301]
+    # 2. Redirect legacy URLs that were renamed
+    RewriteRule ^courses/ssb\.html$ /courses/ssb-interview-coaching-lucknow [R=301,L]
+    RewriteRule ^courses/ssb/?$ /courses/ssb-interview-coaching-lucknow [R=301,L]
+    RewriteRule ^courses/sainik-school\.html$ /courses/sainik-school-coaching-lucknow [R=301,L]
+    RewriteRule ^courses/sainik-school/?$ /courses/sainik-school-coaching-lucknow [R=301,L]
 
-    # 3. Serve Next.js static export structure
-    # If the requested URI with /index.html appended exists, serve it
-    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}index\.html -f
-    RewriteRule ^(.*)$ $1index.html [L]
-    
-    # 4. Handle `.html` requests cleanly
-    # If someone requests /page.html and it doesn't exist, don't crash (500), force a 404.
+    # 3. Redirect remaining `.html` requests directly to clean URL
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\?\ ]
+    RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+    # 3. Redirect trailing slash to non-trailing slash
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # 4. Serve Next.js static export `.html` files silently for clean URLs
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_URI} \.html$
-    RewriteRule ^ - [R=404,L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+    RewriteRule ^(.*)$ /$1.html [L]
 
 </IfModule>
 

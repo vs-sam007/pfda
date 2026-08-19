@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "How to Crack NDA Exam in First Attempt — Complete Guide 2025 | PFDA",
     description: "Learn how to crack the NDA exam in first attempt. Complete NDA syllabus, exam pattern, NDA maths preparation strategy, GAT tips, previous year questions analysis & cutoff marks — by Path Finder Defence Academy Lucknow.",
     keywords: ["how to crack NDA exam", "NDA syllabus", "NDA exam pattern", "NDA maths preparation", "NDA GAT preparation", "NDA previous year questions", "NDA cutoff marks"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/how-to-crack-nda/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/how-to-crack-nda" },
 };
 
 export default function HowToCrackNDA() {

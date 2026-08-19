@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "NDA Coaching in Lucknow | Best NDA Exam Preparation | Path Finder Defence Academy",
     description: "Join the best NDA coaching in Lucknow at Path Finder Defence Academy. Expert NDA written exam coaching covering NDA Maths, GAT, NDA syllabus, exam pattern, previous year questions & cutoff analysis. 1000+ selections. Book free demo.",
     keywords: ["NDA coaching in Lucknow", "best NDA coaching in Lucknow", "NDA written exam coaching", "NDA syllabus", "NDA exam pattern", "NDA maths preparation", "NDA GAT preparation", "NDA previous year questions", "NDA cutoff marks"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/nda/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/nda" },
 };
 
 export default function NDAPage() {

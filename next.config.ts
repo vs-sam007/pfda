@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",   // 👈 YE ADD KARNA HAI
-  trailingSlash: true,
+  trailingSlash: false,
 
   images: {
     unoptimized: true,   // 👈 YE BHI ADD KARO (IMPORTANT)

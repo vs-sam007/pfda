@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "CAPF Coaching in Lucknow | CAPF AC Exam Preparation | Path Finder Defence Academy",
     description: "Best CAPF AC coaching in Lucknow at PFDA. Prepare for UPSC CAPF Assistant Commandant exam for BSF, CRPF, CISF, ITBP & SSB. Complete Paper I, Paper II & interview preparation.",
     keywords: ["CAPF coaching in Lucknow", "CAPF AC exam preparation", "CAPF assistant commandant coaching", "BSF CRPF CISF ITBP coaching", "defence exam preparation institute"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/capf/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/capf" },
 };
 
 export default function CAPFPage() {

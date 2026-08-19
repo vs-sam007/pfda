@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "Video Gallery | Path Finder Defence Academy",
     description: "Watch training videos, SSB interview guidance, classroom sessions, and success stories of Path Finder Defence Academy cadets.",
     alternates: {
-        canonical: "https://pathfinderdefenceacademy.com/gallery/videos/",
+        canonical: "https://pathfinderdefenceacademy.com/gallery/videos",
     },
 };
 

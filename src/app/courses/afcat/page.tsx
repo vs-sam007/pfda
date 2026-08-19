@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "AFCAT Coaching in Lucknow | Air Force Coaching | Path Finder Defence Academy",
     description: "Best AFCAT coaching in Lucknow at PFDA. Air Force Common Admission Test preparation for Flying Branch, Ground Duty & Technical Branch. How to become an Air Force officer — expert coaching & SSB training.",
     keywords: ["AFCAT coaching in Lucknow", "Air Force coaching in Lucknow", "How to become Air Force officer", "AFCAT exam preparation", "Air Force career after graduation"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/afcat/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/afcat" },
 };
 
 export default function AFCATPage() {

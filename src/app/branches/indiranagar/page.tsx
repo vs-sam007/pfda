@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "NDA Coaching in Indira Nagar Lucknow | City Center Branch | PFDA",
     description: "Join Path Finder Defence Academy in Indira Nagar, Lucknow. Premier NDA, CDS, AFCAT & SSB coaching institute at Uma Krishna Complex, Murari Nagar. Book free demo class.",
     keywords: ["NDA coaching in Indira Nagar", "defence coaching Indira Nagar Lucknow", "NDA coaching near Munshipulya", "best defence academy Indira Nagar", "PFDA Indira Nagar branch"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/branches/indiranagar/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/branches/indiranagar" },
 };
 
 export default function IndiranagarBranchPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "How to Join Indian Army, Navy & Air Force After 12th — All Paths | PFDA",
     description: "Complete guide on how to join Indian Army after 12th, how to become Air Force officer, how to join Indian Navy after 12th. NDA, Agniveer, TES, NCC entry & more defence career options explained.",
     keywords: ["how to join Indian Army after 12th", "how to become Air Force officer", "how to join Indian Navy after 12th", "NDA exam preparation after 12th", "defence career options after graduation", "Can I join NDA after class 12", "TES entry after 12th", "women in NDA"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/defence-career-after-12th/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/defence-career-after-12th" },
 };
 
 export default function DefenceCareerAfter12th() {

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Refund Policy | Path Finder Defence Academy",
     description: "Refund and Cancellation Policy for Path Finder Defence Academy.",
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/refund-policy/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/refund-policy" },
 };
 
 export default function RefundPolicyPage() {

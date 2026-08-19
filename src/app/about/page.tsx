@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "About Path Finder Defence Academy | Best Defence Academy in Lucknow",
     description: "Know about Path Finder Defence Academy (PFDA) — the best defence academy in Lucknow. Top defence coaching institute in Uttar Pradesh with NDA & SSB preparation, physical training, hostel facility. 15+ years, 1000+ selections.",
     keywords: ["best defence academy in Lucknow", "top defence coaching institute in Uttar Pradesh", "defence academy with NDA and SSB preparation", "NDA coaching with physical training", "defence coaching with hostel facility"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/about/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/about" },
 };
 
 const facultiesList = [

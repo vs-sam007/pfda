@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]
 
     return routes.map(({ route, priority }) => ({
-        url: `${baseUrl}${route}/`,
+        url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'weekly',
         priority: priority,

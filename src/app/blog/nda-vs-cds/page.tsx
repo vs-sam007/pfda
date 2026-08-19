@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: "NDA vs CDS — Which Defence Exam Should You Choose? | PFDA Lucknow",
     description: "Detailed comparison of NDA vs CDS exam — eligibility, age limit, syllabus, exam pattern, training & career prospects. Find out which defence exam is best after graduation. Expert analysis by PFDA.",
     keywords: ["NDA vs CDS difference", "which defence exam is best after graduation", "NDA vs CDS eligibility", "defence career options after graduation", "NDA or CDS which is better"],
-    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/nda-vs-cds/" },
+    alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/nda-vs-cds" },
 };
 
 export default function NDAVsCDS() {
