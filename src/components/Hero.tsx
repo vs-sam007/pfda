@@ -28,7 +28,7 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/bg.jpg"
+                    src="/images/bg.webp"
                     alt="Indian Army Cadets Training at Sunrise"
                     fill
                     className="object-cover object-center scale-[1.15] md:scale-110 transform"
@@ -57,7 +57,7 @@ export default function Hero() {
                     </span>
                 </motion.div>
 
-                <div className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg flex flex-col items-center gap-2 md:gap-4">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg flex flex-col items-center gap-2 md:gap-4">
                     <TextEffect
                         as='span'
                         per='char'
@@ -74,7 +74,7 @@ export default function Hero() {
                             Coaching in Lucknow
                         </TextEffect>
                     </span>
-                </div>
+                </h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}

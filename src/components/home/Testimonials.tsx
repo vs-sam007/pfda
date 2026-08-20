@@ -12,25 +12,25 @@ export default function Testimonials() {
         {
             name: "Rahul Singh",
             role: "NDA 151 Recommended",
-            image: "/images/Abhishek.jpeg",
+            image: "https://placehold.co/150x150/1B2620/D4AF37.png?text=RS",
             quote: "PFDA transformed my life. The discipline and rigorous training helped me clear my SSB in the first attempt. Forever grateful."
         },
         {
             name: "Priya Sharma",
             role: "CDS 2024 OTA",
-            image: "/images/team-m-1.jpg",
+            image: "https://placehold.co/150x150/1B2620/D4AF37.png?text=PS",
             quote: "The mentors at PFDA are exceptional. Their guidance on GTO tasks and psychology tests was spot on. Highly recommended!"
         },
         {
             name: "Amit Kumar",
             role: "AFCAT 2024 Flying Branch",
-            image: "/images/Rohit.jpeg",
+            image: "https://placehold.co/150x150/1B2620/D4AF37.png?text=AK",
             quote: "Joining PFDA was the best decision. The environment is motivating, and the focus on personality development is unique."
         },
         {
             name: "Vikram Batra",
             role: "TES 50 Army",
-            image: "/images/Girish.jpeg",
+            image: "https://placehold.co/150x150/1B2620/D4AF37.png?text=VB",
             quote: "From checking physical fitness to mock interviews, PFDA covers everything. I felt confident walking into my SSB."
         },
     ];

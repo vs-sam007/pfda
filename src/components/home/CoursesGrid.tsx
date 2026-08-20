@@ -43,7 +43,7 @@ const courses = [
         title: "AFCAT",
         desc: "Air Force Common Admission",
         details: "For Graduates",
-        image: "/images/1657188081910.png",
+        image: "/images/1657188081910.webp",
         href: "/courses/afcat/"
     },
     {

@@ -46,7 +46,7 @@ export default function ContactPage() {
             <PageHeader
                 title="Contact Us"
                 subtitle="Get In Touch"
-                image="/images/pexels-estudiodelarts-4130926.jpg"
+                image="/images/pexels-estudiodelarts-4130926.webp"
             />
 
             <section className="container mx-auto px-4 py-20">

@@ -50,7 +50,7 @@ export default function StudyMaterialPage() {
             <PageHeader
                 title="Study Material"
                 subtitle="Resources to Ace Your Exams"
-                image="/images/bg.jpg"
+                image="/images/bg.webp"
             />
 
             <section className="container mx-auto px-4 py-20">

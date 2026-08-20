@@ -13,7 +13,7 @@ export default function RefundPolicyPage() {
             <PageHeader
                 title="Refund Policy"
                 subtitle="Path Finder Defence Academy"
-                image="/images/bg.jpg"
+                image="/images/bg.webp"
             />
 
             <section className="container mx-auto px-4 py-20 max-w-4xl">

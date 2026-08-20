@@ -73,7 +73,6 @@ export default function BranchesPreview() {
                                 <div className="flex items-start gap-3 text-gray-400">
                                     <Phone className="text-gold shrink-0 mt-1" size={18} />
                                     <div className="flex flex-col gap-1">
-                                        <p className="text-sm">+91 99999 77777</p>
                                         <p className="text-sm">+91 81150 11771</p>
                                     </div>
                                 </div>

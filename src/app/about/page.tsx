@@ -104,7 +104,7 @@ export default function AboutPage() {
             <PageHeader
                 title="About Us"
                 subtitle="Legacy of Excellence"
-                image="/images/pexels-theamritdev-34954633.jpg"
+                image="/images/pexels-theamritdev-34954633.webp"
             />
 
             <section className="container mx-auto px-4 py-20">

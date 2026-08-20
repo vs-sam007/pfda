@@ -13,7 +13,7 @@ export default function TermsConditionsPage() {
             <PageHeader
                 title="Terms and Conditions"
                 subtitle="Path Finder Defence Academy"
-                image="/images/bg.jpg"
+                image="/images/bg.webp"
             />
 
             <section className="container mx-auto px-4 py-20 max-w-4xl">

@@ -15,7 +15,7 @@ export default function CoursesPage() {
             <PageHeader
                 title="Our Courses"
                 subtitle="Shape Your Career In Defence"
-                image="/images/pexels-kolkatarchobiwala-37134459.jpg"
+                image="/images/pexels-kolkatarchobiwala-37134459.webp"
             />
             <CoursesGrid />
         </main>

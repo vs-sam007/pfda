@@ -11,7 +11,7 @@ interface PageHeaderProps {
 export default function PageHeader({
     title,
     subtitle,
-    image = "/images/bg.jpg"
+    image = "/images/bg.webp"
 }: PageHeaderProps) {
     return (
         <div className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">

@@ -62,7 +62,7 @@ export default function BlogPage() {
             <PageHeader
                 title="Defence Blog"
                 subtitle="Expert Tips, News & Guides"
-                image="/images/pexels-yogendras31-3581962.jpg"
+                image="/images/pexels-yogendras31-3581962.webp"
             />
 
             <section className="container mx-auto px-4 py-20">
