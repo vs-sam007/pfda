@@ -70,9 +70,12 @@ export default function BranchesPreview() {
                                     <MapPin className="text-gold shrink-0 mt-1" size={18} />
                                     <p className="text-sm">Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016</p>
                                 </div>
-                                <div className="flex items-center gap-3 text-gray-400">
-                                    <Phone className="text-gold shrink-0" size={18} />
-                                    <p className="text-sm">+91 99999 77777</p>
+                                <div className="flex items-start gap-3 text-gray-400">
+                                    <Phone className="text-gold shrink-0 mt-1" size={18} />
+                                    <div className="flex flex-col gap-1">
+                                        <p className="text-sm">+91 99999 77777</p>
+                                        <p className="text-sm">+91 81150 11771</p>
+                                    </div>
                                 </div>
                             </div>
                             <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="w-full text-center border border-gold text-gold hover:bg-gold hover:text-black font-bold py-3 rounded-lg transition-colors">Get Directions</a>

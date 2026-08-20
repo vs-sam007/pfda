@@ -16,10 +16,15 @@ export default function PageHeader({
     return (
         <div className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
             <div
-                className="absolute inset-0 bg-cover bg-top bg-no-repeat"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-[1.05] transform"
                 style={{ backgroundImage: `url('${image}')` }}
             >
-                <div className="absolute inset-0 bg-black/60 bg-gradient-to-t from-primary via-black/40 to-black/30"></div>
+                <div 
+                    className="absolute inset-0"
+                    style={{
+                        background: "linear-gradient(rgba(10,15,28,0.5), rgba(10,15,28,0.3))"
+                    }}
+                ></div>
             </div>
 
             <div className="container mx-auto px-4 relative z-10 text-center">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import { Youtube, Instagram, MapPin, Phone, Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -31,15 +31,12 @@ export default function Footer() {
                         dedicated to training the next generation of military leaders with discipline and honor.
                     </p>
                     <div className="flex gap-4">
-                        <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300">
-                            <Facebook size={20} />
-                        </Link>
-                        <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300">
+                        <a href="https://youtube.com/@pathfinderdefenceacademy?si=iE6H0NJhcfWIbMME" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300">
+                            <Youtube size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/pathfinder_defence_academy?igsh=dmhrd245dWJ1bHdu" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300">
                             <Instagram size={20} />
-                        </Link>
-                        <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all duration-300">
-                            <Twitter size={20} />
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
@@ -93,11 +90,14 @@ export default function Footer() {
                                 </a>
                             </div>
                         </li>
-                        <li className="flex items-center gap-4">
+                        <li className="flex items-start gap-4">
                             <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">
                                 <Phone size={20} />
                             </div>
-                            <a href="tel:+91 7505188009" className="hover:text-gold transition-colors">+91 75051 88009</a>
+                            <div className="flex flex-col gap-1">
+                                <a href="tel:+917505188009" className="hover:text-gold transition-colors">+91 75051 88009</a>
+                                <a href="tel:+918115011771" className="hover:text-gold transition-colors">+91 81150 11771</a>
+                            </div>
                         </li>
                         <li className="flex items-center gap-4">
                             <div className="bg-[#24332B] p-2 rounded text-gold border border-gold/20">

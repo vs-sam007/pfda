@@ -2,7 +2,7 @@
 
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
-import { Calendar, ArrowLeft, Clock, Share2, Facebook, Twitter, Linkedin, ChevronRight } from "lucide-react";
+import { Calendar, ArrowLeft, Clock, Share2, Youtube, Instagram, ChevronRight } from "lucide-react";
 
 interface BlogArticleProps {
     title: string;
@@ -104,21 +104,18 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             </Link>
                         </div>
 
-                        {/* Share Links */}
+                        {/* Social Links */}
                         <div className="bg-[#24332B] rounded-3xl p-8 border border-white/5 shadow-xl">
                             <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-                                <Share2 className="text-gold" size={20} /> Share This Article
+                                <Share2 className="text-gold" size={20} /> Follow Us
                             </h3>
                             <div className="flex gap-4">
-                                <button className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#1877F2] hover:text-white transition-all">
-                                    <Facebook size={20} />
-                                </button>
-                                <button className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#1DA1F2] hover:text-white transition-all">
-                                    <Twitter size={20} />
-                                </button>
-                                <button className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#0A66C2] hover:text-white transition-all">
-                                    <Linkedin size={20} />
-                                </button>
+                                <a href="https://youtube.com/@pathfinderdefenceacademy?si=iE6H0NJhcfWIbMME" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#FF0000] hover:text-white transition-all">
+                                    <Youtube size={20} />
+                                </a>
+                                <a href="https://www.instagram.com/pathfinder_defence_academy?igsh=dmhrd245dWJ1bHdu" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-300 hover:bg-[#E1306C] hover:text-white transition-all">
+                                    <Instagram size={20} />
+                                </a>
                             </div>
                         </div>
 

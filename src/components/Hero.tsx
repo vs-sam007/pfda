@@ -57,8 +57,9 @@ export default function Hero() {
                     </span>
                 </motion.div>
 
-                <div className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg">
+                <div className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 uppercase tracking-tight leading-none drop-shadow-lg flex flex-col items-center gap-2 md:gap-4">
                     <TextEffect
+                        as='span'
                         per='char'
                         delay={0.5}
                         variants={{
@@ -68,9 +69,8 @@ export default function Hero() {
                     >
                         Best NDA & Defence
                     </TextEffect>
-                    <br />
                     <span className="text-gold">
-                        <TextEffect per='char' delay={1.5}>
+                        <TextEffect as='span' per='char' delay={1.5}>
                             Coaching in Lucknow
                         </TextEffect>
                     </span>

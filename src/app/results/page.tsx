@@ -16,7 +16,7 @@ export default function ResultsPage() {
             <PageHeader
                 title="Our Results"
                 subtitle="Hall of Fame"
-                image="/images/team-m-1.jpg"
+                image="/images/pexels-micklatter-36163617.jpg"
             />
 
             <div className="container mx-auto px-4 py-12">

@@ -1,3 +1,6 @@
+Options -MultiViews
+DirectorySlash Off
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
@@ -16,13 +19,12 @@
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\?\ ]
     RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-    # 3. Redirect trailing slash to non-trailing slash
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # 4. Redirect trailing slash to non-trailing slash
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-    # 4. Serve Next.js static export `.html` files silently for clean URLs
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # 5. Serve Next.js static export `.html` files silently for clean URLs
+    # We omit the !-d condition here so that even if a directory exists (like /gallery),
+    # if gallery.html exists, it will serve the HTML file correctly.
     RewriteCond %{DOCUMENT_ROOT}/$1.html -f
     RewriteRule ^(.*)$ /$1.html [L]
 
