@@ -16,70 +16,70 @@ const courses = [
         desc: "National Defence Academy",
         details: "For 12th Appearing/Pass",
         image: "/images/nda.jpeg",
-        href: "/courses/nda/"
+        href: "/courses/nda"
     },
     {
         title: "CDS",
         desc: "Combined Defence Services",
         details: "For Graduates",
         image: "/images/gallery8.jpg",
-        href: "/courses/cds/"
+        href: "/courses/cds"
     },
     {
         title: "SSB Interview",
         desc: "Service Selection Board",
         details: "Personality Test",
         image: "/images/nccSSB1.jpg",
-        href: "/courses/ssb-interview-coaching-lucknow/"
+        href: "/courses/ssb-interview-coaching-lucknow"
     },
     {
         title: "Foundation",
         desc: "Complete Class 11th & 12th schooling from dummy school along with dedicated NDA preparation.",
         details: "For Class 11th & 12th",
         image: "/images/service4.jpg",
-        href: "/courses/nda-foundation-course-lucknow/"
+        href: "/courses/nda-foundation-course-lucknow"
     },
     {
         title: "AFCAT",
         desc: "Air Force Common Admission",
         details: "For Graduates",
         image: "/images/1657188081910.webp",
-        href: "/courses/afcat/"
+        href: "/courses/afcat"
     },
     {
         title: "CAPF",
         desc: "Central Armed Police Forces",
         details: "For Graduates",
         image: "/images/CAPF-2020-1.webp",
-        href: "/courses/capf/"
+        href: "/courses/capf"
     },
     {
         title: "Sainik School",
         desc: "Sainik School Entrance",
         details: "For Class 6th & 9th",
         image: "/images/sainic-1.jpg",
-        href: "/courses/sainik-school-coaching-lucknow/"
+        href: "/courses/sainik-school-coaching-lucknow"
     },
     {
         title: "Agniveer",
         desc: "Agnipath Scheme",
         details: "For 10th/12th Pass",
         image: "/images/1707393182_indian-army.jpg",
-        href: "/courses/agniveer/"
+        href: "/courses/agniveer"
     },
     {
         title: "RIMC",
         desc: "Rashtriya Indian Military College",
         details: "For Class 8th Entry",
         image: "/images/sainic-1.jpg",
-        href: "/courses/rimc-coaching-lucknow/"
+        href: "/courses/rimc-coaching-lucknow"
     },
     {
         title: "RMS",
         desc: "Rashtriya Military Schools",
         details: "For Class 6th & 9th",
         image: "/images/sainic-1.jpg",
-        href: "/courses/rms-coaching-lucknow/"
+        href: "/courses/rms-coaching-lucknow"
     }
 ];
 

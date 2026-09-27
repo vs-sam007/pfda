@@ -130,7 +130,7 @@ export default function RIMCCoachingPage() {
                                 <CheckCircle className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-lg text-white mb-1">Alambagh Branch</h4>
-                                    <p className="text-gray-400">Our head office centre offers dedicated RIMC batches with access to our full academic and physical training infrastructure.</p>
+                                    <p className="text-gray-400">Our Alambagh centre offers dedicated RIMC batches with access to our full academic and physical training infrastructure.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">

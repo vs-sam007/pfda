@@ -83,7 +83,7 @@ export default function FoundationCourseContent() {
                     >
                         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden border border-gold/20 shadow-2xl">
                             <Image
-                                src="/images/classroom-1.jpg"
+                                src="/images/classroom-4.jpg"
                                 alt="NDA Foundation Course classroom at Path Finder Defence Academy Lucknow"
                                 fill
                                 className="object-cover"

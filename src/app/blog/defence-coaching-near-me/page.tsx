@@ -14,7 +14,7 @@ export default function DefenceCoachingNearMe() {
             title="Defence Coaching Near Me in Lucknow"
             date="May 20, 2025"
             readTime="6 min"
-            heroImage="/images/classroom-1.jpg"
+            heroImage="/images/classroom-4.jpg"
         >
             <p>
                 If you are searching for <strong>&quot;defence academy near me&quot;</strong> or <strong>&quot;NDA coaching near me&quot;</strong> in Lucknow, you have come to the right place. Choosing a conveniently located defence coaching institute saves commute time and allows you to focus entirely on your preparation. Path Finder Defence Academy has two strategically located centres in Lucknow to serve aspirants from across the city.

@@ -12,7 +12,7 @@ export default function Updates() {
             title: "How to Crack NDA Exam in First Attempt",
             date: "May 15, 2025",
             slug: "/blog/how-to-crack-nda",
-            image: "/images/classroom-1.jpg",
+            image: "/images/nda.jpeg",
             badge: "Preparation"
         },
         {

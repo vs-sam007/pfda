@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { X, Loader2 } from "lucide-react";
 import { Button } from "./ui/Button";
+import { submitLeadToGoogleSheet } from "@/lib/leadSubmission";
 
 interface DemoModalProps {
     isOpen: boolean;
@@ -20,21 +21,17 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            name: formData.get("name"),
-            phone: formData.get("phone"),
-            email: formData.get("email"),
-            course: formData.get("course"),
-            formType: "demo",
+            name: (formData.get("name") as string) || "",
+            phone: (formData.get("phone") as string) || "",
+            email: (formData.get("email") as string) || "",
+            course: (formData.get("course") as string) || "",
+            formType: "demo" as const,
         };
 
         try {
-            const res = await fetch("/api/contact", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data),
-            });
+            const res = await submitLeadToGoogleSheet(data);
 
-            if (res.ok) {
+            if (res.success) {
                 setStatus("success");
                 setTimeout(() => {
                     setStatus("idle");
@@ -107,9 +104,10 @@ export default function DemoModal({ isOpen, onClose }: DemoModalProps) {
                             <select 
                                 name="course" 
                                 required 
+                                defaultValue=""
                                 className="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-2.5 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold transition-all"
                             >
-                                <option value="" disabled selected>Choose a course</option>
+                                <option value="" disabled>Choose a course</option>
                                 <option value="NDA">NDA</option>
                                 <option value="CDS">CDS</option>
                                 <option value="AFCAT">AFCAT</option>

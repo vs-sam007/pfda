@@ -45,7 +45,7 @@ export default function Footer() {
                     <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-gold pl-3">Quick Links</h3>
                     <ul className="space-y-3">
                         <li><Link href="/about" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>About Us</Link></li>
-                        <li><Link href="/gallery" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Gallery</Link></li>
+                        <li><Link href="/gallery/photos" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Gallery</Link></li>
                         <li><Link href="/results" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Success Stories</Link></li>
                         <li><Link href="/branches" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Our Branches</Link></li>
                         <li><Link href="/contact" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Contact Us</Link></li>
@@ -73,7 +73,7 @@ export default function Footer() {
                                 <MapPin size={20} />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-white font-bold text-sm mb-1">Alambagh Branch (Head Office)</span>
+                                <span className="text-white font-bold text-sm mb-1">Alambagh Branch</span>
                                 <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors block text-neutral-400 text-sm">
                                     Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005
                                 </a>

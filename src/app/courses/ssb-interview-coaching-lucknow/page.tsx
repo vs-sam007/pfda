@@ -167,7 +167,7 @@ export default function SSBCoachingPage() {
                                 <CheckCircle className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-lg text-white mb-1">Alambagh Branch</h4>
-                                    <p className="text-gray-400 text-sm">Our head office centre, equipped with a full GTO ground and complete SSB training infrastructure.</p>
+                                    <p className="text-gray-400 text-sm">Our Alambagh centre is equipped with a full GTO ground and complete SSB training infrastructure.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">

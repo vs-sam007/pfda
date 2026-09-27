@@ -138,7 +138,7 @@ export default function SainikSchoolCoachingPage() {
                                 <CheckCircle className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-lg text-white mb-1">Alambagh Branch</h4>
-                                    <p className="text-gray-400 text-sm">Our head office centre runs dedicated Sainik School batches for both Class 6 and Class 9 entry, with full access to our academic and training infrastructure.</p>
+                                    <p className="text-gray-400 text-sm">Our Alambagh centre runs dedicated Sainik School batches for both Class 6 and Class 9 entry, with full access to our academic and training infrastructure.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">

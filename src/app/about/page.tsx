@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const facultiesList = [
     {
-        name: "Mr. Abhishek Awasthi Sir\n(Centre Head)",
+        name: "Mr. Abhishek Awasthi Sir\n(Branch Head)",
         role: "H.O.D English",
         experience: "15+ Years Experience",
         qualification: "Post Graduate From English",

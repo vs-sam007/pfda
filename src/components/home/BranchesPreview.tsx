@@ -10,7 +10,7 @@ export default function BranchesPreview() {
     return (
         <section className="py-12 bg-[#1B2620] relative">
             <div className="container mx-auto px-4">
-                <SectionHeading title="Our Centers" subtitle="Visit Us Today" />
+                <SectionHeading title="Our Branches" subtitle="Visit Us Today" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Alambagh Branch */}
@@ -30,8 +30,7 @@ export default function BranchesPreview() {
                             />
                         </div>
                         <div className="p-8 w-full md:w-1/2 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold text-white mb-2">Alambagh Branch</h3>
-                            <p className="text-gold font-medium mb-6">Head Office</p>
+                            <h3 className="text-2xl font-bold text-white mb-6">Alambagh Branch</h3>
                             <div className="space-y-4 mb-8">
                                 <div className="flex items-start gap-3 text-gray-400">
                                     <MapPin className="text-gold shrink-0 mt-1" size={18} />
@@ -63,8 +62,7 @@ export default function BranchesPreview() {
                             />
                         </div>
                         <div className="p-8 w-full md:w-1/2 flex flex-col justify-center md:order-1">
-                            <h3 className="text-2xl font-bold text-white mb-2">Indira Nagar Branch</h3>
-                            <p className="text-gold font-medium mb-6">City Center</p>
+                            <h3 className="text-2xl font-bold text-white mb-6">Indira Nagar Branch</h3>
                             <div className="space-y-4 mb-8">
                                 <div className="flex items-start gap-3 text-gray-400">
                                     <MapPin className="text-gold shrink-0 mt-1" size={18} />

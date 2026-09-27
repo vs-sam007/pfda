@@ -2,12 +2,15 @@
 
 import { Phone, MessageCircle, Calendar } from "lucide-react";
 import { Button } from "./ui/Button";
+import { useDemoModal } from "./DemoModalProvider";
 
 export default function StickyMobileBar() {
+    const { openDemoModal } = useDemoModal();
+
     return (
         <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1B2620]/95 backdrop-blur-md border-t border-white/10 px-4 py-3 pb-6 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
             <a
-                href="tel:+75051 88009"
+                href="tel:+917505188009"
                 className="flex-1 flex flex-col items-center justify-center gap-1 text-white bg-neutral-800/50 rounded-lg py-2 active:scale-95 transition-transform"
             >
                 <Phone size={18} className="text-[#FACC15]" />
@@ -15,7 +18,9 @@ export default function StickyMobileBar() {
             </a>
 
             <a
-                href="https://wa.me/7505188009"
+                href="https://wa.me/917505188009"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex-1 flex flex-col items-center justify-center gap-1 text-white bg-green-900/20 border border-green-500/20 rounded-lg py-2 active:scale-95 transition-transform"
             >
                 <MessageCircle size={18} className="text-green-500" />
@@ -23,6 +28,7 @@ export default function StickyMobileBar() {
             </a>
 
             <Button
+                onClick={openDemoModal}
                 className="flex-[2] bg-[#ff3b3b] hover:bg-red-700 text-white font-bold rounded-lg active:scale-95 shadow-lg shadow-red-900/20"
             >
                 <Calendar size={18} className="mr-2" />

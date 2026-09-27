@@ -216,7 +216,7 @@ export default function NDAFoundationCoachingPage() {
                                 <CheckCircle className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-lg text-white mb-1">Alambagh Branch</h4>
-                                    <p className="text-gray-400 text-sm">Our head office centre running the full 2-year NDA Foundation batch, with complete academic, physical training, and hostel infrastructure.</p>
+                                    <p className="text-gray-400 text-sm">Our Alambagh centre runs the full 2-year NDA Foundation batch, with complete academic, physical training, and hostel infrastructure.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 items-start">

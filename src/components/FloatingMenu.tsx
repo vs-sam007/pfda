@@ -11,7 +11,7 @@ export default function FloatingMenu() {
     const menuItems = [
         { 
             name: "Gallery", 
-            href: "/gallery", 
+            href: "/gallery/photos", 
             icon: <ImageIcon className="w-5 h-5 text-[#4f46e5]" />, 
             bg: "bg-[#eef2ff]", 
             text: "text-[#3730a3]" 

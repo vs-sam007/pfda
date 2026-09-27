@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle, User, Phone, BookOpen, GraduationCap } from "lucide-react";
 import { Button } from "./ui/Button";
+import { submitLeadToGoogleSheet } from "@/lib/leadSubmission";
 
 export default function LeadPopup() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,22 +26,18 @@ export default function LeadPopup() {
         const formData = new FormData(e.currentTarget);
         
         const data = {
-            name: formData.get("name"),
-            phone: formData.get("phone"),
-            course: formData.get("course"),
-            education: formData.get("education"),
-            message: `Lead Popup Form - Education: ${formData.get("education")}`, // Optional, to pass extra info
-            formType: "demo",
+            name: (formData.get("name") as string) || "",
+            phone: (formData.get("phone") as string) || "",
+            course: (formData.get("course") as string) || "",
+            education: (formData.get("education") as string) || "",
+            message: `Lead Popup Form - Education: ${formData.get("education")}`,
+            formType: "enquiry" as const,
         };
 
         try {
-            await fetch("/api/contact", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data),
-            });
+            await submitLeadToGoogleSheet(data);
             
-            // Show success animation anyway
+            // Show success animation
             setIsSubmitted(true);
             setTimeout(() => {
                 handleClose();

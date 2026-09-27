@@ -13,6 +13,27 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        title: "NDA Foundation Course After 10th: 2-Year Schooling + NDA Coaching Guide",
+        date: "Sep 25, 2026",
+        excerpt: "Complete guide to NDA Foundation Course after 10th in Lucknow. Integrated 11th & 12th schooling (CBSE/UP Board) with NDA written exam, SSB training & hostel facility.",
+        image: "/images/service4.jpg",
+        slug: "nda-foundation-course-after-10th",
+    },
+    {
+        title: "NDA Physical Fitness & Medical Test Standards: Complete Eyesight & Height Chart",
+        date: "Sep 15, 2026",
+        excerpt: "Complete guide to NDA medical test standards and physical fitness requirements. Check height and weight chart, eyesight rules (6/6 vs 6/9), flat foot, knock knees & rejection points.",
+        image: "/images/pexels-kolkatarchobiwala-37134459.webp",
+        slug: "nda-medical-test-physical-fitness-guide",
+    },
+    {
+        title: "Sainik School & RIMC Entrance Exam Guide: Class 6 & 9 Pattern, Syllabus & Coaching",
+        date: "Sep 5, 2026",
+        excerpt: "Complete preparation guide for Sainik School (AISSEE) & RIMC Dehradun entrance exams for Class 6 & 9. Check age limits, exam pattern, syllabus, marking scheme & coaching in Lucknow.",
+        image: "/images/sainic-1.jpg",
+        slug: "sainik-school-rimc-entrance-exam-guide",
+    },
+    {
         title: "How to Crack NDA Exam in First Attempt — Complete Guide",
         date: "Jun 20, 2025",
         excerpt: "Master the NDA syllabus, exam pattern, maths preparation strategy, GAT tips, and previous year question analysis. A complete roadmap to clear the UPSC NDA exam on your first try.",
@@ -51,7 +72,7 @@ const posts = [
         title: "Defence Coaching Near Me in Lucknow — Locations & Guide",
         date: "May 20, 2025",
         excerpt: "Looking for NDA coaching near Alambagh or Indiranagar? Here's your guide to finding the best defence academy in Lucknow.",
-        image: "/images/classroom-1.jpg",
+        image: "/images/classroom-4.jpg",
         slug: "defence-coaching-near-me",
     },
 ];

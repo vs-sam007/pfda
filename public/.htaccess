@@ -9,26 +9,42 @@ DirectorySlash Off
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://pathfinderdefenceacademy.com/$1 [L,R=301]
 
-    # 2. Redirect legacy URLs that were renamed
+    # 2. Return HTTP 410 Gone for obsolete Next.js RSC and metadata text files
+    RewriteRule (^|/)__next.*$ - [G,L]
+
+    # 3. Strip spam referral query parameters (e.g. ?whoisdatacenter.com/)
+    RewriteCond %{QUERY_STRING} whoisdatacenter [NC]
+    RewriteRule ^(.*)$ /$1? [R=301,L]
+
+    # 4. Redirect legacy URLs that were renamed
+    RewriteRule ^gallery/?$ /gallery/photos [R=301,L]
     RewriteRule ^courses/ssb\.html$ /courses/ssb-interview-coaching-lucknow [R=301,L]
     RewriteRule ^courses/ssb/?$ /courses/ssb-interview-coaching-lucknow [R=301,L]
     RewriteRule ^courses/sainik-school\.html$ /courses/sainik-school-coaching-lucknow [R=301,L]
     RewriteRule ^courses/sainik-school/?$ /courses/sainik-school-coaching-lucknow [R=301,L]
 
-    # 3. Redirect remaining `.html` requests directly to clean URL
+    # 5. Redirect remaining `.html` requests directly to clean URL
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\?\ ]
     RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-    # 4. Redirect trailing slash to non-trailing slash
+    # 6. Redirect trailing slash to non-trailing slash
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-    # 5. Serve Next.js static export `.html` files silently for clean URLs
+    # 7. Route /api/contact directly to /api/contact.php
+    RewriteRule ^api/contact/?$ /api/contact.php [L]
+
+    # 8. Serve Next.js static export `.html` files silently for clean URLs
     # We omit the !-d condition here so that even if a directory exists (like /gallery),
     # if gallery.html exists, it will serve the HTML file correctly.
     RewriteCond %{DOCUMENT_ROOT}/$1.html -f
     RewriteRule ^(.*)$ /$1.html [L]
 
 </IfModule>
+
+# Protect lead database CSV files from direct public downloads
+<Files "*.csv">
+    Require all denied
+</Files>
 
 # Handle 404 cleanly by serving Next.js default 404 page
 ErrorDocument 404 /404.html

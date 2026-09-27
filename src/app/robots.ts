@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/private/', '/*__next*'],
+            disallow: ['/private/'],
         },
         sitemap: 'https://pathfinderdefenceacademy.com/sitemap.xml',
     }

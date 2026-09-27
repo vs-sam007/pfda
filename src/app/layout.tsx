@@ -106,7 +106,15 @@ const jsonLd = {
     "@type": "City",
     "name": "Lucknow"
   },
-  "sameAs": [],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.8467",
+    "longitude": "80.9462"
+  },
+  "sameAs": [
+    "https://youtube.com/@pathfinderdefenceacademy?si=iE6H0NJhcfWIbMME",
+    "https://www.instagram.com/pathfinder_defence_academy?igsh=dmhrd245dWJ1bHdu"
+  ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Defence Coaching Courses",

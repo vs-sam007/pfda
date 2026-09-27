@@ -5,6 +5,7 @@ import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { submitLeadToGoogleSheet } from "@/lib/leadSubmission";
 
 export default function ContactPage() {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -13,26 +14,23 @@ export default function ContactPage() {
         e.preventDefault();
         setStatus("loading");
 
-        const formData = new FormData(e.currentTarget);
+        const form = e.currentTarget;
+        const formData = new FormData(form);
         const data = {
-            name: formData.get("name"),
-            phone: formData.get("phone"),
-            email: formData.get("email"),
-            course: formData.get("course"),
-            message: formData.get("message"),
-            formType: "contact",
+            name: (formData.get("name") as string) || "",
+            phone: (formData.get("phone") as string) || "",
+            email: (formData.get("email") as string) || "",
+            course: (formData.get("course") as string) || "",
+            message: (formData.get("message") as string) || "",
+            formType: "contact" as const,
         };
 
         try {
-            const res = await fetch("/api/contact", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(data),
-            });
+            const res = await submitLeadToGoogleSheet(data);
 
-            if (res.ok) {
+            if (res.success) {
                 setStatus("success");
-                e.currentTarget.reset();
+                form.reset();
             } else {
                 setStatus("error");
             }
@@ -65,7 +63,7 @@ export default function ContactPage() {
                                     <MapPin size={24} />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h4 className="text-white font-bold text-lg mb-1">Alambagh Branch (Head Office)</h4>
+                                    <h4 className="text-white font-bold text-lg mb-1">Alambagh Branch</h4>
                                     <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2">
                                         Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005
                                     </a>
