@@ -9,33 +9,39 @@ DirectorySlash Off
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://pathfinderdefenceacademy.com/$1 [L,R=301]
 
-    # 2. Return HTTP 410 Gone for obsolete Next.js RSC and metadata text files
+    # 2. Return HTTP 410 Gone for Next.js internal RSC routes and metadata text files
     RewriteRule (^|/)__next.*$ - [G,L]
+    RewriteCond %{REQUEST_URI} !^/robots\.txt$
+    RewriteRule \.txt$ - [G,L]
 
     # 3. Strip spam referral query parameters (e.g. ?whoisdatacenter.com/)
     RewriteCond %{QUERY_STRING} whoisdatacenter [NC]
     RewriteRule ^(.*)$ /$1? [R=301,L]
 
-    # 4. Redirect legacy URLs that were renamed
-    RewriteRule ^gallery/?$ /gallery/photos [R=301,L]
-    RewriteRule ^courses/ssb\.html$ /courses/ssb-interview-coaching-lucknow [R=301,L]
-    RewriteRule ^courses/ssb/?$ /courses/ssb-interview-coaching-lucknow [R=301,L]
-    RewriteRule ^courses/sainik-school\.html$ /courses/sainik-school-coaching-lucknow [R=301,L]
-    RewriteRule ^courses/sainik-school/?$ /courses/sainik-school-coaching-lucknow [R=301,L]
+    # 4. Route /api/contact directly to /api/contact.php (Bypass rewrite/redirect for API)
+    RewriteRule ^api/contact/?$ /api/contact.php [L]
+    RewriteRule ^api/ - [L]
 
-    # 5. Redirect remaining `.html` requests directly to clean URL
-    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\?\ ]
+    # 5. Specific legacy and renamed URL redirects (Single-hop 301 to avoid redirect chains)
+    RewriteRule ^courses/ssb(\.html|/)?$ /courses/ssb-interview-coaching-lucknow [R=301,L]
+    RewriteRule ^courses/sainik-school(\.html|/)?$ /courses/sainik-school-coaching-lucknow [R=301,L]
+    RewriteRule ^courses/nda-foundation-course-lucknow(\.html|/)?$ /courses/foundation [R=301,L]
+
+    # Blog specific duplicate slug variants
+    RewriteRule ^blog/nda-vs-cds-questions/?$ /blog/nda-vs-cds [R=301,L]
+    RewriteRule ^blog/nda-vs-cds-exam-comparison-selection-roadmap/?$ /blog/nda-vs-cds [R=301,L]
+    RewriteRule ^blog/nda-vs-cds.*which-defence-exam.*$ /blog/nda-vs-cds [R=301,L]
+
+    # 6. Generic rule: Strip .html extension (301 Redirect to clean canonical URL)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html[\?\ ] [NC]
     RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-    # 6. Redirect trailing slash to non-trailing slash
-    RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-    # 7. Route /api/contact directly to /api/contact.php
-    RewriteRule ^api/contact/?$ /api/contact.php [L]
+    # 7. Generic rule: Strip trailing slash from all non-empty URLs (301 Redirect to non-trailing slash canonical)
+    RewriteCond %{REQUEST_URI} ^/(.+)/$
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
 
     # 8. Serve Next.js static export `.html` files silently for clean URLs
-    # We omit the !-d condition here so that even if a directory exists (like /gallery),
-    # if gallery.html exists, it will serve the HTML file correctly.
+    # Even if a physical folder exists (like /courses or /gallery), serve the matching .html file
     RewriteCond %{DOCUMENT_ROOT}/$1.html -f
     RewriteRule ^(.*)$ /$1.html [L]
 
@@ -49,13 +55,21 @@ DirectorySlash Off
 # Handle 404 cleanly by serving Next.js default 404 page
 ErrorDocument 404 /404.html
 
-# Cache control for static assets (optional but recommended for speed)
+# Enable Gzip / Deflate compression for text assets
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache control for static assets (Core Web Vitals & speed)
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType image/jpg "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
     ExpiresByType text/css "access plus 1 month"
     ExpiresByType application/pdf "access plus 1 month"
     ExpiresByType text/javascript "access plus 1 month"

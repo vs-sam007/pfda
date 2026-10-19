@@ -15,7 +15,22 @@ const nextConfig: NextConfig = {
         source: '/courses/sainik-school',
         destination: '/courses/sainik-school-coaching-lucknow',
         permanent: true,
-      }
+      },
+      {
+        source: '/courses/nda-foundation-course-lucknow',
+        destination: '/courses/foundation',
+        permanent: true,
+      },
+      {
+        source: '/blog/nda-vs-cds-questions',
+        destination: '/blog/nda-vs-cds',
+        permanent: true,
+      },
+      {
+        source: '/blog/nda-vs-cds-exam-comparison-selection-roadmap',
+        destination: '/blog/nda-vs-cds',
+        permanent: true,
+      },
     ];
   },
 

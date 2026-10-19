@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { route: '/courses/afcat', priority: 0.9 },
 
         { route: '/courses/capf', priority: 0.8 },
-        { route: '/courses/nda-foundation-course-lucknow', priority: 0.8 },
+        { route: '/courses/foundation', priority: 0.9 },
         { route: '/courses/sainik-school-coaching-lucknow', priority: 0.8 },
         { route: '/courses/rimc-coaching-lucknow', priority: 0.8 },
         { route: '/courses/rms-coaching-lucknow', priority: 0.8 },

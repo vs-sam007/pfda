@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Download, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 const materials = [
     {
@@ -106,6 +107,30 @@ export default function StudyMaterialPage() {
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                {/* Internal Cross-Linking to Relevant Courses & Guides */}
+                <div className="mt-20 bg-[#1B2620] border border-gold/20 rounded-2xl p-8 max-w-5xl mx-auto">
+                    <h3 className="text-2xl font-bold text-white mb-4 text-center">
+                        Pair Your Study Material with Expert Classroom Mentorship
+                    </h3>
+                    <p className="text-gray-300 text-sm md:text-base text-center max-w-2xl mx-auto mb-8">
+                        Books give you concepts; disciplined coaching gives you speed, accuracy, and physical selection readiness. Explore our top courses in Lucknow:
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs font-bold uppercase tracking-wider text-center">
+                        <Link href="/courses/nda" className="bg-[#24332B] hover:bg-gold hover:text-black text-white p-4 rounded-xl border border-white/5 transition-all">
+                            🎖️ NDA Written Coaching
+                        </Link>
+                        <Link href="/courses/foundation" className="bg-[#24332B] hover:bg-gold hover:text-black text-white p-4 rounded-xl border border-white/5 transition-all">
+                            🏫 NDA Foundation (11/12)
+                        </Link>
+                        <Link href="/courses/cds" className="bg-[#24332B] hover:bg-gold hover:text-black text-white p-4 rounded-xl border border-white/5 transition-all">
+                            ⚔️ CDS IMA &amp; OTA Coaching
+                        </Link>
+                        <Link href="/courses/ssb-interview-coaching-lucknow" className="bg-[#24332B] hover:bg-gold hover:text-black text-white p-4 rounded-xl border border-white/5 transition-all">
+                            🏅 SSB 14-Day GTO Ground
+                        </Link>
+                    </div>
                 </div>
             </section>
         </main>

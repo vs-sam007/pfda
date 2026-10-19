@@ -2,21 +2,21 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "NDA Foundation Course After 10th: 2-Year Schooling + NDA Coaching Guide | PFDA Lucknow",
-    description: "Complete guide to NDA Foundation Course after 10th in Lucknow. Learn about 2-year integrated 11th & 12th schooling (CBSE/UP Board) with NDA written exam, SSB training, hostel facility & admission process at Path Finder Defence Academy.",
+    title: "NDA Foundation Course After 10th (2026 Guide): 2-Year Schooling + Coaching in Lucknow",
+    description: "Complete guide to 2-year NDA Foundation Course after 10th in Lucknow Alambagh. CBSE/UP board schooling + UPSC NDA prep, SSB GTO ground & hostel. Call 07505188009.",
     keywords: [
         "NDA foundation course after 10th",
-        "NDA foundation coaching in Lucknow",
+        "NDA foundation coaching in Lucknow Alambagh",
         "NDA schooling in Lucknow",
-        "best NDA foundation academy",
-        "NDA coaching with schooling and hostel",
+        "best NDA foundation academy Lucknow",
+        "NDA coaching with schooling and hostel Lucknow",
         "how to join NDA after 10th",
         "NDA 2 year integrated course"
     ],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/nda-foundation-course-after-10th" },
     openGraph: {
         title: "NDA Foundation Course After 10th: 2-Year Schooling + NDA Coaching Guide",
-        description: "Join Lucknow's top-rated 2-year NDA Foundation Course after 10th. Integrated 11th & 12th schooling with expert NDA written and SSB training at PFDA.",
+        description: "Join Lucknow's top-rated 2-year NDA Foundation Course after 10th in Alambagh. Integrated 11th & 12th schooling with expert NDA written and SSB training at PFDA.",
         url: "https://pathfinderdefenceacademy.com/blog/nda-foundation-course-after-10th",
         type: "article",
         images: [{ url: "https://pathfinderdefenceacademy.com/images/service4.jpg", width: 1200, height: 630, alt: "NDA Foundation Course After 10th" }]
@@ -34,12 +34,12 @@ const jsonLdData = {
             "dateModified": "2026-09-25T09:00:00+05:30",
             "author": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "url": "https://pathfinderdefenceacademy.com"
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "logo": {
                     "@type": "ImageObject",
                     "url": "https://pathfinderdefenceacademy.com/images/logo.png"
@@ -56,15 +56,23 @@ const jsonLdData = {
                     "name": "Can I prepare for NDA while studying in Class 11 and 12?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes! An integrated NDA Foundation Course enables students to complete regular Class 11th and 12th board schooling (CBSE or State Board) alongside daily structured NDA written preparation, physical training, and SSB personality grooming."
+                        "text": "Yes. An integrated NDA Foundation Course enables students to complete regular Class 11th and 12th board schooling (CBSE or State Board) alongside daily structured NDA written preparation, physical training, and SSB personality grooming."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "What are the eligibility criteria for NDA Foundation Course after 10th?",
+                    "name": "Can girls join the NDA Foundation Course after Class 10th?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Students who have passed or appeared in Class 10th board exams from CBSE, ICSE, or State Boards with Science/Maths orientation are eligible. Age should generally be between 14.5 to 16.5 years at the time of admission."
+                        "text": "Yes, female candidates are fully eligible to join the NDA Foundation Course following Supreme Court rulings opening NDA entries to women. Pathfinder Defence Academy runs dedicated batches with residential hostels."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Where is the NDA Foundation campus located in Lucknow?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The flagship NDA Foundation campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow, featuring smart classrooms, library, and an on-site outdoor GTO obstacle ground."
                     }
                 },
                 {
@@ -72,15 +80,7 @@ const jsonLdData = {
                     "name": "Are hostel and food facilities available for outstation students?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, Path Finder Defence Academy provides separate well-equipped hostels for boys with hygienic food, 24/7 power backup, disciplined study environment, and round-the-clock security in Lucknow."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Does the NDA Foundation course cover Board Exam preparation too?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Absolutely. The academic syllabus for Physics, Chemistry, and Mathematics is aligned directly with NCERT Class 11th and 12th board exams, ensuring students score 85%+ in board examinations while simultaneously preparing for UPSC NDA."
+                        "text": "Yes, Pathfinder Defence Academy provides separate well-equipped hostels for boys and girls with hygienic mess food, 24/7 security, disciplined evening study hours, and warden supervision in Alambagh, Lucknow."
                     }
                 },
                 {
@@ -118,7 +118,7 @@ export default function NdaFoundationCourseAfter10th() {
                 heroImage="/images/service4.jpg"
             >
                 <p>
-                    Choosing the right path after Class 10th board exams is one of the most critical turning points in a student&apos;s academic life. For young boys and girls whose lifelong ambition is to wear the prestigious uniform of the Indian Armed Forces as commissioned officers, waiting until Class 12th to begin defence preparation is no longer the smartest strategy. Enrolling in an <strong>NDA Foundation Course after 10th</strong> at Path Finder Defence Academy in Lucknow provides a seamless, integrated 2-year ecosystem combining senior secondary schooling (Class 11th &amp; 12th) with rigorous UPSC NDA written exam coaching and Officer Like Qualities (OLQ) grooming.
+                    Choosing the right path after Class 10th board exams is one of the most critical turning points in a student&apos;s academic life. For young boys and girls whose lifelong ambition is to wear the prestigious uniform of the Indian Armed Forces as commissioned officers, waiting until Class 12th to begin defence preparation is no longer the smartest strategy. Enrolling in an <strong>NDA Foundation Course after 10th</strong> at Pathfinder Defence Academy in Lucknow provides a seamless, integrated 2-year ecosystem combining senior secondary schooling (Class 11th &amp; 12th) with rigorous UPSC NDA written exam coaching and Officer Like Qualities (OLQ) grooming.
                 </p>
 
                 <h2>What is an NDA Foundation Course?</h2>
@@ -168,7 +168,7 @@ export default function NdaFoundationCourseAfter10th() {
 
                 <h2>Hostel, Security &amp; Care for Outstation Students</h2>
                 <p>
-                    We understand that leaving home for the first time after Class 10th is a big step for both students and parents. Path Finder Defence Academy provides:
+                    We understand that leaving home for the first time after Class 10th is a big step for both students and parents. Pathfinder Defence Academy provides:
                 </p>
                 <ul>
                     <li>Fully furnished, clean, and air-conditioned/air-cooled hostel rooms with biometric security.</li>
@@ -178,29 +178,46 @@ export default function NdaFoundationCourseAfter10th() {
                 </ul>
 
                 <h2>Frequently Asked Questions (FAQs)</h2>
-                <h3>Can girls join the NDA Foundation Course after Class 10th?</h3>
-                <p>
-                    Yes! Following the Supreme Court directive and UPSC notification permitting female cadets to join the National Defence Academy, girls are eligible for admission into our foundation programmes and can train for Army, Navy, and Air Force entries.
-                </p>
+                <div className="space-y-6">
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Can I prepare for NDA while studying in Class 11 and 12?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Yes. An integrated NDA Foundation Course enables students to complete regular Class 11th and 12th board schooling (CBSE or State Board) alongside daily structured NDA written preparation, physical training, and SSB personality grooming.
+                        </p>
+                    </div>
 
-                <h3>What syllabus board is followed for Class 11 and 12 schooling?</h3>
-                <p>
-                    Students can choose between CBSE (Central Board of Secondary Education) and State Board schooling options, both integrated directly with our teaching modules.
-                </p>
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Can girls join the NDA Foundation Course after Class 10th?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Yes, female candidates are fully eligible to join the NDA Foundation Course following Supreme Court rulings opening NDA entries to women. Pathfinder Defence Academy runs dedicated batches with residential hostels.
+                        </p>
+                    </div>
 
-                <h3>What is the admission procedure for PFDA NDA Foundation?</h3>
-                <p>
-                    Admission is granted based on Class 10th board marks, an initial aptitude test, and a personal counselling interview with our academic directors. You can visit our branches or <a href="/contact">apply online for a free counselling session</a>.
-                </p>
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Where is the NDA Foundation campus located in Lucknow?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            The flagship NDA Foundation campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow, featuring smart classrooms, library, and an on-site outdoor GTO obstacle ground.
+                        </p>
+                    </div>
 
-                <h3>How does PFDA support weak students in Mathematics?</h3>
-                <p>
-                    Our senior faculty, led by renowned mathematics mentors like Mr. Anand Krishna Chauhan Sir and Atul Omar Sir, organize special daily zero-period doubt batches to strengthen fundamental calculation skills and Vedic maths shortcuts.
-                </p>
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Are hostel and food facilities available for outstation students?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Yes, Pathfinder Defence Academy provides separate well-equipped hostels for boys and girls with hygienic mess food, 24/7 security, disciplined evening study hours, and warden supervision in Alambagh, Lucknow.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">When can an NDA Foundation student appear for the actual UPSC NDA exam?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Cadets become eligible to appear for the UPSC NDA written examination during their Class 12th appearing semester (typically the September or April cycle), allowing them to clear the exam on their first attempt without losing a gap year.
+                        </p>
+                    </div>
+                </div>
 
                 <h2>Join Lucknow&apos;s Best NDA Foundation Academy</h2>
                 <p>
-                    If your dream is to enter the National Defence Academy with a single-digit all-India merit rank, give yourself the 2-year competitive advantage. Visit Path Finder Defence Academy, inspect our smart classrooms, hostel facilities, and GTO training ground, and speak directly with our ex-defence mentors today.
+                    If your dream is to enter the National Defence Academy with a single-digit all-India merit rank, give yourself the 2-year competitive advantage. Visit Pathfinder Defence Academy, inspect our smart classrooms, hostel facilities, and GTO training ground, and speak directly with our ex-defence mentors today.
                 </p>
             </BlogArticle>
         </>

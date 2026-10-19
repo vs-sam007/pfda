@@ -2,22 +2,65 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Complete SSB Interview Preparation Guide — Screening to Conference | PFDA",
-    description: "Master SSB interview preparation with this complete guide. Learn about SSB screening test, psychology tests (TAT, WAT, SRT), GTO tasks, personal interview & conference. Expert tips from ex-SSB officers at PFDA Lucknow.",
-    keywords: ["SSB interview preparation", "SSB screening test", "SSB psychology test", "SSB GTO tasks", "SSB interview questions", "how to clear SSB interview"],
+    title: "SSB Interview 5-Day Guide 2026: Screening, Psych, GTO Tasks & Personal Interview",
+    description: "Complete 5-day SSB interview preparation guide 2026. Master OIR, PPDT screening, TAT/WAT/SRT psych tests, outdoor GTO ground tasks & interview questions.",
+    keywords: ["SSB interview preparation 2026", "SSB screening test OIR PPDT", "SSB psychology test TAT WAT", "SSB GTO tasks", "how to clear SSB interview", "SSB coaching in Lucknow Alambagh"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/ssb-interview-guide" },
 };
 
 export default function SSBInterviewGuide() {
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are the 5 days of the SSB interview process?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Day 1 consists of Screening (OIR and PPDT); Day 2 covers Psychological Tests (TAT, WAT, SRT, SD); Days 3 and 4 involve outdoor GTO group tasks and personal interviews; and Day 5 concludes with the Board Conference and final recommendation results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I improve my chances of clearing Stage 1 Screening (PPDT)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Write a realistic, positive story centered around an action-oriented main character in 4 minutes, narrate your story fluently without stammering in 1 minute, and contribute constructively in the group discussion without arguing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is coaching helpful for the SSB Interview?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, guided coaching with retired board assessors and practice on an actual outdoor GTO ground helps candidates understand board expectations, remove nervous body language, and articulate responses naturally."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is the best SSB interview coaching academy in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pathfinder Defence Academy at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow features Lucknow's only dedicated outdoor GTO obstacle ground and mentoring by ex-SSB officers. Call: 07505188009."
+                }
+            }
+        ]
+    };
+
     return (
         <BlogArticle
-            title="Complete SSB Interview Preparation Guide"
+            title="Complete 5-Day SSB Interview Preparation Guide (2026)"
             date="June 10, 2025"
             readTime="15 min"
             heroImage="/images/nccSSB1.jpg"
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
             <p>
-                The Service Selection Board (SSB) interview is the most critical stage of defence selection — whether you have cleared NDA, CDS, AFCAT, or any other defence exam. Unlike written tests that evaluate your knowledge, the <strong>SSB interview preparation</strong> is about developing and showcasing your personality, leadership, and Officer Like Qualities (OLQs). This guide from Path Finder Defence Academy covers every aspect of the 5-day SSB process.
+                The Service Selection Board (SSB) interview is the most critical stage of defence selection — whether you have cleared NDA, CDS, AFCAT, or any other defence exam. Unlike written tests that evaluate your knowledge, the <strong>SSB interview preparation</strong> is about developing and showcasing your personality, leadership, and Officer Like Qualities (OLQs). This guide from Pathfinder Defence Academy in Alambagh, Lucknow covers every aspect of the 5-day SSB process.
             </p>
 
             <h2>Day 1: SSB Screening Test</h2>
@@ -26,7 +69,7 @@ export default function SSBInterviewGuide() {
             </p>
             <ul>
                 <li><strong>OIR (Officer Intelligence Rating):</strong> Verbal and non-verbal reasoning tests. These are timed tests assessing your basic intelligence and cognitive ability.</li>
-                <li><strong>PPDT (Picture Perception & Discussion Test):</strong> You are shown a hazy picture for 30 seconds, asked to write a story based on it, and then narrate it in a group discussion. The assessors evaluate your observation, imagination, and group behaviour.</li>
+                <li><strong>PPDT (Picture Perception &amp; Discussion Test):</strong> You are shown a hazy picture for 30 seconds, asked to write a story based on it, and then narrate it in a group discussion. The assessors evaluate your observation, imagination, and group behaviour.</li>
             </ul>
             <p>
                 <strong>Tip:</strong> In PPDT, write a positive story with a central character showing leadership. During group discussion, be assertive but not aggressive. Listen to others and build on their ideas.
@@ -81,8 +124,36 @@ export default function SSBInterviewGuide() {
 
             <h2>How PFDA Prepares You for SSB Success</h2>
             <p>
-                At Path Finder Defence Academy, our SSB coaching panel includes <strong>ex-SSB psychologists, ex-GTOs, and ex-interviewing officers</strong> from actual Service Selection Boards. We provide live GTO ground practice, mock psychology tests, personality development sessions, and full mock SSB interviews. Our approach develops genuine OLQs rather than teaching scripted responses — which is why our SSB success rate is among the best in Lucknow.
+                At Pathfinder Defence Academy, our SSB coaching panel includes <strong>ex-SSB psychologists, ex-GTOs, and ex-interviewing officers</strong> from actual Service Selection Boards. We provide live GTO ground practice at our Alambagh centre, mock psychology tests, personality development sessions, and full mock SSB interviews. Our approach develops genuine OLQs rather than teaching scripted responses — which is why our SSB success rate is among the best in Lucknow.
             </p>
+
+            <h2 className="mt-12 text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">What are the 5 days of the SSB interview process?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Day 1 consists of Screening (OIR and PPDT); Day 2 covers Psychological Tests (TAT, WAT, SRT, SD); Days 3 and 4 involve outdoor GTO group tasks and personal interviews; and Day 5 concludes with the Board Conference and final recommendation results.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">How can I improve my chances of clearing Stage 1 Screening (PPDT)?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Write a realistic, positive story centered around an action-oriented main character in 4 minutes, narrate your story fluently without stammering in 1 minute, and contribute constructively in the group discussion without arguing.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Is coaching helpful for the SSB Interview?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Yes, guided coaching with retired board assessors and practice on an actual outdoor GTO ground helps candidates understand board expectations, remove nervous body language, and articulate responses naturally.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Where is the best SSB interview coaching academy in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Pathfinder Defence Academy at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow features Lucknow's only dedicated outdoor GTO obstacle ground and mentoring by ex-SSB officers. Call: 07505188009.
+                    </p>
+                </div>
+            </div>
         </BlogArticle>
     );
 }

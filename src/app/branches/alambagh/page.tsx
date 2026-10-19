@@ -4,32 +4,47 @@ import { MapPin, Phone, Mail, Navigation, CheckCircle2, Award, Users, BookOpen }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "NDA Coaching in Alambagh Lucknow | Path Finder Defence Academy",
-    description: "Visit Path Finder Defence Academy (PFDA) in Alambagh, Lucknow. Best coaching for NDA, CDS, AFCAT & SSB near Singar Nagar Metro Station. Hostel & ground facility.",
-    keywords: ["NDA coaching in Alambagh", "defence academy Alambagh Lucknow", "NDA coaching near Singar Nagar Metro", "best NDA institute Alambagh", "PFDA Alambagh branch"],
+    title: "Best NDA Coaching in Alambagh Lucknow (2026 Batches, Admissions & Hostel)",
+    description: "Visit Pathfinder Defence Academy in Alambagh, Lucknow. Best coaching for NDA, CDS, AFCAT & SSB near Singar Nagar Metro Station. Hostel & GTO ground facility.",
+    keywords: ["NDA coaching in Alambagh", "defence academy Alambagh Lucknow", "NDA coaching near Singar Nagar Metro", "best NDA institute Alambagh", "PFDA Alambagh branch", "NDA coaching in Alambagh Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/branches/alambagh" },
     openGraph: {
-        title: "NDA Coaching in Alambagh Lucknow | Path Finder Defence Academy",
+        title: "Best NDA Coaching in Alambagh Lucknow | Pathfinder Defence Academy",
         description: "Best coaching for NDA, CDS, AFCAT & SSB near Singar Nagar Metro Station, Alambagh, Lucknow. Hostel & GTO ground facility.",
         url: "https://pathfinderdefenceacademy.com/branches/alambagh",
         type: "website",
-        images: [{ url: "https://pathfinderdefenceacademy.com/images/classroom-2.jpg", width: 1200, height: 630, alt: "PFDA Alambagh Branch" }]
+        images: [{ url: "https://pathfinderdefenceacademy.com/images/classroom-2.jpg", width: 1200, height: 630, alt: "Pathfinder Defence Academy Alambagh Branch Lucknow" }]
     }
 };
 
 const alambaghSchema = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Path Finder Defence Academy - Alambagh Branch",
+    "@type": ["LocalBusiness", "EducationalOrganization"],
+    "name": "Pathfinder Defence Academy - Alambagh Branch",
     "url": "https://pathfinderdefenceacademy.com/branches/alambagh",
     "logo": "https://pathfinderdefenceacademy.com/images/logo.png",
-    "description": "Leading defence coaching academy in Alambagh, Lucknow for NDA, CDS, AFCAT, and SSB interview preparation.",
+    "image": "https://pathfinderdefenceacademy.com/images/classroom-2.jpg",
+    "description": "Leading defence coaching academy in Alambagh, Lucknow for NDA, CDS, AFCAT, and SSB interview preparation opposite Singar Nagar Metro Station.",
     "telephone": "+91-7505188009",
     "email": "info@pathfinderdefenceacademy.co.in",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 08:00-20:00",
+    "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Alambagh" },
+        { "@type": "AdministrativeArea", "name": "Singar Nagar" },
+        { "@type": "AdministrativeArea", "name": "Krishna Nagar" },
+        { "@type": "AdministrativeArea", "name": "Charbagh" },
+        { "@type": "AdministrativeArea", "name": "Aminabad" },
+        { "@type": "AdministrativeArea", "name": "Thakurganj" },
+        { "@type": "AdministrativeArea", "name": "Mawaiya" },
+        { "@type": "AdministrativeArea", "name": "Rajajipuram" },
+        { "@type": "City", "name": "Lucknow" },
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" }
+    ],
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar",
-        "addressLocality": "Alambagh",
+        "streetAddress": "Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar Nagar",
+        "addressLocality": "Alambagh, Lucknow",
         "addressRegion": "Uttar Pradesh",
         "postalCode": "226005",
         "addressCountry": "IN"
@@ -38,6 +53,13 @@ const alambaghSchema = {
         "@type": "GeoCoordinates",
         "latitude": "26.8188",
         "longitude": "80.9087"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "140",
+        "bestRating": "5",
+        "worstRating": "1"
     },
     "hasMap": "https://maps.app.goo.gl/EBqtfWVp8Akaeeki7"
 };
@@ -52,11 +74,11 @@ export default function AlambaghBranchPage() {
             <main className="bg-primary min-h-screen pb-20">
                 <PageHeader
                     title="Alambagh Branch"
-                    subtitle="Lucknow Centre"
-                    image="/images/classroom-2.jpg"
+                    subtitle="Lucknow Centre — Singar Nagar Metro"
+                    image="/images/pexels-estudiodelarts-4130926.webp"
                 />
 
-                <section className="container mx-auto px-4 py-16 max-w-6xl">
+                <section className="container mx-auto px-4 py-16 max-w-6xl space-y-12">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                         
                         {/* Left 2 Cols: Branch Details & Facilities */}
@@ -64,7 +86,7 @@ export default function AlambaghBranchPage() {
                             <div className="bg-[#1B2620]/60 border border-gold/20 rounded-2xl p-6 md:p-8 shadow-xl">
                                 <span className="text-gold font-bold uppercase tracking-widest text-xs mb-2 block">Central Lucknow Campus</span>
                                 <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
-                                    Path Finder Defence Academy, Alambagh
+                                    Pathfinder Defence Academy, Alambagh
                                 </h2>
                                 <p className="text-gray-300 leading-relaxed mb-6">
                                     Conveniently located right opposite the Singar Nagar Metro Station in Alambagh, our flagship campus offers world-class infrastructure for defence aspirants across Uttar Pradesh. From high-tech smart classrooms and comprehensive library facilities to ex-defence faculty guidance, our Alambagh centre is designed to provide a distraction-free officer training environment.
@@ -99,7 +121,7 @@ export default function AlambaghBranchPage() {
                                     <Link href="/courses/nda" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
                                         NDA Written Exam
                                     </Link>
-                                    <Link href="/courses/nda-foundation-course-lucknow" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
+                                    <Link href="/courses/foundation" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
                                         NDA Foundation (11/12)
                                     </Link>
                                     <Link href="/courses/cds" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
@@ -187,6 +209,42 @@ export default function AlambaghBranchPage() {
                         </div>
 
                     </div>
+
+                    {/* Embedded Google Maps Section */}
+                    <div className="bg-[#1B2620] border border-gold/20 rounded-2xl p-6 md:p-8 shadow-2xl space-y-4">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+                                    <MapPin className="text-gold w-6 h-6" /> Location on Google Maps — Alambagh Campus
+                                </h3>
+                                <p className="text-gray-300 text-sm mt-1">
+                                    KSM Plaza, Opposite Singar Nagar Metro Station (Gate No. 2), Kanpur Road, Alambagh, Lucknow.
+                                </p>
+                            </div>
+                            <a
+                                href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gold hover:bg-yellow-500 text-black font-bold text-xs px-4 py-2 rounded-lg shrink-0 transition-colors"
+                            >
+                                Open in Google Maps App ↗
+                            </a>
+                        </div>
+                        <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-inner">
+                            <iframe
+                                title="Pathfinder Defence Academy Alambagh Branch Campus Google Map"
+                                src="https://maps.google.com/maps?q=26.8188,80.9087&hl=en&z=16&output=embed"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen={false}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+                    </div>
+
                 </section>
             </main>
         </>

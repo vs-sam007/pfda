@@ -3,8 +3,8 @@ import PageHeader from "@/components/PageHeader";
 import BranchesPreview from "@/components/home/BranchesPreview";
 
 export const metadata: Metadata = {
-    title: "Our Branches | Path Finder Defence Academy Lucknow",
-    description: "Visit Path Finder Defence Academy campuses in Lucknow (Alambagh & Indiranagar). State-of-the-art classrooms, hostel facility, and physical training grounds.",
+    title: "Our Branches | Pathfinder Defence Academy Lucknow",
+    description: "Visit Pathfinder Defence Academy campuses in Lucknow (Alambagh & Indiranagar). State-of-the-art classrooms, hostel facility, and physical training grounds.",
     alternates: {
         canonical: "https://pathfinderdefenceacademy.com/branches",
     },

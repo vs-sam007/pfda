@@ -6,13 +6,27 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Best RMS Coaching in Lucknow | Rashtriya Military School | PFDA",
-    description: "Expert Rashtriya Military School (RMS) coaching in Lucknow for Class 6 & 9. RMS CET preparation with hostel facilities at Alambagh & Indira Nagar. Enroll now.",
-    keywords: ["RMS coaching in Lucknow", "Rashtriya Military School entrance exam coaching Lucknow", "RMS CET preparation Lucknow", "RMS class 6 coaching", "RMS class 9 coaching"],
+    title: "RMS Coaching in Lucknow Alambagh: Class 6 & 9 CET Entrance Prep 2026",
+    description: "Best RMS (Rashtriya Military School) coaching in Lucknow Alambagh for Class 6 & 9 CET. Top results, daily mock tests & hostel facility. Call 07505188009.",
+    keywords: ["RMS coaching in Lucknow", "RMS coaching Alambagh", "Rashtriya Military School entrance exam coaching Lucknow", "RMS CET preparation Lucknow", "RMS class 6 coaching Alambagh", "RMS class 9 coaching Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/rms-coaching-lucknow" },
 };
 
 export default function RMSCoachingPage() {
+    const courseJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "RMS Entrance Exam Coaching Lucknow Alambagh",
+        "description": "Comprehensive Rashtriya Military School Common Entrance Test (RMS CET) coaching for Class 6 and Class 9 at Pathfinder Defence Academy Lucknow.",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Pathfinder Defence Academy",
+            "url": "https://pathfinderdefenceacademy.com"
+        },
+        "courseMode": "In-Person Classroom and Boarding",
+        "educationalCredentialAwarded": "RMS CET Class 6 & 9 Entrance Qualification"
+    };
+
     const faqJsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -22,7 +36,7 @@ export default function RMSCoachingPage() {
                 "name": "What is the age limit for RMS Class 6 and Class 9 admission?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "RMS follows specific age brackets for each entry class, notified annually by the Ministry of Defence. Our mentors will guide you through the exact current-year eligibility criteria."
+                    "text": "For RMS Class 6 admission, candidate age must be between 10 to 12 years. For Class 9 admission, candidate age must be between 13 to 15 years as of 31st March of the year of admission."
                 }
             },
             {
@@ -30,31 +44,31 @@ export default function RMSCoachingPage() {
                 "name": "What is the RMS CET exam pattern?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The RMS Common Entrance Test typically covers Mathematics, Language/English, Intelligence, and General Knowledge (subjects vary slightly by entry class), followed by a personal interview for shortlisted candidates."
+                    "text": "RMS Class 6 CET tests English (qualifying), Intelligence, Mathematics, and General Knowledge (200 marks total). Class 9 CET consists of Paper 1 (English, Hindi, Social Science) and Paper 2 (Maths, Science) followed by a 50-mark interview."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How is RMS different from Sainik School?",
+                "name": "Where is Pathfinder Defence Academy RMS coaching campus located in Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "RMS has only 5 schools across India and is administered directly under the Ministry of Defence, while Sainik Schools number over 33 and are state-affiliated. Both lead toward similar defence career pathways."
+                    "text": "Our primary RMS coaching campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. We also have a branch in Indira Nagar, Lucknow."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Do you provide hostel facilities for RMS coaching students?",
+                "name": "Do you provide hostel facilities for outstation RMS students?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we offer residential hostel arrangements for students joining our RMS coaching program from outside Lucknow."
+                    "text": "Yes, Pathfinder Defence Academy provides secure residential hostel facilities with nutritious meals, disciplined study schedules, and medical care at our Alambagh, Lucknow campus."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What is the fee structure for RMS coaching at Pathfinder Defence Academy?",
+                "name": "How does RMS differ from Sainik Schools?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Fees vary based on batch and class level. Please contact our Alambagh or Indira Nagar centre directly for current fee details."
+                    "text": "RMS consists of only 5 military schools directly governed by the Ministry of Defence with high seat competition, while Sainik Schools comprise 33+ schools administered by the Sainik Schools Society."
                 }
             }
         ]
@@ -64,28 +78,61 @@ export default function RMSCoachingPage() {
         <main className="bg-primary min-h-screen pb-20">
             <script
                 type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
             
             <PageHeader 
                 title="RMS Coaching in Lucknow" 
-                subtitle="Expert Preparation for Rashtriya Military School" 
+                subtitle="Expert Preparation for Rashtriya Military School (Class 6 & 9 CET) | Alambagh" 
                 image="/images/sainic-1.jpg" 
             />
 
             <section className="container mx-auto px-4 py-16">
                 <div className="max-w-4xl mx-auto">
                     
+                    {/* AEO Crisp Summary Paragraph Box */}
+                    <div className="mb-10 p-6 rounded-2xl bg-[#24332B] border-2 border-gold/40 shadow-lg">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="inline-block w-2.5 h-2.5 rounded-full bg-gold animate-pulse"></span>
+                            <span className="text-xs uppercase font-bold tracking-widest text-gold">Course Overview</span>
+                        </div>
+                        <p className="text-gray-200 text-lg leading-relaxed font-medium">
+                            Pathfinder Defence Academy delivers specialized RMS CET coaching in Lucknow (Alambagh & Indira Nagar) for Class 6 and Class 9 admissions into all 5 Rashtriya Military Schools. The course includes daily subject classes in Maths, English, Intelligence, and GK, interview orientation, regular OMR mock tests, and full boarding facilities at our Alambagh campus.
+                        </p>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-white/10 text-center">
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Class 6 & 9</span>
+                                <span className="text-xs text-gray-300">CET Batches</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">5 RMS Schools</span>
+                                <span className="text-xs text-gray-300">Target Network</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">OMR Series</span>
+                                <span className="text-xs text-gray-300">Weekly Testing</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Alambagh</span>
+                                <span className="text-xs text-gray-300">Head Campus</span>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* H1 Section */}
                     <div className="mb-12">
                         <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Best Rashtriya Military School (RMS) Coaching in Lucknow
+                            Best Rashtriya Military School (RMS) Coaching in Lucknow Alambagh
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed mb-4">
                             Rashtriya Military School (RMS) is a network of just 5 institutions across India — Chail, Ajmer, Belgaum, Bengaluru, and Dholpur — offering disciplined, military-style schooling to students from Class 6 onward. Admission happens through the RMS Common Entrance Test (CET), a competitive exam that requires focused, exam-specific preparation.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            At Pathfinder Defence Academy, our RMS coaching in Lucknow prepares students for the CET exam at both Class 6 and Class 9 entry levels, with expert faculty, structured mock tests, and hostel facilities for outstation families.
+                            At Pathfinder Defence Academy, our RMS coaching in Lucknow prepares students for the CET exam at both Class 6 and Class 9 entry levels, with expert faculty, structured mock tests, and hostel facilities for outstation families at our Alambagh centre (Opp. Singar Nagar Metro).
                         </p>
                     </div>
 
@@ -198,15 +245,15 @@ export default function RMSCoachingPage() {
                         <SectionHeading title="Frequently Asked Questions" alignment="left" />
                         <div className="space-y-6 mt-8">
                             {[
-                                { q: "What is the age limit for RMS Class 6 and Class 9 admission?", a: "RMS follows specific age brackets for each entry class, notified annually by the Ministry of Defence. Our mentors will guide you through the exact current-year eligibility criteria." },
-                                { q: "What is the RMS CET exam pattern?", a: "The RMS Common Entrance Test typically covers Mathematics, Language/English, Intelligence, and General Knowledge (subjects vary slightly by entry class), followed by a personal interview for shortlisted candidates." },
-                                { q: "How is RMS different from Sainik School?", a: "RMS has only 5 schools across India and is administered directly under the Ministry of Defence, while Sainik Schools number over 33 and are state-affiliated. Both lead toward similar defence career pathways." },
-                                { q: "Do you provide hostel facilities for RMS coaching students?", a: "Yes, we offer residential hostel arrangements for students joining our RMS coaching program from outside Lucknow." },
-                                { q: "What is the fee structure for RMS coaching at Pathfinder Defence Academy?", a: "Fees vary based on batch and class level. Please contact our Alambagh or Indira Nagar centre directly for current fee details." }
+                                { q: "What is the age limit for RMS Class 6 and Class 9 admission?", a: "For RMS Class 6 admission, candidate age must be between 10 to 12 years. For Class 9 admission, candidate age must be between 13 to 15 years as of 31st March of the year of admission." },
+                                { q: "What is the RMS CET exam pattern?", a: "RMS Class 6 CET tests English (qualifying), Intelligence, Mathematics, and General Knowledge (200 marks total). Class 9 CET consists of Paper 1 (English, Hindi, Social Science) and Paper 2 (Maths, Science) followed by a 50-mark interview." },
+                                { q: "Where is Pathfinder Defence Academy RMS coaching campus located in Lucknow?", a: "Our primary RMS coaching campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. We also have a branch in Indira Nagar, Lucknow." },
+                                { q: "Do you provide hostel facilities for outstation RMS students?", a: "Yes, Pathfinder Defence Academy provides secure residential hostel facilities with nutritious meals, disciplined study schedules, and medical care at our Alambagh, Lucknow campus." },
+                                { q: "How does RMS differ from Sainik Schools?", a: "RMS consists of only 5 military schools directly governed by the Ministry of Defence with high seat competition, while Sainik Schools comprise 33+ schools administered by the Sainik Schools Society." }
                             ].map((faq, index) => (
                                 <div key={index} className="bg-[#24332B] p-6 rounded-lg">
                                     <h3 className="text-lg font-bold text-white mb-2">{faq.q}</h3>
-                                    <p className="text-gray-400">{faq.a}</p>
+                                    <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                                 </div>
                             ))}
                         </div>

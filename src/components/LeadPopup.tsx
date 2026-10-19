@@ -11,14 +11,26 @@ export default function LeadPopup() {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     useEffect(() => {
+        try {
+            if (sessionStorage.getItem("pfda_lead_popup_dismissed")) {
+                return;
+            }
+        } catch {
+            // Ignore storage restrictions
+        }
         const timer = setTimeout(() => {
             setIsOpen(true);
-        }, 3000);
+        }, 8500);
         return () => clearTimeout(timer);
     }, []);
 
     const handleClose = () => {
         setIsOpen(false);
+        try {
+            sessionStorage.setItem("pfda_lead_popup_dismissed", "1");
+        } catch {
+            // Ignore storage restrictions
+        }
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

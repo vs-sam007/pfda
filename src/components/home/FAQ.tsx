@@ -8,7 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 const faqs = [
     {
         question: "Which is the best NDA coaching in Lucknow?",
-        answer: "Path Finder Defence Academy (PFDA) is widely regarded as the best NDA coaching in Lucknow, with over 1000+ selections and 15+ years of experience. Our expert faculty of ex-defence officers, comprehensive NDA written exam coaching, SSB interview preparation, physical training, and hostel facility make us the top defence coaching institute in Uttar Pradesh."
+        answer: "Pathfinder Defence Academy (PFDA) is widely regarded as the best NDA coaching in Lucknow, with over 1000+ selections and 15+ years of experience. Our expert faculty of ex-defence officers, comprehensive NDA written exam coaching, SSB interview preparation, physical training, and hostel facility make us the top defence coaching institute in Uttar Pradesh."
     },
     {
         question: "How to crack NDA exam in first attempt?",
@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "What is the NDA coaching fees in Lucknow?",
-        answer: "NDA coaching fees in Lucknow vary between ₹30,000 to ₹1,50,000 depending on the course duration and facilities. At Path Finder Defence Academy, we offer affordable NDA coaching with flexible payment plans. Our packages include classroom coaching, study material, mock tests, physical training, and optional hostel facility. Contact us for the latest fee structure and available discounts."
+        answer: "At Pathfinder Defence Academy, we offer affordable NDA coaching with flexible installment plans and merit scholarships. Our packages include complete classroom coaching, specialized study material, regular mock tests, physical conditioning, GTO obstacle ground access, and optional residential hostel facilities. Contact our admissions desk for the latest fee structure and available discounts."
     },
     {
         question: "What is the difference between NDA and CDS?",
@@ -40,7 +40,7 @@ const faqs = [
     },
     {
         question: "Does PFDA provide hostel facility for defence coaching?",
-        answer: "Yes, Path Finder Defence Academy provides separate hostel facilities for boys and girls with 24/7 security, nutritious meals, and a disciplined environment. Our hostels are located close to the academy campus in Lucknow. The residential programme includes morning physical training, structured study hours, and a regimented daily routine that mirrors the discipline of the armed forces — making us one of the few defence coaching institutes with hostel facility in Lucknow."
+        answer: "Yes, Pathfinder Defence Academy provides separate hostel facilities for boys and girls with 24/7 security, nutritious meals, and a disciplined environment. Our hostels are located close to the academy campus in Lucknow. The residential programme includes morning physical training, structured study hours, and a regimented daily routine that mirrors the discipline of the armed forces — making us one of the few defence coaching institutes with hostel facility in Lucknow."
     },
     {
         question: "How to join the Indian Army, Navy, or Air Force after 12th?",

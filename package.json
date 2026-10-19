@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node clean-out.js",
+    "postbuild": "node clean-out.js && python create-zip.py",
     "start": "next start",
     "lint": "eslint"
   },

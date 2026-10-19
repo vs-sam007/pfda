@@ -9,34 +9,41 @@ import { ArrowRight, Calendar } from "lucide-react";
 export default function Updates() {
     const recentBlogs = [
         {
-            title: "How to Crack NDA Exam in First Attempt",
-            date: "May 15, 2025",
-            slug: "/blog/how-to-crack-nda",
-            image: "/images/nda.jpeg",
-            badge: "Preparation"
+            title: "NDA Foundation Course After 10th: 2-Year Schooling + NDA Coaching Guide",
+            date: "Sep 25, 2026",
+            slug: "/blog/nda-foundation-course-after-10th",
+            image: "/images/service4.jpg",
+            badge: "Career Roadmap"
         },
         {
-            title: "NDA vs CDS — Which Defence Exam Should You Choose?",
-            date: "May 28, 2025",
-            slug: "/blog/nda-vs-cds",
-            image: "/images/gallery8.jpg",
-            badge: "Career Guide"
+            title: "NDA Medical Fitness Requirements & Physical Standards: Eyesight & Height Chart",
+            date: "Sep 20, 2026",
+            slug: "/blog/nda-medical-test-physical-fitness-guide",
+            image: "/images/pexels-kolkatarchobiwala-37134459.webp",
+            badge: "Medical Guide"
         },
         {
-            title: "Complete SSB Interview Preparation Guide",
-            date: "May 12, 2025",
+            title: "Complete SSB Interview 5-Day Selection Process & Preparation Guide",
+            date: "Aug 15, 2026",
             slug: "/blog/ssb-interview-guide",
             image: "/images/nccSSB1.jpg",
             badge: "SSB Guide"
+        },
+        {
+            title: "Sainik School & RIMC Entrance Exam Guide: Class 6 & 9 Pattern & Coaching",
+            date: "Aug 10, 2026",
+            slug: "/blog/sainik-school-rimc-entrance-exam-guide",
+            image: "/images/sainic-1.jpg",
+            badge: "School Entrance"
         }
     ];
 
     return (
         <section className="py-12 bg-[#060910]">
             <div className="container mx-auto px-4">
-                <SectionHeading title="Defence Updates" subtitle="Stay Informed" />
+                <SectionHeading title="Latest Defence Guides &amp; Resources" subtitle="Stay Informed &amp; Exam-Ready" />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {recentBlogs.map((blog, i) => (
                         <motion.div
                             key={i}
@@ -46,39 +53,52 @@ export default function Updates() {
                             transition={{ delay: i * 0.1 }}
                             className="bg-[#24332B] rounded-xl overflow-hidden border border-white/5 hover:border-gold/30 transition-all group flex flex-col"
                         >
-                            <div className="h-48 bg-gray-800 relative overflow-hidden shrink-0">
+                            <div className="h-44 bg-gray-800 relative overflow-hidden shrink-0">
                                 <Image
                                     src={blog.image}
                                     alt={blog.title}
                                     fill
                                     className="object-cover transform group-hover:scale-105 transition-transform"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                 />
-                                <div className="absolute top-4 left-4 bg-gold text-black text-xs font-bold px-3 py-1 rounded z-10">
+                                <div className="absolute top-3 left-3 bg-gold text-black text-xs font-bold px-2.5 py-1 rounded z-10">
                                     {blog.badge}
                                 </div>
                             </div>
-                            <div className="p-6 flex flex-col flex-grow">
-                                <div className="flex items-center gap-2 text-gray-400 text-xs mb-3">
+                            <div className="p-5 flex flex-col flex-grow">
+                                <div className="flex items-center gap-2 text-gray-400 text-xs mb-2">
                                     <Calendar size={14} />
                                     <span>{blog.date}</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-gold transition-colors line-clamp-2">
+                                <h3 className="text-base font-bold text-white mb-4 group-hover:text-gold transition-colors line-clamp-2">
                                     {blog.title}
                                 </h3>
-                                <div className="mt-auto pt-4 border-t border-white/5">
-                                    <Link href={blog.slug} className="text-gold text-sm font-semibold flex items-center gap-2 hover:gap-3 transition-all inline-flex">
-                                        Read More <ArrowRight size={16} />
+                                <div className="mt-auto pt-3 border-t border-white/5">
+                                    <Link href={blog.slug} className="text-gold text-xs font-bold flex items-center gap-1.5 hover:gap-2.5 transition-all inline-flex">
+                                        Read Complete Guide <ArrowRight size={14} />
                                     </Link>
                                 </div>
                             </div>
                         </motion.div>
                     ))}
                 </div>
-                
-                <div className="mt-12 text-center">
-                    <Link href="/blog" className="inline-block bg-transparent border-2 border-gold text-gold font-bold px-8 py-3 rounded hover:bg-gold hover:text-black transition-colors uppercase tracking-wider text-sm">
-                        View All Articles
+
+                {/* Quick Resource Link Pills */}
+                <div className="mt-10 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-3">
+                    <Link href="/study-material" className="bg-[#1B2620] hover:bg-gold hover:text-black text-gray-200 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-full border border-gold/30 transition-all">
+                        📚 Free Defence Study Material &amp; Notes PDF
+                    </Link>
+                    <Link href="/gallery/videos" className="bg-[#1B2620] hover:bg-gold hover:text-black text-gray-200 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-full border border-gold/30 transition-all">
+                        🎥 Academy GTO Training Videos
+                    </Link>
+                    <Link href="/courses/rms-coaching-lucknow" className="bg-[#1B2620] hover:bg-gold hover:text-black text-gray-200 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-full border border-gold/30 transition-all">
+                        🎖️ RMS Entrance Coaching Lucknow
+                    </Link>
+                    <Link href="/courses/foundation" className="bg-[#1B2620] hover:bg-gold hover:text-black text-gray-200 text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-full border border-gold/30 transition-all">
+                        🏫 NDA Foundation Course (11th &amp; 12th)
+                    </Link>
+                    <Link href="/blog" className="bg-gold text-black hover:bg-white text-xs font-black uppercase tracking-wider px-5 py-2.5 rounded-full transition-all">
+                        View All Articles &rarr;
                     </Link>
                 </div>
             </div>

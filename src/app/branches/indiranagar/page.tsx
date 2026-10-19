@@ -4,32 +4,40 @@ import { MapPin, Phone, Mail, Navigation, CheckCircle2, BookOpen } from "lucide-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "NDA Coaching in Indira Nagar Lucknow | PFDA",
-    description: "Join Path Finder Defence Academy in Indira Nagar, Lucknow. Premier NDA, CDS, AFCAT & SSB coaching institute at Uma Krishna Complex, Murari Nagar. Book free demo class.",
+    title: "Best NDA Coaching in Indira Nagar Lucknow (2026 Batches & Admissions)",
+    description: "Join Pathfinder Defence Academy in Indira Nagar, Lucknow. Premier NDA, CDS, AFCAT & SSB coaching institute at Uma Krishna Complex, Murari Nagar. Book free demo class.",
     keywords: ["NDA coaching in Indira Nagar", "defence coaching Indira Nagar Lucknow", "NDA coaching near Munshipulya", "best defence academy Indira Nagar", "PFDA Indira Nagar branch"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/branches/indiranagar" },
     openGraph: {
-        title: "NDA Coaching in Indira Nagar Lucknow | Path Finder Defence Academy",
+        title: "Best NDA Coaching in Indira Nagar Lucknow | Pathfinder Defence Academy",
         description: "Premier NDA, CDS, AFCAT & SSB coaching institute at Uma Krishna Complex, Murari Nagar, Indira Nagar, Lucknow.",
         url: "https://pathfinderdefenceacademy.com/branches/indiranagar",
         type: "website",
-        images: [{ url: "https://pathfinderdefenceacademy.com/images/classroom-2.jpg", width: 1200, height: 630, alt: "PFDA Indira Nagar Branch" }]
+        images: [{ url: "https://pathfinderdefenceacademy.com/images/classroom-2.jpg", width: 1200, height: 630, alt: "Pathfinder Defence Academy Indira Nagar Branch Lucknow" }]
     }
 };
 
 const indiranagarSchema = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Path Finder Defence Academy - Indira Nagar Branch",
+    "@type": ["LocalBusiness", "EducationalOrganization"],
+    "name": "Pathfinder Defence Academy - Indira Nagar Branch",
     "url": "https://pathfinderdefenceacademy.com/branches/indiranagar",
     "logo": "https://pathfinderdefenceacademy.com/images/logo.png",
-    "description": "Top defence coaching academy in Indira Nagar, Lucknow for NDA, CDS, AFCAT, and SSB interview preparation.",
+    "image": "https://pathfinderdefenceacademy.com/images/classroom-2.jpg",
+    "description": "Top defence coaching academy in Indira Nagar, Lucknow for NDA, CDS, AFCAT, and SSB interview preparation near Munshipulya.",
     "telephone": "+91-8115011771",
     "email": "info@pathfinderdefenceacademy.co.in",
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 08:00-20:00",
+    "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Indira Nagar" },
+        { "@type": "City", "name": "Lucknow" },
+        { "@type": "AdministrativeArea", "name": "Uttar Pradesh" }
+    ],
     "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Uma Krishna Complex, Murari Nagar",
-        "addressLocality": "Indira Nagar",
+        "streetAddress": "Uma Krishna Complex, Murari Nagar, Sector 8",
+        "addressLocality": "Indira Nagar, Lucknow",
         "addressRegion": "Uttar Pradesh",
         "postalCode": "226016",
         "addressCountry": "IN"
@@ -38,6 +46,13 @@ const indiranagarSchema = {
         "@type": "GeoCoordinates",
         "latitude": "26.8833",
         "longitude": "80.9933"
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "474",
+        "bestRating": "5",
+        "worstRating": "1"
     },
     "hasMap": "https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6"
 };
@@ -52,11 +67,11 @@ export default function IndiranagarBranchPage() {
             <main className="bg-primary min-h-screen pb-20">
                 <PageHeader
                     title="Indira Nagar Branch"
-                    subtitle="Lucknow Centre"
-                    image="/images/classroom-2.jpg"
+                    subtitle="Lucknow Centre — Trans-Gomti Campus"
+                    image="/images/pexels-estudiodelarts-4130926.webp"
                 />
 
-                <section className="container mx-auto px-4 py-16 max-w-6xl">
+                <section className="container mx-auto px-4 py-16 max-w-6xl space-y-12">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
                         
                         {/* Left 2 Cols: Branch Details & Facilities */}
@@ -64,10 +79,10 @@ export default function IndiranagarBranchPage() {
                             <div className="bg-[#1B2620]/60 border border-gold/20 rounded-2xl p-6 md:p-8 shadow-xl">
                                 <span className="text-gold font-bold uppercase tracking-widest text-xs mb-2 block">Trans-Gomti Campus</span>
                                 <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
-                                    Path Finder Defence Academy, Indira Nagar
+                                    Pathfinder Defence Academy, Indira Nagar
                                 </h2>
                                 <p className="text-gray-300 leading-relaxed mb-6">
-                                    Situated in the peaceful educational belt of Murari Nagar, Indira Nagar, this centre caters to defence aspirants from across Lucknow, Barabanki, and eastern UP districts. Equipped with state-of-the-art multimedia classrooms, individual doubt counters, and comprehensive study material, the Indira Nagar campus provides an intensive academic environment.
+                                    Situated in the peaceful educational belt of Murari Nagar, Sector 8, Indira Nagar, this centre caters to defence aspirants from across East Lucknow, Gomti Nagar, Aliganj, Mahanagar, and Barabanki. Equipped with state-of-the-art multimedia classrooms, individual doubt counters, and comprehensive study material, the Indira Nagar campus provides an intensive academic environment.
                                 </p>
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-white/10">
@@ -97,22 +112,22 @@ export default function IndiranagarBranchPage() {
                                 </h3>
                                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm font-semibold">
                                     <Link href="/courses/nda" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        NDA Coaching
+                                        NDA Written Exam
                                     </Link>
-                                    <Link href="/courses/nda-foundation-course-lucknow" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        NDA Foundation Course
+                                    <Link href="/courses/foundation" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
+                                        NDA Foundation (11/12)
                                     </Link>
                                     <Link href="/courses/cds" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        CDS Exam Preparation
+                                        CDS Examination
                                     </Link>
                                     <Link href="/courses/afcat" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        AFCAT Classes
+                                        AFCAT Coaching
                                     </Link>
                                     <Link href="/courses/ssb-interview-coaching-lucknow" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        SSB Personality Grooming
+                                        SSB Interview (5-Day)
                                     </Link>
                                     <Link href="/courses/sainik-school-coaching-lucknow" className="p-3 bg-white/5 rounded-lg border border-white/5 text-gray-200 hover:border-gold hover:text-gold transition-colors text-center">
-                                        Sainik / RMS School
+                                        Sainik / RIMC
                                     </Link>
                                 </div>
                             </div>
@@ -130,7 +145,7 @@ export default function IndiranagarBranchPage() {
                                     <div>
                                         <p className="font-semibold text-white mb-1">Campus Address</p>
                                         <p className="leading-relaxed">
-                                            Uma Krishna Complex, Murari Nagar, Lucknow, Uttar Pradesh - 226016
+                                            Uma Krishna Complex, Murari Nagar, Sector 8, Indira Nagar, Lucknow, UP 226016
                                         </p>
                                     </div>
                                 </div>
@@ -187,6 +202,42 @@ export default function IndiranagarBranchPage() {
                         </div>
 
                     </div>
+
+                    {/* Embedded Google Maps Section */}
+                    <div className="bg-[#1B2620] border border-gold/20 rounded-2xl p-6 md:p-8 shadow-2xl space-y-4">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <h3 className="text-2xl font-bold text-white flex items-center gap-2">
+                                    <MapPin className="text-gold w-6 h-6" /> Location on Google Maps — Indira Nagar Campus
+                                </h3>
+                                <p className="text-gray-300 text-sm mt-1">
+                                    Uma Krishna Complex, Murari Nagar, Sector 8, Indira Nagar, Lucknow — Near Munshipulia &amp; Polytechnic Chauraha.
+                                </p>
+                            </div>
+                            <a
+                                href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gold hover:bg-yellow-500 text-black font-bold text-xs px-4 py-2 rounded-lg shrink-0 transition-colors"
+                            >
+                                Open in Google Maps App ↗
+                            </a>
+                        </div>
+                        <div className="relative w-full h-[400px] rounded-xl overflow-hidden border border-white/10 shadow-inner">
+                            <iframe
+                                title="Pathfinder Defence Academy Indira Nagar Branch Campus Google Map"
+                                src="https://maps.google.com/maps?q=26.8833,80.9933&hl=en&z=16&output=embed"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen={false}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+                    </div>
+
                 </section>
             </main>
         </>

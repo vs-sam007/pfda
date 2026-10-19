@@ -13,16 +13,17 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div>
                     <div className="flex items-center gap-2 mb-6">
-                        <div className="relative w-12 h-12">
+                        <div className="relative w-12 h-12 flex-shrink-0" style={{ width: 48, height: 48 }}>
                             <Image
-                                src="/images/logo.png"
+                                src="/images/logo.webp"
                                 alt="PFDA Logo"
-                                fill
-                                className="object-contain mix-blend-screen"
+                                width={48}
+                                height={48}
+                                className="w-12 h-12 object-contain mix-blend-screen"
                             />
                         </div>
                         <div className="flex flex-col">
-                            <span className="font-bold text-lg leading-none text-white">PATH FINDER</span>
+                            <span className="font-bold text-lg leading-none text-white">PATHFINDER</span>
                             <span className="text-xs font-bold tracking-[0.2em] text-gold">DEFENCE ACADEMY</span>
                         </div>
                     </div>
@@ -45,9 +46,12 @@ export default function Footer() {
                     <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-gold pl-3">Quick Links</h3>
                     <ul className="space-y-3">
                         <li><Link href="/about" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>About Us</Link></li>
-                        <li><Link href="/gallery/photos" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Gallery</Link></li>
-                        <li><Link href="/results" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Success Stories</Link></li>
                         <li><Link href="/branches" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Our Branches</Link></li>
+                        <li><Link href="/blog" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Defence Blog</Link></li>
+                        <li><Link href="/study-material" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Study Material PDF</Link></li>
+                        <li><Link href="/gallery/photos" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Photo Gallery</Link></li>
+                        <li><Link href="/gallery/videos" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Video Gallery</Link></li>
+                        <li><Link href="/results" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Success Stories</Link></li>
                         <li><Link href="/contact" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Contact Us</Link></li>
                     </ul>
                 </div>
@@ -56,10 +60,12 @@ export default function Footer() {
                 <div>
                     <h3 className="text-xl font-bold mb-6 text-white border-l-4 border-gold pl-3">Our Courses</h3>
                     <ul className="space-y-3">
-                        <li><Link href="/courses/nda" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>NDA</Link></li>
-                        <li><Link href="/courses/cds" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>CDS</Link></li>
+                        <li><Link href="/courses/nda" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>NDA Written Coaching</Link></li>
+                        <li><Link href="/courses/foundation" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>NDA Foundation (11th &amp; 12th)</Link></li>
+                        <li><Link href="/courses/cds" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>CDS Coaching</Link></li>
+                        <li><Link href="/courses/ssb-interview-coaching-lucknow" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>SSB Interview Prep</Link></li>
                         <li><Link href="/courses/afcat" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>AFCAT</Link></li>
-                        <li><Link href="/courses/ssb-interview-coaching-lucknow" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>SSB Interview</Link></li>
+                        <li><Link href="/courses/rms-coaching-lucknow" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>RMS Coaching</Link></li>
                         <li><Link href="/courses/agniveer" className="hover:text-gold transition-colors flex items-center gap-2"><span className="w-1.5 h-1.5 bg-gold rounded-full"></span>Agniveer</Link></li>
                     </ul>
                 </div>
@@ -114,7 +120,7 @@ export default function Footer() {
 
             <div className="container mx-auto px-4 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-neutral-500 text-sm">
                 <div className="text-center md:text-left">
-                    <p className="mb-2">&copy; {new Date().getFullYear()} Path Finder Defence Academy. All rights reserved.</p>
+                    <p className="mb-2">&copy; {new Date().getFullYear()} Pathfinder Defence Academy. All rights reserved.</p>
                     <p className="text-xs text-neutral-600">Defence Academy near Alambagh, Indiranagar, Lucknow, Uttar Pradesh</p>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 text-xs">

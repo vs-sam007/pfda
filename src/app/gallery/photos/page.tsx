@@ -32,7 +32,7 @@ export default function GalleryPage() {
             <PageHeader
                 title="Life at PFDA"
                 subtitle="Training, Discipline & Glory"
-                image="/images/CAPF-2020-1.webp"
+                image="/images/bg.webp"
             />
 
             <section className="container mx-auto px-4 py-20">

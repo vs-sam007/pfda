@@ -6,23 +6,37 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Best Sainik School Coaching in Lucknow (Class 6 & 9) | PFDA",
-    description: "Expert AISSEE & Sainik School entrance coaching in Lucknow for Class 6 & 9. Top success rate, hostel facilities at Alambagh & Indira Nagar. Enroll today.",
-    keywords: ["Sainik School coaching in Lucknow", "AISSEE coaching Lucknow", "Sainik School entrance classes near me", "Sainik School class 6 coaching Lucknow", "Sainik School class 9 coaching Lucknow"],
+    title: "Sainik School Coaching in Lucknow Alambagh: Class 6 & 9 AISSEE 2026",
+    description: "Best Sainik School coaching in Lucknow Alambagh for Class 6 & 9 AISSEE entrance. 1000+ selections, expert mentors, OMR test series & hostel. Call 07505188009.",
+    keywords: ["Sainik School coaching in Lucknow", "Sainik School coaching Alambagh", "AISSEE coaching Lucknow", "Sainik School entrance classes Lucknow", "best Sainik School coaching Lucknow", "Sainik School class 6 coaching Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/sainik-school-coaching-lucknow" },
 };
 
 export default function SainikSchoolCoachingPage() {
+    const courseJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Sainik School Entrance Exam Coaching Lucknow Alambagh",
+        "description": "Comprehensive All India Sainik Schools Entrance Examination (AISSEE) coaching for Class 6 and Class 9 admissions at Pathfinder Defence Academy Lucknow.",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Pathfinder Defence Academy",
+            "url": "https://pathfinderdefenceacademy.com"
+        },
+        "courseMode": "In-Person Classroom and Boarding",
+        "educationalCredentialAwarded": "AISSEE Class 6 & 9 Sainik School Entrance Qualification"
+    };
+
     const faqJsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is the age limit for Sainik School Class 6 admission?",
+                "name": "What is the age limit for Sainik School Class 6 and Class 9 admission?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "AISSEE eligibility age brackets are notified each year for both Class 6 and Class 9 entry. Our mentors can walk you through the current-year criteria in detail."
+                    "text": "For Class 6 admission, candidate age must be 10 to 12 years (boys and girls). For Class 9, candidate age must be 13 to 15 years as of 31st March of the admission year."
                 }
             },
             {
@@ -30,39 +44,31 @@ export default function SainikSchoolCoachingPage() {
                 "name": "What is the AISSEE exam pattern and syllabus?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "AISSEE for Class 6 covers Mathematics, Language, Intelligence, and General Knowledge, while Class 9 covers Mathematics, English, Intelligence, General Science, and Social Science. Our coaching program is structured around these exact patterns."
+                    "text": "Class 6 AISSEE is a 300-mark OMR exam covering Mathematics (150), Intelligence (50), Language (50), and GK (50). Class 9 is a 400-mark exam covering Maths (200), Intelligence (50), English (50), General Science (50), and Social Studies (50)."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What are the medical and physical fitness requirements for Sainik School?",
+                "name": "Where is Pathfinder Defence Academy Sainik School coaching centre located in Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sainik School admission includes specific medical and physical fitness standards, which candidates must meet at the time of admission. We guide families through these requirements as part of our coaching program."
+                    "text": "Our head campus is at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. We also have a branch at Sector 8, Indira Nagar, Lucknow."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How do I apply for Sainik School admission from Lucknow?",
+                "name": "Do you provide hostel facilities for Sainik School students?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Applications for AISSEE are submitted online through the official Sainik Schools admission portal during the notified application window. Our team can guide you through the process alongside your coaching."
+                    "text": "Yes, we provide fully-furnished residential hostels with 24/7 warden supervision, hygienic mess food, daily physical PT, and supervised evening study hours at our Alambagh campus."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What is the fee structure for Sainik School coaching at Pathfinder Defence Academy?",
+                "name": "Does Pathfinder prepare for both All India Sainik Schools and UP Sainik School Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Fees vary by class level and batch type. Please contact our Alambagh or Indira Nagar centre for current details."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the difference between UP Sainik School and All India Sainik School entrance?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Admission to Sainik Schools across India, including the UP Sainik School, is conducted through the same AISSEE exam, with seats allocated state-wise. Our coaching prepares students for this common entrance process."
+                    "text": "Yes, we provide targeted preparation for both the NTA AISSEE exam (33+ All India Sainik Schools) and the independent UP Sainik School Lucknow entrance exam."
                 }
             }
         ]
@@ -72,28 +78,61 @@ export default function SainikSchoolCoachingPage() {
         <main className="bg-primary min-h-screen pb-20">
             <script
                 type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
             
             <PageHeader 
                 title="Sainik School Coaching" 
-                subtitle="Expert Entrance Preparation for Class 6 & Class 9" 
+                subtitle="Expert Entrance Preparation for Class 6 & Class 9 | Alambagh & Indira Nagar" 
                 image="/images/sainic-1.jpg" 
             />
 
             <section className="container mx-auto px-4 py-16">
                 <div className="max-w-4xl mx-auto">
                     
+                    {/* AEO Crisp Summary Paragraph Box */}
+                    <div className="mb-10 p-6 rounded-2xl bg-[#24332B] border-2 border-gold/40 shadow-lg">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="inline-block w-2.5 h-2.5 rounded-full bg-gold animate-pulse"></span>
+                            <span className="text-xs uppercase font-bold tracking-widest text-gold">Course Overview</span>
+                        </div>
+                        <p className="text-gray-200 text-lg leading-relaxed font-medium">
+                            Pathfinder Defence Academy offers top-rated Sainik School (AISSEE) coaching in Lucknow at Alambagh and Indira Nagar for Class 6 and Class 9 aspirants. We provide rigorous coverage of Mathematics, Intelligence, Language, and General Science, combined with weekly OMR mock tests, physical fitness guidance, and residential hostel facilities in Alambagh.
+                        </p>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-white/10 text-center">
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Class 6 & 9</span>
+                                <span className="text-xs text-gray-300">AISSEE Batches</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">1000+</span>
+                                <span className="text-xs text-gray-300">Total Selections</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Hostel + Mess</span>
+                                <span className="text-xs text-gray-300">In Alambagh</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Alambagh</span>
+                                <span className="text-xs text-gray-300">Head Campus</span>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* H1 Section */}
                     <div className="mb-12">
                         <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Best Sainik School Entrance Coaching in Lucknow — Class 6 & Class 9
+                            Best Sainik School Entrance Coaching in Lucknow Alambagh — Class 6 & Class 9
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed mb-4">
                             Sainik Schools give students a disciplined, structured foundation from a young age — and for many, it's the first real step toward the National Defence Academy (NDA) and a career in the armed forces. Admission happens through AISSEE (All India Sainik Schools Entrance Exam), a competitive test conducted for Class 6 and Class 9 entry.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            At Pathfinder Defence Academy, our Sainik School coaching in Lucknow prepares students for both entry levels, with structured batches, regular mock tests, and mentors who understand exactly what AISSEE demands — both academically and beyond.
+                            At Pathfinder Defence Academy, our Sainik School coaching in Lucknow prepares students for both entry levels, with structured batches, regular mock tests, and mentors who understand exactly what AISSEE demands — both academically and beyond at our Alambagh centre (Opp. Singar Nagar Metro).
                         </p>
                     </div>
 
@@ -186,16 +225,15 @@ export default function SainikSchoolCoachingPage() {
                         <SectionHeading title="Frequently Asked Questions" alignment="left" />
                         <div className="space-y-6 mt-8">
                             {[
-                                { q: "What is the age limit for Sainik School Class 6 admission?", a: "AISSEE eligibility age brackets are notified each year for both Class 6 and Class 9 entry. Our mentors can walk you through the current-year criteria in detail." },
-                                { q: "What is the AISSEE exam pattern and syllabus?", a: "AISSEE for Class 6 covers Mathematics, Language, Intelligence, and General Knowledge, while Class 9 covers Mathematics, English, Intelligence, General Science, and Social Science. Our coaching program is structured around these exact patterns." },
-                                { q: "What are the medical and physical fitness requirements for Sainik School?", a: "Sainik School admission includes specific medical and physical fitness standards, which candidates must meet at the time of admission. We guide families through these requirements as part of our coaching program." },
-                                { q: "How do I apply for Sainik School admission from Lucknow?", a: "Applications for AISSEE are submitted online through the official Sainik Schools admission portal during the notified application window. Our team can guide you through the process alongside your coaching." },
-                                { q: "What is the fee structure for Sainik School coaching at Pathfinder Defence Academy?", a: "Fees vary by class level and batch type. Please contact our Alambagh or Indira Nagar centre for current details." },
-                                { q: "What is the difference between UP Sainik School and All India Sainik School entrance?", a: "Admission to Sainik Schools across India, including the UP Sainik School, is conducted through the same AISSEE exam, with seats allocated state-wise. Our coaching prepares students for this common entrance process." }
+                                { q: "What is the age limit for Sainik School Class 6 and Class 9 admission?", a: "For Class 6 admission, candidate age must be 10 to 12 years (boys and girls). For Class 9, candidate age must be 13 to 15 years as of 31st March of the admission year." },
+                                { q: "What is the AISSEE exam pattern and syllabus?", a: "Class 6 AISSEE is a 300-mark OMR exam covering Mathematics (150), Intelligence (50), Language (50), and GK (50). Class 9 is a 400-mark exam covering Maths (200), Intelligence (50), English (50), General Science (50), and Social Studies (50)." },
+                                { q: "Where is Pathfinder Defence Academy Sainik School coaching centre located in Lucknow?", a: "Our head campus is at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. We also have a branch at Sector 8, Indira Nagar, Lucknow." },
+                                { q: "Do you provide hostel facilities for Sainik School students?", a: "Yes, we provide fully-furnished residential hostels with 24/7 warden supervision, hygienic mess food, daily physical PT, and supervised evening study hours at our Alambagh campus." },
+                                { q: "Does Pathfinder prepare for both All India Sainik Schools and UP Sainik School Lucknow?", a: "Yes, we provide targeted preparation for both the NTA AISSEE exam (33+ All India Sainik Schools) and the independent UP Sainik School Lucknow entrance exam." }
                             ].map((faq, index) => (
                                 <div key={index} className="bg-[#24332B] p-6 rounded-lg">
                                     <h3 className="text-lg font-bold text-white mb-2">{faq.q}</h3>
-                                    <p className="text-gray-400">{faq.a}</p>
+                                    <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                                 </div>
                             ))}
                         </div>

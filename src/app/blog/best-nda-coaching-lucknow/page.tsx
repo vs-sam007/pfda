@@ -2,22 +2,65 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Best NDA Coaching in Lucknow — Why PFDA Leads the Way | Path Finder Defence Academy",
-    description: "Discover why Path Finder Defence Academy is rated the best NDA coaching in Lucknow. Affordable fees, expert faculty, hostel facility, physical training & 1000+ selections. Top defence coaching institute in Uttar Pradesh.",
-    keywords: ["best NDA coaching in Lucknow", "best NDA coaching institute for beginners", "top defence coaching institute in Uttar Pradesh", "affordable NDA coaching in Lucknow", "NDA coaching with physical training", "defence coaching with hostel facility"],
+    title: "Best NDA Coaching in Lucknow 2026: Why 1000+ Aspirants Choose Alambagh Campus",
+    description: "Looking for the best NDA coaching in Lucknow Alambagh? Discover 1000+ selections, ex-defence mentors, full SSB GTO ground & hostel facility. Call 07505188009.",
+    keywords: ["best NDA coaching in Lucknow", "NDA coaching in Lucknow Alambagh", "best NDA coaching in Alambagh Lucknow", "top defence academy in Lucknow", "NDA coaching with hostel Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/best-nda-coaching-lucknow" },
 };
 
 export default function BestNDACoachingLucknow() {
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Which is the best NDA coaching in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pathfinder Defence Academy in Alambagh, Lucknow is widely rated the best NDA coaching institute due to its 1000+ selections, ex-defence officer faculty, dedicated outdoor SSB GTO ground, and integrated hostel facilities."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the fees for NDA coaching in Lucknow at Pathfinder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "NDA coaching fees at Pathfinder Defence Academy are structured affordably with transparent installment options and merit scholarships. Please contact our admissions desk at +91 75051 88009 for the latest batch fee details."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is hostel facility available for outstation NDA students in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Pathfinder Defence Academy provides separate residential hostels for boys and girls in Alambagh, Lucknow with 24/7 security, nutritious meals, and disciplined evening study schedules."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Pathfinder Defence Academy located in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The head campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. Contact: 07505188009."
+                }
+            }
+        ]
+    };
+
     return (
         <BlogArticle
-            title="Best NDA Coaching in Lucknow — Why PFDA Leads"
+            title="Best NDA Coaching in Lucknow — Why PFDA Leads in 2026"
             date="June 15, 2025"
             readTime="8 min"
             heroImage="/images/Pathfinderimg.JPG"
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
             <p>
-                Choosing the right coaching institute can make or break your defence career. If you are searching for the <strong>best NDA coaching in Lucknow</strong>, Path Finder Defence Academy (PFDA) stands out as the top choice — and for good reason. With 15+ years of legacy, 1000+ successful selections, and a team of ex-defence mentors, PFDA has established itself as the <strong>top defence coaching institute in Uttar Pradesh</strong>.
+                Choosing the right coaching institute can make or break your defence career. If you are searching for the <strong>best NDA coaching in Lucknow Alambagh</strong>, Pathfinder Defence Academy (PFDA) stands out as the top choice — and for good reason. With 15+ years of legacy, 1000+ successful selections, and a team of ex-defence mentors, PFDA has established itself as the <strong>top defence coaching institute in Uttar Pradesh</strong>.
             </p>
 
             <h2>What Makes PFDA the Best NDA Coaching Institute?</h2>
@@ -52,21 +95,49 @@ export default function BestNDACoachingLucknow() {
                 If you are new to defence preparation, PFDA is the <strong>best NDA coaching institute for beginners</strong>. We start from the basics, build your foundation gradually, and ensure no student is left behind. Our Foundation course for Class 11th and 12th students is specifically designed for early starters.
             </p>
 
-            <h2>Location Advantage</h2>
+            <h2>Location Advantage: Alambagh Lucknow Head Campus</h2>
             <p>
-                PFDA has two centres in Lucknow — Alambagh and Indiranagar — making it easily accessible. We are the most conveniently located <strong>defence coaching institute in Lucknow</strong> and the wider <strong>North India</strong> region.
+                PFDA operates its flagship campus in Alambagh (opposite Singar Nagar Metro Station) and a branch in Indira Nagar, making it the most accessible and connected <strong>defence coaching institute in Lucknow</strong>.
             </p>
 
             <h2>Our Track Record</h2>
             <ul>
                 <li><strong>1000+ selections</strong> in NDA, CDS, AFCAT, and other defence exams</li>
                 <li><strong>5000+ students trained</strong> across 15+ years</li>
-                <li><strong>Expert SSB panel</strong> with ex-psychologists and GTOs from actual SSBs</li>
+                <li><strong>Dedicated outdoor GTO ground</strong> at Alambagh for real obstacle practice</li>
                 <li><strong>2 centres</strong> in Lucknow with modern infrastructure</li>
             </ul>
 
-            <p>
-                When it comes to <strong>best NDA coaching in Lucknow</strong>, Path Finder Defence Academy is the clear choice. Visit us for a free demo class and experience the PFDA difference yourself.
+            <h2 className="mt-12 text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Which is the best NDA coaching in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Pathfinder Defence Academy in Alambagh, Lucknow is widely rated the best NDA coaching institute due to its 1000+ selections, ex-defence officer faculty, dedicated outdoor SSB GTO ground, and integrated hostel facilities.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">What are the fees for NDA coaching in Lucknow at Pathfinder?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        NDA coaching fees at Pathfinder Defence Academy are structured affordably with transparent installment options and merit scholarships. Please contact our admissions desk at +91 75051 88009 for the latest batch fee details.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Is hostel facility available for outstation NDA students in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Yes, Pathfinder Defence Academy provides separate residential hostels for boys and girls in Alambagh, Lucknow with 24/7 security, nutritious meals, and disciplined evening study schedules.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Where is Pathfinder Defence Academy located in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        The head campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. Contact: 07505188009.
+                    </p>
+                </div>
+            </div>
+
+            <p className="mt-8">
+                When it comes to <strong>best NDA coaching in Lucknow</strong>, Pathfinder Defence Academy is the clear choice. Visit us for a free demo class and experience the PFDA difference yourself.
             </p>
         </BlogArticle>
     );

@@ -2,12 +2,12 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sainik School & RIMC Entrance Exam Guide: Class 6 & 9 Pattern, Syllabus & Coaching | PFDA",
-    description: "Complete preparation guide for Sainik School (AISSEE) & RIMC Dehradun entrance exams for Class 6 & 9. Check age limits, exam pattern, syllabus, marking scheme & coaching in Lucknow at Path Finder Defence Academy.",
+    title: "Sainik School & RIMC Entrance Guide 2026: Class 6 & 9 Syllabus, Pattern & Coaching",
+    description: "Complete 2026 guide for Sainik School (AISSEE) & RIMC Dehradun entrance exams. Class 6 & 9 eligibility, syllabus, marking scheme & coaching in Lucknow Alambagh.",
     keywords: [
-        "Sainik school entrance exam guide",
-        "AISSEE preparation Lucknow",
-        "RIMC coaching in Lucknow",
+        "Sainik school entrance exam guide 2026",
+        "AISSEE preparation Lucknow Alambagh",
+        "RIMC coaching in Lucknow Alambagh",
         "best Sainik school coaching in Lucknow",
         "Sainik school eligibility class 6 and 9",
         "AISSEE syllabus and exam pattern",
@@ -34,12 +34,12 @@ const jsonLdData = {
             "dateModified": "2026-09-05T09:00:00+05:30",
             "author": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "url": "https://pathfinderdefenceacademy.com"
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "logo": {
                     "@type": "ImageObject",
                     "url": "https://pathfinderdefenceacademy.com/images/logo.png"
@@ -56,7 +56,7 @@ const jsonLdData = {
                     "name": "What is the age limit for Sainik School Class 6 and Class 9 admission?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "For Class 6 admission in Sainik School, a candidate must be between 10 and 12 years of age as of 31st March of the admission year. For Class 9, candidates must be between 13 and 15 years of age and currently studying in Class 8th."
+                        "text": "For Class 6 admission in Sainik School, a candidate must be between 10 and 12 years of age as of 31st March of the admission year. For Class 9, candidates must be between 13 and 15 years of age and studying in Class 8th."
                     }
                 },
                 {
@@ -72,7 +72,7 @@ const jsonLdData = {
                     "name": "How is RIMC Dehradun different from Sainik Schools?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Rashtriya Indian Military College (RIMC) Dehradun is an elite premier feeder institution directly under the Ministry of Defence with only 25 seats per term across the entire country. Sainik Schools are managed by the Sainik Schools Society across various states with broader intake."
+                        "text": "Rashtriya Indian Military College (RIMC) Dehradun is an elite institution directly under the Ministry of Defence with only 25 seats per term nationwide for Class 8 entry, while Sainik Schools comprise 33+ state schools with larger intake."
                     }
                 },
                 {
@@ -80,15 +80,15 @@ const jsonLdData = {
                     "name": "What subjects carry the maximum weightage in AISSEE Class 6?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "In the AISSEE Class 6 written exam, Mathematics carries the highest weightage — 150 marks out of a total of 300 marks (50 questions of 3 marks each). General Knowledge, Language, and Intelligence test carry 50 marks each."
+                        "text": "In the AISSEE Class 6 written exam, Mathematics carries the highest weightage — 150 marks out of a total of 300 marks (50 questions of 3 marks each). General Knowledge, Language, and Intelligence tests carry 50 marks each."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Why is classroom coaching recommended for Sainik School & RIMC entrance exams?",
+                    "name": "Where is the best Sainik School coaching institute in Lucknow?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Given the intense competition with negative marking and strict age cutoffs, specialized coaching at Path Finder Defence Academy helps young children master calculation speed, OMR accuracy, mental ability shortcuts, and English grammar fundamentals under Ex-Defence mentors."
+                        "text": "Pathfinder Defence Academy at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow is the top-ranked coaching institute for Sainik School, RMS, and RIMC exams with full hostel facilities. Call: 07505188009."
                     }
                 }
             ]
@@ -118,7 +118,7 @@ export default function SainikSchoolRimcEntranceExamGuide() {
                 heroImage="/images/sainic-1.jpg"
             >
                 <p>
-                    Every parent dreams of providing their child with a foundation that nurtures academic excellence, unshakeable discipline, physical robustness, and leadership character. When it comes to grooming future officers for the Indian Armed Forces, no educational institutions hold a higher stature than <strong>Sainik Schools, Rashtriya Military Schools (RMS), and the prestigious Rashtriya Indian Military College (RIMC), Dehradun</strong>. In this comprehensive guide, Path Finder Defence Academy — the premier <a href="/courses/sainik-school-coaching-lucknow">Sainik School coaching in Lucknow</a> — breaks down everything parents and young aspirants need to know about exam patterns, eligibility, syllabus, and preparation strategies.
+                    Every parent dreams of providing their child with a foundation that nurtures academic excellence, unshakeable discipline, physical robustness, and leadership character. When it comes to grooming future officers for the Indian Armed Forces, no educational institutions hold a higher stature than <strong>Sainik Schools, Rashtriya Military Schools (RMS), and the prestigious Rashtriya Indian Military College (RIMC), Dehradun</strong>. In this comprehensive guide, Pathfinder Defence Academy — the premier <a href="/courses/sainik-school-coaching-lucknow">Sainik School coaching in Lucknow</a> — breaks down everything parents and young aspirants need to know about exam patterns, eligibility, syllabus, and preparation strategies.
                 </p>
 
                 <h2>Why Target Sainik Schools and RIMC Early?</h2>
@@ -175,7 +175,7 @@ export default function SainikSchoolRimcEntranceExamGuide() {
                     <li><strong>Physical Activity:</strong> 45 minutes of outdoor games, running, and swimming daily keeps children energetic, focused, and medically fit.</li>
                 </ul>
 
-                <h2>Why Choose Path Finder Defence Academy for Sainik &amp; RIMC Coaching?</h2>
+                <h2>Why Choose Pathfinder Defence Academy for Sainik &amp; RIMC Coaching?</h2>
                 <p>
                     Located centrally in Lucknow with branches at <a href="/branches/alambagh">Alambagh</a> and <a href="/branches/indiranagar">Indiranagar</a>, PFDA runs dedicated Junior Wing batches for AISSEE, RIMC, and RMS exams. Our programme features:
                 </p>
@@ -186,9 +186,47 @@ export default function SainikSchoolRimcEntranceExamGuide() {
                     <li>Safe, disciplined hostel facilities with supervised night study hours for outstation students.</li>
                 </ul>
 
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <div className="space-y-6">
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">What is the age limit for Sainik School Class 6 and Class 9 admission?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            For Class 6 admission in Sainik School, a candidate must be between 10 and 12 years of age as of 31st March of the admission year. For Class 9, candidates must be between 13 and 15 years of age and studying in Class 8th.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Can girls apply for Sainik School entrance exam (AISSEE)?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Yes, girls are fully eligible to apply for Class 6 admission across all 33 Sainik Schools in India under the All India Sainik Schools Entrance Examination (AISSEE).
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">How is RIMC Dehradun different from Sainik Schools?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Rashtriya Indian Military College (RIMC) Dehradun is an elite institution directly under the Ministry of Defence with only 25 seats per term nationwide for Class 8 entry, while Sainik Schools comprise 33+ state schools with larger intake.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">What subjects carry the maximum weightage in AISSEE Class 6?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            In the AISSEE Class 6 written exam, Mathematics carries the highest weightage — 150 marks out of a total of 300 marks (50 questions of 3 marks each). General Knowledge, Language, and Intelligence tests carry 50 marks each.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Where is the best Sainik School coaching institute in Lucknow?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Pathfinder Defence Academy at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow is the top-ranked coaching institute for Sainik School, RMS, and RIMC exams with full hostel facilities. Call: 07505188009.
+                        </p>
+                    </div>
+                </div>
+
                 <h2>Conclusion: Give Your Child the Head Start They Deserve</h2>
                 <p>
-                    Admitting your child into a Sainik School or RIMC is the greatest gift of character and discipline a parent can provide. Start early, prepare with the right mentors, and pave their way to wearing the proud uniform of an officer in the Indian Armed Forces. Visit Path Finder Defence Academy in Lucknow or <a href="/contact">contact our admissions desk</a> today for a free diagnostic assessment.
+                    Admitting your child into a Sainik School or RIMC is the greatest gift of character and discipline a parent can provide. Start early, prepare with the right mentors, and pave their way to wearing the proud uniform of an officer in the Indian Armed Forces. Visit Pathfinder Defence Academy in Alambagh, Lucknow or <a href="/contact">contact our admissions desk</a> today for a free diagnostic assessment.
                 </p>
             </BlogArticle>
         </>

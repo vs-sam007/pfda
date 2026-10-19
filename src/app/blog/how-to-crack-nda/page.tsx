@@ -2,22 +2,65 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "How to Crack NDA Exam in First Attempt — Complete Guide 2025 | PFDA",
-    description: "Learn how to crack the NDA exam in first attempt. Complete NDA syllabus, exam pattern, NDA maths preparation strategy, GAT tips, previous year questions analysis & cutoff marks — by Path Finder Defence Academy Lucknow.",
-    keywords: ["how to crack NDA exam", "NDA syllabus", "NDA exam pattern", "NDA maths preparation", "NDA GAT preparation", "NDA previous year questions", "NDA cutoff marks"],
+    title: "How to Crack NDA in First Attempt (2026 Strategy): 6-Month Study Plan & Cutoff",
+    description: "Step-by-step roadmap to crack NDA 2026 in your first attempt. Master Maths (300 marks), GAT (600 marks), cutoff analysis & 6-month timetable by top Lucknow mentors.",
+    keywords: ["how to crack NDA exam in first attempt", "NDA 2026 strategy", "NDA maths preparation tips", "NDA cutoff marks 2026", "NDA coaching in Lucknow Alambagh"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/how-to-crack-nda" },
 };
 
 export default function HowToCrackNDA() {
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can I crack the NDA exam in my first attempt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, candidates can crack NDA in their first attempt with 4 to 6 months of disciplined preparation, daily practice of Class 11 and 12 Maths formulas, and systematic coverage of NCERT for General Ability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the minimum cutoff score to qualify for NDA written exam?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The UPSC NDA written exam cutoff generally ranges between 345 and 365 marks out of 900, with a mandatory minimum 20% to 25% sectional cutoff in both Mathematics and GAT."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many hours should I study daily to crack NDA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A dedicated 5 to 7 hours of daily study—divided into 3 hours of Mathematics problem-solving, 2 hours of English and GS reading, and 1 hour of current affairs—is optimal for clearing NDA."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I join the best NDA coaching in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pathfinder Defence Academy at Alambagh (opposite Singar Nagar Metro Station) and Indira Nagar offers top-ranked NDA classroom batches with hostel and physical training. Call: 07505188009."
+                }
+            }
+        ]
+    };
+
     return (
         <BlogArticle
-            title="How to Crack NDA Exam in First Attempt"
+            title="How to Crack NDA Exam in First Attempt (2026 Strategy)"
             date="June 20, 2025"
             readTime="12 min"
             heroImage="/images/nda.jpeg"
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
             <p>
-                The National Defence Academy (NDA) exam, conducted by UPSC twice a year, is the gateway to a prestigious career in the Indian Army, Navy, and Air Force. Every year, lakhs of aspirants appear for this exam, but only a few thousand make it through. If you are wondering <strong>how to crack NDA exam in first attempt</strong>, this comprehensive guide from Path Finder Defence Academy — the best NDA coaching in Lucknow — will give you a clear roadmap.
+                The National Defence Academy (NDA) exam, conducted by UPSC twice a year, is the gateway to a prestigious career in the Indian Army, Navy, and Air Force. Every year, lakhs of aspirants appear for this exam, but only a few thousand make it through. If you are wondering <strong>how to crack NDA exam in first attempt</strong>, this comprehensive guide from Pathfinder Defence Academy — the best NDA coaching in Lucknow Alambagh — will give you a clear roadmap.
             </p>
 
             <h2>Understanding the NDA Exam Pattern</h2>
@@ -65,7 +108,7 @@ export default function HowToCrackNDA() {
                 <li>You can estimate your score against <strong>NDA cutoff marks</strong></li>
             </ul>
             <p>
-                At Path Finder Defence Academy, we provide students with the last 10 years of NDA previous year papers along with detailed solutions and topic-wise analysis.
+                At Pathfinder Defence Academy, we provide students with the last 10 years of NDA previous year papers along with detailed solutions and topic-wise analysis.
             </p>
 
             <h2>NDA Cutoff Marks — What Score Do You Need?</h2>
@@ -88,10 +131,38 @@ export default function HowToCrackNDA() {
                 <li><strong>Month 6:</strong> Intensive revision and daily mock tests. Focus on speed and accuracy. Stay updated with last-minute current affairs.</li>
             </ul>
 
-            <h2>Why Choose Path Finder Defence Academy for NDA Coaching?</h2>
+            <h2>Why Choose Pathfinder Defence Academy for NDA Coaching?</h2>
             <p>
-                Path Finder Defence Academy is the <strong>best NDA coaching in Lucknow</strong> with 15+ years of experience and 1000+ selections. Our NDA coaching programme includes expert faculty (M.Tech, Ph.D. qualified), daily practice tests, comprehensive study material, physical training, and complete SSB preparation — all under one roof. Whether you are a beginner or a repeater, our structured approach ensures you crack the NDA exam with confidence.
+                Pathfinder Defence Academy is the <strong>best NDA coaching in Lucknow Alambagh</strong> with 15+ years of experience and 1000+ selections. Our NDA coaching programme includes expert faculty (M.Tech, Ph.D. qualified), daily practice tests, comprehensive study material, physical training, and complete SSB preparation — all under one roof. Whether you are a beginner or a repeater, our structured approach ensures you crack the NDA exam with confidence.
             </p>
+
+            <h2 className="mt-12 text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Can I crack the NDA exam in my first attempt?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Yes, candidates can crack NDA in their first attempt with 4 to 6 months of disciplined preparation, daily practice of Class 11 and 12 Maths formulas, and systematic coverage of NCERT for General Ability.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">What is the minimum cutoff score to qualify for NDA written exam?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        The UPSC NDA written exam cutoff generally ranges between 345 and 365 marks out of 900, with a mandatory minimum 20% to 25% sectional cutoff in both Mathematics and GAT.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">How many hours should I study daily to crack NDA?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        A dedicated 5 to 7 hours of daily study—divided into 3 hours of Mathematics problem-solving, 2 hours of English and GS reading, and 1 hour of current affairs—is optimal for clearing NDA.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Where can I join the best NDA coaching in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Pathfinder Defence Academy at Alambagh (opposite Singar Nagar Metro Station) and Indira Nagar offers top-ranked NDA classroom batches with hostel and physical training. Call: 07505188009.
+                    </p>
+                </div>
+            </div>
         </BlogArticle>
     );
 }

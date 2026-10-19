@@ -4,7 +4,7 @@ import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Navigation } from "lucide-react";
 import { submitLeadToGoogleSheet } from "@/lib/leadSubmission";
 
 export default function ContactPage() {
@@ -43,18 +43,18 @@ export default function ContactPage() {
         <main className="bg-primary min-h-screen pb-20">
             <PageHeader
                 title="Contact Us"
-                subtitle="Get In Touch"
+                subtitle="Get In Touch — Pathfinder Defence Academy Lucknow"
                 image="/images/pexels-estudiodelarts-4130926.webp"
             />
 
-            <section className="container mx-auto px-4 py-20">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section className="container mx-auto px-4 py-20 space-y-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
                     {/* Contact Information */}
                     <div>
                         <SectionHeading title="Reach Out To Us" alignment="left" />
                         <p className="text-gray-300 mb-12">
-                            Have questions about our courses or admission process? Feel free to contact us. Our team is here to guide you.
+                            Have questions about our NDA, CDS, AFCAT, CAPF, or Agniveer batches, fee structures, or residential hostel facilities? Visit our Lucknow campuses or get in touch below.
                         </p>
 
                         <div className="space-y-8">
@@ -63,9 +63,9 @@ export default function ContactPage() {
                                     <MapPin size={24} />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h4 className="text-white font-bold text-lg mb-1">Alambagh Branch</h4>
-                                    <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2">
-                                        Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar nagar, Alambagh - 226005
+                                    <h4 className="text-white font-bold text-lg mb-1">Alambagh Branch (Flagship Campus)</h4>
+                                    <a href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2 text-sm leading-relaxed">
+                                        Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Opposite to Hero Showroom, Singar Nagar, Alambagh, Lucknow - 226005
                                     </a>
                                 </div>
                             </div>
@@ -75,9 +75,9 @@ export default function ContactPage() {
                                     <MapPin size={24} />
                                 </div>
                                 <div className="flex flex-col">
-                                    <h4 className="text-white font-bold text-lg mb-1">Indira Nagar Branch</h4>
-                                    <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2">
-                                        Uma Krishna Complex, Murari Nagar, Lucknow, UP 226016
+                                    <h4 className="text-white font-bold text-lg mb-1">Indira Nagar Branch (Trans-Gomti)</h4>
+                                    <a href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gold transition-colors block mb-2 text-sm leading-relaxed">
+                                        Uma Krishna Complex, Murari Nagar, Sector 8, Indira Nagar, Lucknow, UP 226016
                                     </a>
                                 </div>
                             </div>
@@ -87,9 +87,9 @@ export default function ContactPage() {
                                     <Phone size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold text-lg mb-1">Phone</h4>
-                                    <p className="text-gray-400">+91 75051 88009</p>
-                                    <p className="text-gray-400">+91 83184 49559</p>
+                                    <h4 className="text-white font-bold text-lg mb-1">Phone Helplines</h4>
+                                    <a href="tel:+917505188009" className="text-gold font-bold hover:underline block text-base">+91 75051 88009</a>
+                                    <a href="tel:+918115011771" className="text-gray-400 hover:text-white transition-colors block text-sm">+91 81150 11771</a>
                                 </div>
                             </div>
 
@@ -98,9 +98,9 @@ export default function ContactPage() {
                                     <Mail size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold text-lg mb-1">Email</h4>
-                                    <p className="text-gray-400">director@pathfinderdefenceacademy.co.in</p>
-                                    <p className="text-gray-400">info@pathfinderdefenceacademy.co.in</p>
+                                    <h4 className="text-white font-bold text-lg mb-1">Email Desk</h4>
+                                    <p className="text-gray-400 text-sm">info@pathfinderdefenceacademy.co.in</p>
+                                    <p className="text-gray-400 text-sm">director@pathfinderdefenceacademy.co.in</p>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ export default function ContactPage() {
                         {status === "success" ? (
                             <div className="bg-green-500/10 border border-green-500/30 text-green-400 p-8 rounded-lg text-center animate-in fade-in zoom-in duration-300">
                                 <h3 className="font-bold text-xl mb-2">Message Sent Successfully!</h3>
-                                <p>Thank you for reaching out. Our team will get back to you shortly.</p>
+                                <p>Thank you for reaching out. Our admissions counselor will get back to you shortly.</p>
                                 <Button 
                                     onClick={() => setStatus("idle")}
                                     className="mt-6 bg-transparent border border-green-500/50 hover:bg-green-500/20 text-green-400"
@@ -141,14 +141,14 @@ export default function ContactPage() {
                                     <label className="block text-sm font-medium text-gray-400 mb-2">Course Interested In</label>
                                     <select name="course" className="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold">
                                         <option value="">Select a course (Optional)</option>
-                                        <option value="NDA">NDA</option>
-                                        <option value="CDS">CDS</option>
-                                        <option value="AFCAT">AFCAT</option>
-                                        <option value="SSB Interview">SSB Interview</option>
-                                        <option value="CAPF">CAPF</option>
-                                        <option value="Agniveer">Agniveer</option>
-                                        <option value="Sainik School">Sainik School</option>
-                                        <option value="Foundation">Foundation</option>
+                                        <option value="NDA">NDA Written &amp; SSB</option>
+                                        <option value="Foundation">NDA Foundation (11th &amp; 12th)</option>
+                                        <option value="CDS">CDS (IMA, OTA, AFA)</option>
+                                        <option value="AFCAT">AFCAT (Flying &amp; Ground Duty)</option>
+                                        <option value="SSB Interview">5-Day SSB Interview Prep</option>
+                                        <option value="CAPF">CAPF Assistant Commandant</option>
+                                        <option value="Agniveer">Agniveer (Army, Navy, Air Force)</option>
+                                        <option value="Sainik School">Sainik School / RIMC / RMS</option>
                                     </select>
                                 </div>
                                 <div>
@@ -170,6 +170,85 @@ export default function ContactPage() {
                         )}
                     </div>
                 </div>
+
+                {/* Google Maps Section for Both Campuses */}
+                <div className="pt-8 border-t border-white/10 space-y-8">
+                    <div>
+                        <SectionHeading title="Locate Our Lucknow Campuses on Google Maps" alignment="left" />
+                        <p className="text-gray-300 text-sm mt-2">
+                            Both branches are strategically located with excellent transit connectivity via the Lucknow Metro and major city arterials.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Map 1: Alambagh */}
+                        <div className="bg-[#1B2620] border border-gold/20 rounded-2xl p-6 shadow-xl space-y-4">
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <h4 className="text-xl font-bold text-white flex items-center gap-2">
+                                        <MapPin className="text-gold w-5 h-5 shrink-0" /> Alambagh Branch
+                                    </h4>
+                                    <p className="text-gray-400 text-xs mt-1">Opp. Singar Nagar Metro Station (Gate No. 2)</p>
+                                </div>
+                                <a
+                                    href="https://maps.app.goo.gl/EBqtfWVp8Akaeeki7"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs px-3 py-1.5 rounded-lg border border-white/15 transition-colors"
+                                >
+                                    <Navigation className="w-3.5 h-3.5 text-gold" /> Directions
+                                </a>
+                            </div>
+                            <div className="relative w-full h-[320px] rounded-xl overflow-hidden border border-white/10">
+                                <iframe
+                                    title="Pathfinder Defence Academy Alambagh Branch Map"
+                                    src="https://maps.google.com/maps?q=26.8188,80.9087&hl=en&z=16&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen={false}
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="w-full h-full"
+                                ></iframe>
+                            </div>
+                        </div>
+
+                        {/* Map 2: Indira Nagar */}
+                        <div className="bg-[#1B2620] border border-gold/20 rounded-2xl p-6 shadow-xl space-y-4">
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <h4 className="text-xl font-bold text-white flex items-center gap-2">
+                                        <MapPin className="text-gold w-5 h-5 shrink-0" /> Indira Nagar Branch
+                                    </h4>
+                                    <p className="text-gray-400 text-xs mt-1">Uma Krishna Complex, Sector 8 (Near Munshipulia)</p>
+                                </div>
+                                <a
+                                    href="https://maps.app.goo.gl/hpaLiDeWJZzRhmVy6"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs px-3 py-1.5 rounded-lg border border-white/15 transition-colors"
+                                >
+                                    <Navigation className="w-3.5 h-3.5 text-gold" /> Directions
+                                </a>
+                            </div>
+                            <div className="relative w-full h-[320px] rounded-xl overflow-hidden border border-white/10">
+                                <iframe
+                                    title="Pathfinder Defence Academy Indira Nagar Branch Map"
+                                    src="https://maps.google.com/maps?q=26.8833,80.9933&hl=en&z=16&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen={false}
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    className="w-full h-full"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
     );

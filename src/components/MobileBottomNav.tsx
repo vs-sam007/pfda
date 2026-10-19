@@ -24,6 +24,7 @@ export default function MobileBottomNav() {
     const moreItems = [
         { name: "Study Material", href: "/study-material", icon: <FileText className="w-5 h-5 text-[#059669]" />, bg: "bg-[#ecfdf5]", text: "text-[#047857]" },
         { name: "Photo Gallery", href: "/gallery/photos", icon: <ImageIcon className="w-5 h-5 text-[#4f46e5]" />, bg: "bg-[#eef2ff]", text: "text-[#3730a3]" },
+        { name: "Video Gallery", href: "/gallery/videos", icon: <Video className="w-5 h-5 text-[#2563eb]" />, bg: "bg-[#eff6ff]", text: "text-[#1d4ed8]" },
         { name: "About Us", href: "/about", icon: <Info className="w-5 h-5 text-[#9333ea]" />, bg: "bg-[#f3e8ff]", text: "text-[#6b21a8]" },
         { name: "Branches", href: "/branches", icon: <MapPin className="w-5 h-5 text-[#e11d48]" />, bg: "bg-[#ffe4e6]", text: "text-[#9f1239]" },
         { name: "Blog", href: "/blog", icon: <BookOpen className="w-5 h-5 text-[#ea580c]" />, bg: "bg-[#ffedd5]", text: "text-[#c2410c]" },
@@ -93,7 +94,7 @@ export default function MobileBottomNav() {
 
                     {/* Center Floating Action Button */}
                     <div className="absolute left-1/2 -translate-x-1/2 -top-6 flex flex-col items-center justify-center">
-                        <button onClick={openDemoModal} className="bg-[#1B2620] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
+                        <button onClick={openDemoModal} aria-label="Book Free Demo and Quick Enquiry" className="bg-[#1B2620] text-white w-14 h-14 flex items-center justify-center rounded-full shadow-[0_8px_20px_rgba(30,27,75,0.4)] border-[5px] border-white transform hover:scale-105 transition-transform">
                             <Send className="w-6 h-6 ml-1" />
                         </button>
                         <span className="text-[10px] font-extrabold text-[#1B2620] mt-1.5 tracking-wider uppercase">Enquire</span>
@@ -114,7 +115,7 @@ export default function MobileBottomNav() {
                         })}
                         
                         {/* More Button */}
-                        <button onClick={() => setIsMoreOpen(!isMoreOpen)} className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1B2620] relative pt-1">
+                        <button onClick={() => setIsMoreOpen(!isMoreOpen)} aria-label="Toggle navigation menu" className="flex flex-col items-center justify-center w-full h-full text-gray-500 hover:text-[#1B2620] relative pt-1">
                             {isMoreOpen ? <X className="w-6 h-6 mb-1 text-gold" /> : <Menu className="w-6 h-6 mb-1" />}
                             <span className={`text-[10px] font-bold ${isMoreOpen ? "text-[#1B2620]" : ""}`}>More</span>
                             {isMoreOpen && <div className="absolute bottom-1 w-1.5 h-1.5 rounded-full bg-gold"></div>}

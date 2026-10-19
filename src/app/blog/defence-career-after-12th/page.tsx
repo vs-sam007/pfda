@@ -2,22 +2,65 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "How to Join Indian Army, Navy & Air Force After 12th — All Paths | PFDA",
-    description: "Complete guide on how to join Indian Army after 12th, how to become Air Force officer, how to join Indian Navy after 12th. NDA, Agniveer, TES, NCC entry & more defence career options explained.",
-    keywords: ["how to join Indian Army after 12th", "how to become Air Force officer", "how to join Indian Navy after 12th", "NDA exam preparation after 12th", "defence career options after graduation", "Can I join NDA after class 12", "TES entry after 12th", "women in NDA"],
+    title: "How to Join Indian Army, Navy & Air Force After 12th (2026 Guide): 5 Direct Routes",
+    description: "Complete 2026 guide on how to join the Indian Army, Navy & Air Force after 12th. Eligibility, NDA exam, TES 10+2 entry, Agniveer & physical test standards.",
+    keywords: ["how to join Indian Army after 12th", "how to become Air Force officer after 12th", "how to join Indian Navy after 12th", "NDA exam after 12th", "defence career after 12th PCM", "defence academy in Lucknow Alambagh"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/defence-career-after-12th" },
 };
 
 export default function DefenceCareerAfter12th() {
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Which is the best entry to join Indian Armed Forces after 12th as an officer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The UPSC National Defence Academy (NDA) examination is the premier entry to become a Commissioned Officer in the Indian Army, Navy, or Air Force directly after 12th."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I join the Indian Army after 12th without taking the NDA exam?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, candidates who pass 10+2 with PCM (minimum 60%) and appear in JEE Main can apply for the Indian Army Technical Entry Scheme (TES) for direct SSB interview calls without a written exam."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Are girls eligible to join Indian Defence Forces after Class 12th?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, female candidates are eligible for the UPSC NDA examination for entry into the Army, Navy, and Air Force, as well as the Agnipath scheme for soldier roles in Navy and Air Force."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I prepare for NDA and 12th defence entries in Lucknow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pathfinder Defence Academy at Alambagh, Lucknow offers specialized foundation and regular coaching batches with integrated hostel and outdoor SSB GTO ground facilities. Call: 07505188009."
+                }
+            }
+        ]
+    };
+
     return (
         <BlogArticle
-            title="How to Join Indian Army, Navy & Air Force After 12th"
+            title="How to Join Indian Army, Navy & Air Force After 12th (2026 Guide)"
             date="June 5, 2025"
             readTime="10 min"
             heroImage="/images/1707393182_indian-army.jpg"
         >
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+            />
             <p>
-                One of the most frequently asked questions by young defence aspirants is: <strong>&quot;How to join the Indian Army, Navy, or Air Force after 12th?&quot;</strong> The good news is that there are multiple pathways available for 12th pass candidates to begin their defence career, whether you want to serve as a Commissioned Officer or as a highly respected soldier. This comprehensive guide from Path Finder Defence Academy covers every entry route available to you immediately following your board exams.
+                One of the most frequently asked questions by young defence aspirants is: <strong>&quot;How to join the Indian Army, Navy, or Air Force after 12th?&quot;</strong> The good news is that there are multiple pathways available for 12th pass candidates to begin their defence career, whether you want to serve as a Commissioned Officer or as a highly respected soldier. This comprehensive guide from Pathfinder Defence Academy covers every entry route available to you immediately following your board exams.
             </p>
 
             <p>
@@ -126,11 +169,39 @@ export default function DefenceCareerAfter12th() {
                 Preparing for these entries—especially the NDA written exam and the grueling 5-Day SSB Interview—requires structured guidance, discipline, and expert mentorship. 
             </p>
             <p>
-                Path Finder Defence Academy offers premier coaching for NDA, CDS, AFCAT, SSB, CAPF, and Agniveer in Lucknow. Whether you are currently in Class 11th looking for a Foundation course, a Class 12th student needing a crash course, or a graduate targeting CDS, we have the right programme for you. 
+                Pathfinder Defence Academy offers premier coaching for NDA, CDS, AFCAT, SSB, CAPF, and Agniveer at Alambagh and Indira Nagar in Lucknow. Whether you are currently in Class 11th looking for a Foundation course, a Class 12th student needing a crash course, or a graduate targeting CDS, we have the right programme for you. 
             </p>
             <p>
                 With our dedicated GTO ground, psychological training by ex-SSB assessors, and rigorous academic classes, we have successfully guided over 1000+ candidates into the uniform. 
             </p>
+
+            <h2 className="mt-12 text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Which is the best entry to join Indian Armed Forces after 12th as an officer?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        The UPSC National Defence Academy (NDA) examination is the premier entry to become a Commissioned Officer in the Indian Army, Navy, or Air Force directly after 12th.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Can I join the Indian Army after 12th without taking the NDA exam?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Yes, candidates who pass 10+2 with PCM (minimum 60%) and appear in JEE Main can apply for the Indian Army Technical Entry Scheme (TES) for direct SSB interview calls without a written exam.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Are girls eligible to join Indian Defence Forces after Class 12th?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Yes, female candidates are eligible for the UPSC NDA examination for entry into the Army, Navy, and Air Force, as well as the Agnipath scheme for soldier roles in Navy and Air Force.
+                    </p>
+                </div>
+                <div className="bg-[#24332B] p-6 rounded-lg">
+                    <h3 className="text-lg font-bold text-white mb-2">Where can I prepare for NDA and 12th defence entries in Lucknow?</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                        Pathfinder Defence Academy at Alambagh, Lucknow offers specialized foundation and regular coaching batches with integrated hostel and outdoor SSB GTO ground facilities. Call: 07505188009.
+                    </p>
+                </div>
+            </div>
         </BlogArticle>
     );
 }

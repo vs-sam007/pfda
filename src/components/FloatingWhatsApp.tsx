@@ -9,6 +9,7 @@ export default function FloatingWhatsApp() {
             href="https://wa.me/917505188009"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Chat with Pathfinder Defence Academy on WhatsApp"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.1 }}

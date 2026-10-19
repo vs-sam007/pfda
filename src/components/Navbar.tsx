@@ -20,7 +20,7 @@ const navLinks = [
             { name: "NDA", href: "/courses/nda" },
             { name: "CDS", href: "/courses/cds" },
             { name: "SSB Interview", href: "/courses/ssb-interview-coaching-lucknow" },
-            { name: "NDA Foundation", href: "/courses/nda-foundation-course-lucknow" },
+            { name: "NDA Foundation", href: "/courses/foundation" },
             { name: "AFCAT", href: "/courses/afcat" },
             { name: "CAPF", href: "/courses/capf" },
             { name: "Sainik School", href: "/courses/sainik-school-coaching-lucknow" },
@@ -36,6 +36,7 @@ const navLinks = [
         dropdown: [
             { name: "Study Material", href: "/study-material" },
             { name: "Photo gallery", href: "/gallery/photos" },
+            { name: "Video gallery", href: "/gallery/videos" },
         ]
     },
     {
@@ -79,12 +80,14 @@ export default function Navbar() {
             <div className="container mx-auto px-4 flex justify-between items-center h-full">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative w-12 h-12 transform group-hover:scale-105 transition-transform">
+                    <div className="relative w-12 h-12 transform group-hover:scale-105 transition-transform flex-shrink-0" style={{ width: 48, height: 48 }}>
                         <Image
-                            src="/images/logo.png"
+                            src="/images/logo.webp"
                             alt="PFDA Logo"
-                            fill
-                            className="object-contain mix-blend-screen"
+                            width={48}
+                            height={48}
+                            className="w-12 h-12 object-contain mix-blend-screen"
+                            priority
                         />
                     </div>
                     <div className="flex flex-col">

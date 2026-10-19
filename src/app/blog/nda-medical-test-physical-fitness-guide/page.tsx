@@ -2,16 +2,16 @@ import BlogArticle from "@/components/BlogArticle";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "NDA Medical Test & Physical Fitness Standards: Complete Eyesight & Height Chart | PFDA",
-    description: "Complete guide to NDA medical test standards and physical fitness requirements. Check height and weight chart, eyesight rules (6/6 vs 6/9), flat foot, knock knees & medical rejection points by PFDA Lucknow.",
+    title: "NDA Medical Test & Physical Fitness Standards 2026: Eyesight & Height Chart",
+    description: "Complete 2026 guide to NDA medical test standards. Eyesight rules (6/6 vs 6/9), height-weight chart, knock knees, flat foot & rejection causes by Lucknow experts.",
     keywords: [
         "NDA medical test requirements",
-        "NDA physical fitness test",
+        "NDA physical fitness test 2026",
         "NDA eyesight standards",
         "NDA height weight chart",
         "knock knees flat foot NDA",
         "how to clear NDA medical exam",
-        "NDA medical board procedure"
+        "defence coaching in Lucknow Alambagh"
     ],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog/nda-medical-test-physical-fitness-guide" },
     openGraph: {
@@ -34,12 +34,12 @@ const jsonLdData = {
             "dateModified": "2026-09-15T09:00:00+05:30",
             "author": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "url": "https://pathfinderdefenceacademy.com"
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "Path Finder Defence Academy",
+                "name": "Pathfinder Defence Academy",
                 "logo": {
                     "@type": "ImageObject",
                     "url": "https://pathfinderdefenceacademy.com/images/logo.png"
@@ -56,7 +56,7 @@ const jsonLdData = {
                     "name": "What is the minimum height required for NDA exam?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "For the Indian Army, the minimum acceptable height is 157 cm for male candidates and 152 cm for female candidates (with relaxations of 5 cm for Gorkhas and candidates from North-Eastern states). For the Indian Air Force Flying Branch, the minimum required height is 162.5 cm."
+                        "text": "For the Indian Army, the minimum acceptable height is 157 cm for male candidates and 152 cm for female candidates (with 5 cm relaxation for Gorkhas and North-Eastern states). For the Air Force Flying Branch, the minimum required height is 162.5 cm."
                     }
                 },
                 {
@@ -64,7 +64,7 @@ const jsonLdData = {
                     "name": "Is wearing spectacles or glasses allowed in NDA?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, spectacles are allowed for the Indian Army and Navy (Ground Duty). Uncorrected vision can be 6/36, correctable to 6/6 in one eye and 6/9 in the other eye with myopia limits up to -2.50D. However, for Air Force Flying Branch, uncorrected vision must be strictly 6/6 and spectacles are generally not permitted."
+                        "text": "Yes, spectacles are allowed for the Indian Army and Navy (Ground Duty). Uncorrected vision can be 6/36, correctable to 6/6 and 6/9 with myopia limits up to -2.50D. For Air Force Flying Branch, uncorrected vision must be strictly 6/6 without glasses."
                     }
                 },
                 {
@@ -72,7 +72,7 @@ const jsonLdData = {
                     "name": "Is LASIK surgery allowed for NDA entry?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Candidates who have undergone LASIK or PRK refractive surgery are permanently rejected for the National Defence Academy entry because cadets are under 20 years of age and the eye is still developing."
+                        "text": "Candidates who have undergone LASIK or PRK laser surgery are permanently disqualified for the National Defence Academy entry because candidates are under 20 years of age and corneal development is ongoing."
                     }
                 },
                 {
@@ -118,7 +118,7 @@ export default function NdaMedicalTestPhysicalFitnessGuide() {
                 heroImage="/images/pexels-kolkatarchobiwala-37134459.webp"
             >
                 <p>
-                    Clearing the UPSC NDA written examination and earning a recommendation from the Service Selection Board (SSB) are tremendous milestones. However, the final hurdle before your name appears in the official Ministry of Defence merit list is the <strong>NDA medical examination</strong> conducted by the Special Medical Board (SMB). Every year, nearly 20% to 25% of recommended candidates face temporary or permanent rejection simply due to preventable physical or medical shortcomings. In this authoritative guide, Path Finder Defence Academy details the exact height, weight, eyesight, and physical conditioning standards required to secure a clean medical clearance.
+                    Clearing the UPSC NDA written examination and earning a recommendation from the Service Selection Board (SSB) are tremendous milestones. However, the final hurdle before your name appears in the official Ministry of Defence merit list is the <strong>NDA medical examination</strong> conducted by the Special Medical Board (SMB). Every year, nearly 20% to 25% of recommended candidates face temporary or permanent rejection simply due to preventable physical or medical shortcomings. In this authoritative guide, Pathfinder Defence Academy details the exact height, weight, eyesight, and physical conditioning standards required to secure a clean medical clearance.
                 </p>
 
                 <h2>How the NDA Special Medical Board (SMB) Operates</h2>
@@ -181,7 +181,7 @@ export default function NdaMedicalTestPhysicalFitnessGuide() {
                     <li><strong>Permanent Tattoos:</strong> Tattoos are strictly banned on any body part except the inner face of the forearms or tribal communities with official cultural exemptions. Offensive, religious, or neck tattoos lead to instant disqualification.</li>
                 </ul>
 
-                <h2>Pre-Medical Preparation at Path Finder Defence Academy</h2>
+                <h2>Pre-Medical Preparation at Pathfinder Defence Academy</h2>
                 <p>
                     At PFDA Lucknow, we ensure our students don&apos;t face surprises after recommendation. Our comprehensive training incorporates:
                 </p>
@@ -191,9 +191,47 @@ export default function NdaMedicalTestPhysicalFitnessGuide() {
                     <li><strong>Consultation with Ex-Army Medical Officers:</strong> Guidance on correcting posture, managing body weight, and filing timely appeals if assigned a temporary rejection.</li>
                 </ul>
 
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <div className="space-y-6">
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">What is the minimum height required for NDA exam?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            For the Indian Army, the minimum acceptable height is 157 cm for male candidates and 152 cm for female candidates (with 5 cm relaxation for Gorkhas and North-Eastern states). For the Air Force Flying Branch, the minimum required height is 162.5 cm.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Is wearing spectacles or glasses allowed in NDA?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Yes, spectacles are allowed for the Indian Army and Navy (Ground Duty). Uncorrected vision can be 6/36, correctable to 6/6 and 6/9 with myopia limits up to -2.50D. For Air Force Flying Branch, uncorrected vision must be strictly 6/6 without glasses.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Is LASIK surgery allowed for NDA entry?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Candidates who have undergone LASIK or PRK laser surgery are permanently disqualified for the National Defence Academy entry because candidates are under 20 years of age and corneal development is ongoing.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">Can knock knees and flat foot be corrected before the medical test?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Mild knock knees and flexible flat foot can be rectified through targeted physiotherapy exercises, arch support footwear, pillow drills while sleeping, and dedicated calf stretching if caught 6-12 months in advance.
+                        </p>
+                    </div>
+
+                    <div className="bg-[#24332B] p-6 rounded-lg">
+                        <h3 className="text-lg font-bold text-white mb-2">What happens if a candidate is declared temporarily unfit (TR) in the NDA medical board?</h3>
+                        <p className="text-gray-300 leading-relaxed">
+                            Candidates receiving a Temporary Rejection (TR) are granted 42 days to resolve remediable conditions (such as overweight, ear wax, DNS, or minor skin conditions) and reappear before an Appeal Medical Board (AMB) at a designated Military Hospital.
+                        </p>
+                    </div>
+                </div>
+
                 <h2>Conclusion: Start Your Physical Journey Today</h2>
                 <p>
-                    A sharp, disciplined mind must be housed in a robust, combat-ready body. Do not leave your medical fitness until the last minute. Pair your written exam preparation with daily disciplined physical drills at Path Finder Defence Academy, Lucknow, and walk into the SSB medical board with complete confidence.
+                    A sharp, disciplined mind must be housed in a robust, combat-ready body. Do not leave your medical fitness until the last minute. Pair your written exam preparation with daily disciplined physical drills at Pathfinder Defence Academy in Alambagh, Lucknow, and walk into the SSB medical board with complete confidence.
                 </p>
             </BlogArticle>
         </>

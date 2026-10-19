@@ -68,4 +68,13 @@ function removeRscFolders(dirPath) {
 const outDir = path.join(__dirname, 'out');
 console.log('🧹 Cleaning up Next.js export artifacts to ensure flat HTML output...');
 removeRscFolders(outDir);
+
+// Guarantee public/.htaccess is synced into out/
+const publicHtaccess = path.join(__dirname, 'public', '.htaccess');
+const outHtaccess = path.join(outDir, '.htaccess');
+if (fs.existsSync(publicHtaccess)) {
+    fs.copyFileSync(publicHtaccess, outHtaccess);
+    console.log('📄 Synced public/.htaccess to out/.htaccess');
+}
+
 console.log('✅ Cleanup complete! Only static assets and flat HTML files remain.');

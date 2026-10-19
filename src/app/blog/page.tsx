@@ -5,7 +5,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Defence Blog | NDA, CDS, SSB Tips & Updates | Path Finder Defence Academy",
+    title: "Defence Blog | NDA, CDS, SSB Tips & Updates | Pathfinder Defence Academy",
     description: "Read expert articles on NDA exam preparation, SSB interview tips, CDS coaching strategies, defence career options after 12th & graduation. Latest defence news and updates from PFDA Lucknow.",
     keywords: ["NDA preparation tips", "SSB interview tips", "defence career blog", "NDA vs CDS", "how to crack NDA", "defence coaching blog Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/blog" },
@@ -43,7 +43,7 @@ const posts = [
     {
         title: "Best NDA Coaching in Lucknow — Why PFDA Leads the Way",
         date: "Jun 15, 2025",
-        excerpt: "Discover what makes Path Finder Defence Academy the top NDA coaching institute in Lucknow. From expert faculty to affordable fees and hostel facility.",
+        excerpt: "Discover what makes Pathfinder Defence Academy the top NDA coaching institute in Lucknow. From expert faculty to dedicated mentorship and hostel facility.",
         image: "/images/Pathfinderimg.JPG",
         slug: "best-nda-coaching-lucknow",
     },

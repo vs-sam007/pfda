@@ -37,7 +37,7 @@ export default function CourseDetail({
         "description": description,
         "provider": {
             "@type": "EducationalOrganization",
-            "name": "Path Finder Defence Academy",
+            "name": "Pathfinder Defence Academy",
             "sameAs": "https://pathfinderdefenceacademy.com"
         },
         "timeRequired": duration

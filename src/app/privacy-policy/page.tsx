@@ -2,8 +2,8 @@ import PageHeader from "@/components/PageHeader";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy | Path Finder Defence Academy",
-    description: "Privacy Policy for Path Finder Defence Academy. Learn how we collect, use, and protect your personal information.",
+    title: "Privacy Policy | Pathfinder Defence Academy",
+    description: "Privacy Policy for Pathfinder Defence Academy. Learn how we collect, use, and protect your personal information.",
     alternates: { canonical: "https://pathfinderdefenceacademy.com/privacy-policy" },
 };
 
@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         <main className="bg-primary min-h-screen pb-20">
             <PageHeader
                 title="Privacy Policy"
-                subtitle="Path Finder Defence Academy"
+                subtitle="Pathfinder Defence Academy"
                 image="/images/bg.webp"
             />
 
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-[#24332B] rounded-2xl p-8 md:p-12 border border-white/5 shadow-xl prose prose-invert max-w-none prose-headings:text-gold prose-p:text-gray-300 prose-li:text-gray-300">
                     <h2>1. Introduction</h2>
                     <p>
-                        Path Finder Defence Academy ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (pathfinderdefenceacademy.com) or use our services.
+                        Pathfinder Defence Academy ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (pathfinderdefenceacademy.com) or use our services.
                     </p>
 
                     <h2>2. Information We Collect</h2>

@@ -2,8 +2,8 @@ import PageHeader from "@/components/PageHeader";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Refund Policy | Path Finder Defence Academy",
-    description: "Refund and Cancellation Policy for Path Finder Defence Academy.",
+    title: "Refund Policy | Pathfinder Defence Academy",
+    description: "Refund and Cancellation Policy for Pathfinder Defence Academy.",
     alternates: { canonical: "https://pathfinderdefenceacademy.com/refund-policy" },
 };
 
@@ -12,7 +12,7 @@ export default function RefundPolicyPage() {
         <main className="bg-primary min-h-screen pb-20">
             <PageHeader
                 title="Refund Policy"
-                subtitle="Path Finder Defence Academy"
+                subtitle="Pathfinder Defence Academy"
                 image="/images/bg.webp"
             />
 
@@ -20,7 +20,7 @@ export default function RefundPolicyPage() {
                 <div className="bg-[#24332B] rounded-2xl p-8 md:p-12 border border-white/5 shadow-xl prose prose-invert max-w-none prose-headings:text-gold prose-p:text-gray-300 prose-li:text-gray-300">
                     <h2>1. General Refund Policy</h2>
                     <p>
-                        Path Finder Defence Academy follows a strict NO REFUND policy under normal circumstances. Once a student is admitted and the fee is paid, it is generally non-refundable and non-transferable to any other student.
+                        Pathfinder Defence Academy follows a strict NO REFUND policy under normal circumstances. Once a student is admitted and the fee is paid, it is generally non-refundable and non-transferable to any other student.
                     </p>
 
                     <h2>2. Registration Fees</h2>
@@ -33,7 +33,7 @@ export default function RefundPolicyPage() {
                         In highly exceptional cases, such as a severe medical emergency that prevents the student from attending classes entirely, a partial refund may be considered.
                     </p>
                     <ul>
-                        <li>The decision to grant a refund in such cases rests solely with the management of Path Finder Defence Academy.</li>
+                        <li>The decision to grant a refund in such cases rests solely with the management of Pathfinder Defence Academy.</li>
                         <li>A written application along with valid supporting documents (like medical certificates) must be submitted to the management.</li>
                         <li>If approved, the refund will be calculated on a pro-rata basis after deducting the registration fee, study material cost, and administrative charges.</li>
                     </ul>
@@ -45,7 +45,7 @@ export default function RefundPolicyPage() {
 
                     <h2>5. Batch Cancellation</h2>
                     <p>
-                        In the rare event that Path Finder Defence Academy cancels a specific batch or course before it commences, a full refund of the fee paid for that specific course will be provided to the enrolled students.
+                        In the rare event that Pathfinder Defence Academy cancels a specific batch or course before it commences, a full refund of the fee paid for that specific course will be provided to the enrolled students.
                     </p>
 
                     <h2>6. Process for Approved Refunds</h2>

@@ -6,23 +6,37 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Best RIMC Coaching in Lucknow | Elite Entrance Prep | PFDA",
-    description: "Prepare for RIMC Dehradun with Pathfinder Defence Academy's elite Lucknow coaching. Expert Maths, English & Viva-Voce training for Class 8 entry. Enroll now.",
-    keywords: ["RIMC coaching in Lucknow", "RIMC entrance exam classes Lucknow", "RIMC preparation near me", "best RIMC coaching institute in Lucknow", "RIMC Dehradun preparation"],
+    title: "RIMC Coaching in Lucknow Alambagh: Class 8 Admission & Viva-Voce Prep 2026",
+    description: "Best RIMC coaching in Lucknow Alambagh for Class 8 admission. 100% exam-focused Maths, English, GK & Viva-Voce training with hostel facility. Call 07505188009.",
+    keywords: ["RIMC coaching in Lucknow", "RIMC coaching Alambagh", "RIMC entrance exam classes Lucknow", "best RIMC coaching in Lucknow", "RIMC Dehradun preparation Alambagh Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/rimc-coaching-lucknow" },
 };
 
 export default function RIMCCoachingPage() {
+    const courseJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "RIMC Coaching in Lucknow Alambagh",
+        "description": "Specialized RIMC Dehradun Class 8 entrance examination preparation including written test in Maths, English, GK, plus viva-voce interview and residential training at Pathfinder Defence Academy Lucknow.",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Pathfinder Defence Academy",
+            "url": "https://pathfinderdefenceacademy.com"
+        },
+        "courseMode": "In-Person Classroom and Boarding",
+        "educationalCredentialAwarded": "RIMC Dehradun Class 8 Entrance Qualification"
+    };
+
     const faqJsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is the age limit and eligibility for RIMC?",
+                "name": "What is the age limit for RIMC admission?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "RIMC generally admits boys and girls around 11.5 to 13 years of age, applying for Class 8 entry, meeting specified academic and medical standards. Exact age brackets are notified each year — our mentors guide you through the latest eligibility details."
+                    "text": "For RIMC Class 8 admission, a candidate must be between 11.5 and 13 years of age at the time of joining the college. The applicant must either be studying in Class 7 or have passed Class 7 from a recognized school."
                 }
             },
             {
@@ -30,31 +44,31 @@ export default function RIMCCoachingPage() {
                 "name": "Can girls apply for RIMC Dehradun?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, RIMC has opened admissions to girls in recent years. Our coaching batches are open to both boys and girls."
+                    "text": "Yes, RIMC Dehradun now admits female candidates for Class 8 entry following Supreme Court directives. Pathfinder Defence Academy runs dedicated batches for both boys and girls at our Alambagh campus."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What is the fee structure for RIMC coaching at Pathfinder Defence Academy?",
+                "name": "Where is Pathfinder Defence Academy located for RIMC coaching in Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Fees depend on the batch type and duration. Contact our Alambagh or Indira Nagar centre directly for the current fee structure and batch schedule."
+                    "text": "Our primary RIMC coaching campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow, with an additional branch in Indira Nagar. Both centres provide full academic mentoring and boarding."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How is RIMC's written exam different from a regular school test?",
+                "name": "What is the exam pattern for the RIMC written test?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "RIMC's Mathematics and English papers are considerably tougher than standard school-level papers for the same age group, requiring dedicated, exam-specific preparation rather than regular school study alone."
+                    "text": "The RIMC entrance exam comprises three written papers: English (125 marks), Mathematics (200 marks), and General Knowledge (75 marks) totaling 400 marks, followed by a 50-mark viva-voce interview for qualifying candidates."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How can I prepare my child for the RIMC viva-voce?",
+                "name": "How does Pathfinder Defence Academy prepare students for the RIMC viva-voce?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Consistent mock interview practice, confidence-building exercises, and general awareness development — all part of our structured RIMC coaching program — are the most effective ways to prepare a child for the viva-voce stage."
+                    "text": "We conduct 1-on-1 mock interviews, personality grooming sessions, and current affairs discussions with ex-defence officers to build confidence, articulation, and presence of mind required for the 50-mark viva-voce."
                 }
             }
         ]
@@ -64,28 +78,61 @@ export default function RIMCCoachingPage() {
         <main className="bg-primary min-h-screen pb-20">
             <script
                 type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
             
             <PageHeader 
                 title="RIMC Coaching in Lucknow" 
-                subtitle="Expert Preparation for RIMC Dehradun (Class 8 Entry)" 
+                subtitle="Expert Preparation for RIMC Dehradun (Class 8 Entry) | Alambagh & Indira Nagar" 
                 image="/images/sainic-1.jpg" 
             />
 
             <section className="container mx-auto px-4 py-16">
                 <div className="max-w-4xl mx-auto">
                     
+                    {/* AEO Crisp Summary Paragraph Box */}
+                    <div className="mb-10 p-6 rounded-2xl bg-[#24332B] border-2 border-gold/40 shadow-lg">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="inline-block w-2.5 h-2.5 rounded-full bg-gold animate-pulse"></span>
+                            <span className="text-xs uppercase font-bold tracking-widest text-gold">Course Overview</span>
+                        </div>
+                        <p className="text-gray-200 text-lg leading-relaxed font-medium">
+                            Pathfinder Defence Academy provides premier RIMC coaching in Lucknow (Alambagh & Indira Nagar) for boys and girls seeking Class 8 entry to RIMC Dehradun. The program offers intensive Mathematics and English written test modules, dedicated viva-voce mock interviews, previous 10-year paper analysis, and complete residential hostel facilities near Singar Nagar Metro, Alambagh.
+                        </p>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-white/10 text-center">
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">11.5 - 13 Yrs</span>
+                                <span className="text-xs text-gray-300">Age Eligibility</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">15:1 Ratio</span>
+                                <span className="text-xs text-gray-300">Small Batches</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">100% Viva</span>
+                                <span className="text-xs text-gray-300">Interview Training</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Alambagh</span>
+                                <span className="text-xs text-gray-300">Head Campus</span>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* H1 Section */}
                     <div className="mb-12">
                         <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Best RIMC Coaching in Lucknow — Expert Preparation for RIMC Dehradun
+                            Best RIMC Coaching in Lucknow Alambagh — Expert Preparation for RIMC Dehradun
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed mb-4">
                             The Rashtriya Indian Military College (RIMC), Dehradun, is one of the most prestigious defence institutions in India, admitting boys and girls around Class 8 through a rigorous written exam and interview. With only a handful of seats available per state each term, getting in requires focused, expert guidance — not generic coaching.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            At Pathfinder Defence Academy, our RIMC coaching in Lucknow is built specifically for this exam. We run small, focused batches at our Alambagh and Indira Nagar centres, led by mentors who understand exactly what RIMC's written test and viva-voce demand.
+                            At Pathfinder Defence Academy, our RIMC coaching in Lucknow is built specifically for this exam. We run small, focused batches at our Alambagh (Opp. Singar Nagar Metro) and Indira Nagar centres, led by mentors who understand exactly what RIMC's written test and viva-voce demand.
                         </p>
                     </div>
 
@@ -196,15 +243,15 @@ export default function RIMCCoachingPage() {
                         <SectionHeading title="Frequently Asked Questions" alignment="left" />
                         <div className="space-y-6 mt-8">
                             {[
-                                { q: "What is the age limit and eligibility for RIMC?", a: "RIMC generally admits boys and girls around 11.5 to 13 years of age, applying for Class 8 entry, meeting specified academic and medical standards. Exact age brackets are notified each year — our mentors guide you through the latest eligibility details." },
-                                { q: "Can girls apply for RIMC Dehradun?", a: "Yes, RIMC has opened admissions to girls in recent years. Our coaching batches are open to both boys and girls." },
-                                { q: "What is the fee structure for RIMC coaching at Pathfinder Defence Academy?", a: "Fees depend on the batch type and duration. Contact our Alambagh or Indira Nagar centre directly for the current fee structure and batch schedule." },
-                                { q: "How is RIMC's written exam different from a regular school test?", a: "RIMC's Mathematics and English papers are considerably tougher than standard school-level papers for the same age group, requiring dedicated, exam-specific preparation rather than regular school study alone." },
-                                { q: "How can I prepare my child for the RIMC viva-voce?", a: "Consistent mock interview practice, confidence-building exercises, and general awareness development — all part of our structured RIMC coaching program — are the most effective ways to prepare a child for the viva-voce stage." }
+                                { q: "What is the age limit for RIMC admission?", a: "For RIMC Class 8 admission, a candidate must be between 11.5 and 13 years of age at the time of joining the college. The applicant must either be studying in Class 7 or have passed Class 7 from a recognized school." },
+                                { q: "Can girls apply for RIMC Dehradun?", a: "Yes, RIMC Dehradun now admits female candidates for Class 8 entry following Supreme Court directives. Pathfinder Defence Academy runs dedicated batches for both boys and girls at our Alambagh campus." },
+                                { q: "Where is Pathfinder Defence Academy located for RIMC coaching in Lucknow?", a: "Our primary RIMC coaching campus is located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow, with an additional branch in Indira Nagar. Both centres provide full academic mentoring and boarding." },
+                                { q: "What is the exam pattern for the RIMC written test?", a: "The RIMC entrance exam comprises three written papers: English (125 marks), Mathematics (200 marks), and General Knowledge (75 marks) totaling 400 marks, followed by a 50-mark viva-voce interview for qualifying candidates." },
+                                { q: "How does Pathfinder Defence Academy prepare students for the RIMC viva-voce?", a: "We conduct 1-on-1 mock interviews, personality grooming sessions, and current affairs discussions with ex-defence officers to build confidence, articulation, and presence of mind required for the 50-mark viva-voce." }
                             ].map((faq, index) => (
                                 <div key={index} className="bg-[#24332B] p-6 rounded-lg">
                                     <h3 className="text-lg font-bold text-white mb-2">{faq.q}</h3>
-                                    <p className="text-gray-400">{faq.a}</p>
+                                    <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                                 </div>
                             ))}
                         </div>

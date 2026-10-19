@@ -3,50 +3,108 @@ import SectionHeading from "@/components/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, MapPin, Award, Users, ShieldCheck, PhoneCall, Zap, GraduationCap, Clock, BookOpen, Activity, Target } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Best Agniveer Coaching in India | Agnipath Scheme Preparation",
-    description: "Prepare for the Agniveer recruitment (Army, Navy, Air Force) under the Agnipath Scheme. Join the best coaching in India for written exams & physical fitness.",
-    keywords: ["best Agniveer coaching in India", "Agnipath scheme coaching", "Indian Army Agniveer preparation online", "Agniveer physical fitness training", "Agniveer written exam coaching"],
+    title: "Best Agniveer Coaching in Lucknow & Alambagh 2026 | Army, Navy & Air Force",
+    description: "Join Lucknow's #1 Agniveer coaching academy in Alambagh (opposite Singar Nagar Metro). Complete Army GD, Technical, Clerk, Navy SSR & IAF Vayu preparation, daily 1.6km running ground & hostel.",
+    keywords: [
+        "best Agniveer coaching in Lucknow",
+        "Agniveer coaching in Alambagh Lucknow",
+        "Agniveer coaching in Alambagh",
+        "Agniveer coaching near me",
+        "Agnipath scheme coaching Lucknow",
+        "Indian Army Agniveer coaching",
+        "Agniveer physical fitness training Lucknow",
+        "Pathfinder Defence Academy Agniveer",
+        "Agniveer coaching fees in Lucknow",
+        "Army GD coaching Lucknow",
+        "Air Force Agniveer Vayu coaching Lucknow",
+    ],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/agniveer" },
+    openGraph: {
+        title: "Best Agniveer Coaching in Lucknow & Alambagh 2026 | Pathfinder Defence Academy",
+        description: "Join Lucknow's premier Agniveer coaching institute in Alambagh. Daily 1.6km physical training ground, CBT mock tests, and hostel facilities.",
+        url: "https://pathfinderdefenceacademy.com/courses/agniveer",
+        type: "website",
+        images: [{ url: "https://pathfinderdefenceacademy.com/images/1707393182_indian-army.jpg", width: 1200, height: 630, alt: "Agniveer Coaching at Pathfinder Defence Academy Lucknow" }],
+    },
 };
 
-export default function AgniveerNationalPage() {
+export default function AgniveerCoursePage() {
+    const courseSchema = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "Agniveer (Agnipath Scheme) Army, Navy & Air Force Coaching Program",
+        "description": "Comprehensive written exam and physical fitness training program for Indian Army (GD, Technical, Clerk), Indian Navy (SSR, MR), and Indian Air Force (Agniveer Vayu) recruitment rallies.",
+        "courseMode": "Offline, Classroom & Physical Field Training",
+        "educationalCredentialAwarded": "Agniveer Recruitment Written & Physical Rally Qualification",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Pathfinder Defence Academy",
+            "url": "https://pathfinderdefenceacademy.com",
+            "telephone": "+91-7505188009",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Metro Station, 3rd Floor, KSM Plaza, 826-Sneh Nagar Mod, Singar Nagar",
+                "addressLocality": "Alambagh, Lucknow",
+                "addressRegion": "Uttar Pradesh",
+                "postalCode": "226005",
+                "addressCountry": "IN"
+            }
+        }
+    };
+
     const faqJsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Does the academy provide physical fitness training for Agniveer rallies?",
+                "name": "Which is the best Agniveer coaching institute in Lucknow and Alambagh?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Physical fitness is the most critical hurdle for Agniveer rallies. We provide daily rigorous physical training, including the 1.6 km run, pull-ups, and balance exercises, on our dedicated ground."
+                    "text": "Pathfinder Defence Academy (PFDA), located opposite Singar Nagar Metro Station in Alambagh, Lucknow, is widely regarded as the best Agniveer coaching institute in Uttar Pradesh. PFDA offers combined Computer-Based Entrance (CEE) classroom coaching, daily 1.6 km timed physical track drills, pre-medical screenings, and full residential hostel facilities."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can out-of-station candidates join the Agniveer batches?",
+                "name": "What trades are covered under the Agniveer coaching program at PFDA?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Absolutely. Students from villages and cities across India come to our residential campus, where we provide complete hostel and mess facilities to support their demanding daily routine."
+                    "text": "PFDA provides trade-specific coaching for Indian Army Agniveer General Duty (GD), Technical, Clerk/Store Keeper Technical, and Tradesman (10th/8th pass); Indian Navy Agniveer SSR and MR; and Indian Air Force Agniveer Vayu (Science and Non-Science subjects)."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Does the coaching cover all Agniveer trades (Army, Navy, Air Force)?",
+                "name": "What is the fee structure for Agniveer coaching in Lucknow at PFDA?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, our coaching structure covers General Duty (GD), Technical, Clerk, and Store Keeper trades across the Army, Navy, and Air Force, with specialized subject classes for each."
+                    "text": "Agniveer coaching packages at Pathfinder Defence Academy are highly affordable and transparent, covering both CEE written exam preparation and physical rally conditioning, with residential hostel options. For current fee details and trade-wise batches, contact our admissions desk at +91 75051 88009."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Are there mock tests for the Agniveer written examination?",
+                "name": "Does PFDA offer daily ground physical training for the 1.6 km run?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we conduct weekly mock tests modeled directly on the latest computer-based test (CBT) patterns for the Agnipath scheme to improve speed and accuracy."
+                    "text": "Yes. Physical fitness is the primary elimination phase in military rallies. PFDA runs daily morning physical training on our private training ground in Alambagh, training cadets to achieve Group 1 (under 5 minutes 30 seconds for the 1.6 km run), 10 pull-ups (40 marks), 9-foot ditch jump, and zig-zag beam balance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the age and educational eligibility requirements for Agniveer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Candidates must be between 17.5 and 21 years of age. For Army GD, 10th pass with 45% aggregate (33% in each subject) is required. For Technical, 10+2 with Physics, Chemistry, Math & English (50% aggregate). For Clerk, 10+2 in any stream (60% aggregate with 50% in English & Math/Accounts). For Navy SSR & Air Force Vayu Science, 10+2 with Math and Physics is mandatory."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How accessible is the PFDA Alambagh campus from nearby Lucknow localities?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The campus is directly opposite Singar Nagar Metro Station on Kanpur Road in Alambagh. It is just 3.5 km from Charbagh Railway Station, 1.5 km from Krishna Nagar, and easily accessible from Aminabad, Thakurganj, Mawaiya, and Alambagh Bus Stand."
                 }
             }
         ]
@@ -56,158 +114,254 @@ export default function AgniveerNationalPage() {
         <main className="bg-primary min-h-screen pb-20">
             <script
                 type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+            />
+            <script
+                type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
-            
-            <PageHeader 
-                title="Best Agniveer Coaching in India" 
-                subtitle="Agnipath Scheme — Armed Forces Recruitment" 
-                image="/images/1707393182_indian-army.jpg" 
+
+            <PageHeader
+                title="Best Agniveer Coaching in Lucknow"
+                subtitle="Agnipath Scheme — Army, Navy & Air Force — Alambagh Campus"
+                image="/images/1707393182_indian-army.jpg"
             />
 
             <section className="container mx-auto px-4 py-16">
-                <div className="max-w-4xl mx-auto">
-                    
-                    {/* H1 Section */}
-                    <div className="mb-12">
-                        <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Top Agniveer Preparation — Join the Indian Armed Forces
+                <div className="max-w-5xl mx-auto space-y-16">
+
+                    {/* H1 & Campus Location Badge */}
+                    <div>
+                        <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/30 text-gold text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
+                            <MapPin className="w-3.5 h-3.5" />
+                            Alambagh (Opp. Singar Nagar Metro) &amp; Indira Nagar, Lucknow
+                        </div>
+                        <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+                            Best Agniveer Coaching in Lucknow &amp; Alambagh — Army, Navy &amp; Air Force Rally Preparation
                         </h1>
-                        <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                            The Agnipath Scheme (Agniveer) has transformed the recruitment process for soldiers, sailors, and airmen across India. Serving a 4-year tenure in the Indian Army, Navy, or Air Force—with up to 25% of the most elite candidates retained permanently—is a golden opportunity for dedicated 10th and 12th pass youth nationwide.
-                        </p>
-                        <p className="text-gray-300 text-lg leading-relaxed">
-                            Path Finder Defence Academy offers specialized pan-India Agniveer coaching. We recognize that Agniveer recruitment requires an intense combination of flawless physical endurance and sharp written exam accuracy. Through our residential offline batches and digital test modules, we prepare thousands of candidates from across the country for recruitment rallies.
-                        </p>
-                        
-                        {/* Internal Link to Local Page equivalent */}
-                        <div className="mt-8 bg-gold/10 border border-gold/30 rounded-lg p-4 flex items-center justify-between flex-wrap gap-4">
-                            <p className="text-gray-300">
-                                <strong className="text-gold">Looking for intensive offline physical training?</strong> We conduct daily physical and written batches at our dedicated centres.
+
+                        {/* AEO / AI Direct-Answer Summary Box */}
+                        <div className="bg-[#1B2620] border-l-4 border-gold p-6 md:p-8 rounded-r-2xl shadow-xl space-y-4 my-8">
+                            <div className="flex items-center gap-2 text-gold font-bold text-sm uppercase tracking-wider">
+                                <Zap className="w-5 h-5 text-gold shrink-0" />
+                                Course Snapshot: Agniveer Preparation at Pathfinder Defence Academy Lucknow
+                            </div>
+                            <p className="text-gray-200 text-base md:text-lg font-medium leading-relaxed">
+                                <strong className="text-white">Pathfinder Defence Academy (PFDA)</strong> is Uttar Pradesh’s top-ranked coaching institute for the Agnipath scheme, preparing candidates for recruitment into the Indian Army, Indian Navy, and Indian Air Force. Located opposite Singar Nagar Metro Station in Alambagh, Lucknow, PFDA delivers rigorous Computer-Based Entrance Exam (CEE) classroom coaching, daily morning 1.6 km track endurance training, pull-up beam drills, pre-medical physical tests, and residential hostel facilities with nutritious food for outstation youth.
                             </p>
-                            <Link href="/branches" className="text-gold hover:text-white font-bold shrink-0 transition-colors">
-                                Find a Centre Near You →
-                            </Link>
-                        </div>
-                    </div>
 
-                    {/* H2: Why Choose PFDA Nationally */}
-                    <div className="mb-16">
-                        <SectionHeading title="Why Youth Across India Choose PFDA for Agniveer" alignment="left" />
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                            <div className="bg-[#1B2620] p-6 rounded-lg border border-white/5">
-                                <h3 className="text-xl font-bold text-white mb-3">Hostels for Out-of-State Youth</h3>
-                                <p className="text-gray-400">Our campus provides secure, affordable residential facilities and nutritious mess food, ensuring students from any state can live and train comfortably without distractions.</p>
-                            </div>
-                            
-                            <div className="bg-[#1B2620] p-6 rounded-lg border border-gold/20">
-                                <h3 className="text-xl font-bold text-white mb-3">Rigorous Physical Training</h3>
-                                <p className="text-gray-400">Agniveer rallies are physically gruelling. Our ex-military instructors conduct daily ground training covering the 1.6km run, pull-ups, and obstacle courses.</p>
-                            </div>
-                            
-                            <div className="bg-[#1B2620] p-6 rounded-lg border border-white/5">
-                                <h3 className="text-xl font-bold text-white mb-3">CBT Pattern Mock Tests</h3>
-                                <p className="text-gray-400">With the shift to Computer-Based Testing (CBT), we provide digital mock tests that exactly replicate the real exam environment, ensuring zero technical hesitation on exam day.</p>
-                            </div>
-
-                            <div className="bg-[#1B2620] p-6 rounded-lg border border-white/5">
-                                <h3 className="text-xl font-bold text-white mb-3">Trade-Specific Coaching</h3>
-                                <p className="text-gray-400">Whether you are applying for General Duty (GD), Technical, Clerk, or Store Keeper trades, we provide focused subject coaching for your specific syllabus.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* H2: Exam Breakdown */}
-                    <div className="mb-16 bg-[#24332B] p-8 rounded-xl border border-white/5">
-                        <h2 className="text-2xl font-bold text-gold mb-6">Agniveer Selection Process</h2>
-                        <p className="text-gray-300 mb-6">The Agnipath scheme selection process is structured into two main phases:</p>
-                        
-                        <div className="space-y-6">
-                            <div className="flex items-start gap-4 border-b border-white/10 pb-6">
-                                <div className="bg-gold text-black font-bold px-4 py-2 rounded shrink-0">Phase 1</div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Online Computer Based Written Examination (CEE)</h3>
-                                    <p className="text-gray-400">Depending on the trade, subjects include General Knowledge, General Science, Mathematics, Logical Reasoning, and English/Hindi. Accuracy and speed are critical.</p>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-4 border-t border-white/10 text-sm">
+                                <div className="bg-black/30 p-3 rounded-lg border border-white/5">
+                                    <div className="text-gold font-semibold flex items-center gap-1.5 mb-1">
+                                        <Clock className="w-4 h-4" /> Batch Duration
+                                    </div>
+                                    <p className="text-gray-300 text-xs">3 Months (Intensive Rally) / 6 Months (Complete Foundation)</p>
                                 </div>
-                            </div>
-                            <div className="flex items-start gap-4">
-                                <div className="bg-gold text-black font-bold px-4 py-2 rounded shrink-0">Phase 2</div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-white mb-2">Recruitment Rally (Physical & Medical)</h3>
-                                    <p className="text-gray-400">Shortlisted candidates undergo the Physical Fitness Test (PFT), Physical Measurement Test (PMT), and a strict Medical Examination at designated rally sites.</p>
+                                <div className="bg-black/30 p-3 rounded-lg border border-white/5">
+                                    <div className="text-gold font-semibold flex items-center gap-1.5 mb-1">
+                                        <Users className="w-4 h-4" /> Eligibility
+                                    </div>
+                                    <p className="text-gray-300 text-xs">Age 17.5–21 Yrs | 10th / 12th Pass (Male &amp; Female)</p>
+                                </div>
+                                <div className="bg-black/30 p-3 rounded-lg border border-white/5">
+                                    <div className="text-gold font-semibold flex items-center gap-1.5 mb-1">
+                                        <ShieldCheck className="w-4 h-4" /> Physical &amp; Medical Drills
+                                    </div>
+                                    <p className="text-gray-300 text-xs">Daily 1.6 km Track Training &amp; Beam Practice</p>
+                                </div>
+                                <div className="bg-black/30 p-3 rounded-lg border border-white/5">
+                                    <div className="text-gold font-semibold flex items-center gap-1.5 mb-1">
+                                        <MapPin className="w-4 h-4" /> Key Locations
+                                    </div>
+                                    <p className="text-gray-300 text-xs">Singar Nagar, Alambagh &amp; Munshipulia, Indira Nagar</p>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Stat Badges for GEO & Search Snippets */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+                            <div className="bg-[#24332B] p-4 rounded-xl border border-white/5 text-center shadow-lg">
+                                <Award className="w-6 h-6 text-gold mx-auto mb-2" />
+                                <div className="text-2xl font-black text-white">1000+</div>
+                                <div className="text-gray-400 text-xs mt-1">Soldier Selections</div>
+                            </div>
+                            <div className="bg-[#24332B] p-4 rounded-xl border border-white/5 text-center shadow-lg">
+                                <Activity className="w-6 h-6 text-gold mx-auto mb-2" />
+                                <div className="text-2xl font-black text-white">Daily 1.6 KM</div>
+                                <div className="text-gray-400 text-xs mt-1">Ground Physical Drills</div>
+                            </div>
+                            <div className="bg-[#24332B] p-4 rounded-xl border border-white/5 text-center shadow-lg">
+                                <Target className="w-6 h-6 text-gold mx-auto mb-2" />
+                                <div className="text-2xl font-black text-white">Army/Navy/Air</div>
+                                <div className="text-gray-400 text-xs mt-1">Tri-Service Tracks</div>
+                            </div>
+                            <div className="bg-[#24332B] p-4 rounded-xl border border-white/5 text-center shadow-lg">
+                                <MapPin className="w-6 h-6 text-gold mx-auto mb-2" />
+                                <div className="text-2xl font-black text-white">Alambagh</div>
+                                <div className="text-gray-400 text-xs mt-1">Opp. Singar Nagar Metro</div>
+                            </div>
+                        </div>
                     </div>
 
-                    {/* H2: Eligibility */}
-                    <div className="mb-16">
-                        <h2 className="text-2xl font-bold text-white mb-6 border-b border-white/10 pb-2">Agniveer Eligibility Standards</h2>
+                    {/* Section: Lucknow & Alambagh Geographic Context */}
+                    <div className="space-y-6">
+                        <SectionHeading title="Strategic Agniveer Training Hub in Central Lucknow" alignment="left" />
+                        <p className="text-gray-300 text-lg leading-relaxed">
+                            Securing an Agniveer appointment demands dual excellence: clearing the nationwide Common Entrance Examination (CEE) and ranking in <strong className="text-white">Group 1 in the 1.6 km rally run</strong>. Pathfinder Defence Academy’s Alambagh campus is situated directly on Kanpur Road opposite <strong className="text-gold">Singar Nagar Metro Station (Gate 2)</strong>.
+                        </p>
+                        <p className="text-gray-300 leading-relaxed">
+                            Day-scholars from <strong className="text-white">Charbagh (3.5 km away), Krishna Nagar (1.5 km), Aminabad, Thakurganj, Mawaiya, and Rajajipuram</strong> reach the centre in under 15 minutes via the Lucknow Metro Red Line. East Lucknow students can attend our branch at Sector 8, Indira Nagar near Munshipulia. Furthermore, thousands of young defence aspirants travel from rural and semi-urban belts across Uttar Pradesh—including Unnao, Hardoi, Sitapur, Barabanki, Rae Bareli, Fatehpur, and Gonda—to reside in our dedicated Alambagh hostels where military physical discipline and smart digital classrooms run hand-in-hand.
+                        </p>
+                    </div>
+
+                    {/* Section: Comprehensive Trade Breakdown */}
+                    <div className="bg-[#24332B] p-8 rounded-2xl border border-white/5 space-y-6 shadow-xl">
+                        <div className="flex items-center gap-3">
+                            <BookOpen className="w-6 h-6 text-gold" />
+                            <h2 className="text-2xl font-bold text-white">Tri-Service Agniveer Specialization Tracks</h2>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed">
+                            Under the Agnipath recruitment system, candidates appear for Computer-Based Examinations customized to their chosen trade:
+                        </p>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/10 space-y-3">
+                                <span className="text-gold font-bold text-lg block border-b border-white/10 pb-2">Indian Army Agniveer</span>
+                                <ul className="text-gray-300 text-sm space-y-2">
+                                    <li><strong>General Duty (GD):</strong> GK (15Q), General Science (15Q), Math (15Q), Logical Reasoning (5Q) — 100 Marks.</li>
+                                    <li><strong>Technical:</strong> GK (10Q), Math (15Q), Physics (15Q), Chemistry (10Q) — 200 Marks.</li>
+                                    <li><strong>Clerk / Store Keeper:</strong> General English (25Q) + GK, Science, Math &amp; Computer (25Q) — 200 Marks.</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/10 space-y-3">
+                                <span className="text-gold font-bold text-lg block border-b border-white/10 pb-2">Indian Navy Agniveer</span>
+                                <ul className="text-gray-300 text-sm space-y-2">
+                                    <li><strong>Agniveer SSR:</strong> English, Science (Physics/Chemistry), Mathematics, General Awareness — 100 Questions (1 Hour).</li>
+                                    <li><strong>Agniveer MR (Chef/Steward):</strong> Science &amp; Mathematics (25Q), General Awareness (25Q) — 50 Questions (30 Mins).</li>
+                                </ul>
+                            </div>
+
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/10 space-y-3">
+                                <span className="text-gold font-bold text-lg block border-b border-white/10 pb-2">Indian Air Force Vayu</span>
+                                <ul className="text-gray-300 text-sm space-y-2">
+                                    <li><strong>Science Subjects:</strong> English (20Q), Math (25Q), Physics (25Q) — 60 Minutes duration.</li>
+                                    <li><strong>Other Than Science (RAGA):</strong> English (20Q), Reasoning &amp; General Awareness (30Q) — 45 Minutes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Section: Physical Training Rigor */}
+                    <div className="space-y-6">
+                        <SectionHeading title="Daily 1.6 KM Physical Track Training in Alambagh" alignment="left" />
+                        <p className="text-gray-300 text-base leading-relaxed">
+                            In Indian Army rallies, physical marks are decisive. Group 1 runners earn 60 full marks, giving them an insurmountable lead in the final merit list. PFDA conducts structured physical training daily at 5:30 AM:
+                        </p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-2 text-center">
+                                <span className="text-gold font-bold text-3xl">1.6 KM</span>
+                                <h4 className="text-white font-bold text-base">Running Speed Drills</h4>
+                                <p className="text-gray-400 text-xs">Paced interval workouts to achieve Group 1 timing (under 5 mins 30 secs) on outdoor tracks.</p>
+                            </div>
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-2 text-center">
+                                <span className="text-gold font-bold text-3xl">10 Beam</span>
+                                <h4 className="text-white font-bold text-base">Pull-Ups (40 Marks)</h4>
+                                <p className="text-gray-400 text-xs">Upper-body core strengthening on official rally standard pull-up bars to earn full 40 marks.</p>
+                            </div>
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-2 text-center">
+                                <span className="text-gold font-bold text-3xl">9 Feet</span>
+                                <h4 className="text-white font-bold text-base">Ditch Jump</h4>
+                                <p className="text-gray-400 text-xs">Technique training for safe takeoff and landing across the 9-foot qualifying obstacle pit.</p>
+                            </div>
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-2 text-center">
+                                <span className="text-gold font-bold text-3xl">Zig-Zag</span>
+                                <h4 className="text-white font-bold text-base">Balance Beam</h4>
+                                <p className="text-gray-400 text-xs">Neuromuscular balance training to comfortably clear the zig-zag balance beam without fault.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Section: Why PFDA Stands Apart */}
+                    <div className="space-y-6">
+                        <SectionHeading title="Why Aspirants Choose Pathfinder Defence Academy" alignment="left" />
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="flex gap-4 items-start">
-                                <CheckCircle className="text-gold shrink-0 mt-1" />
-                                <div>
-                                    <h4 className="font-bold text-lg text-white mb-1">Age Limits</h4>
-                                    <p className="text-gray-400 text-sm">Candidates must be between 17.5 and 21 years of age (age brackets are strictly enforced as per the latest notifications).</p>
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-3">
+                                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-2">
+                                    <Target className="w-6 h-6" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white">Computer Lab for CEE Mock Exams</h3>
+                                <p className="text-gray-300 text-sm leading-relaxed">
+                                    With the Army now conducting the Common Entrance Exam online before the rally, PFDA maintains a dedicated computer testing lab where students take bilingual (Hindi &amp; English) timed CBT mock tests every week.
+                                </p>
                             </div>
-                            <div className="flex gap-4 items-start">
-                                <CheckCircle className="text-gold shrink-0 mt-1" />
-                                <div>
-                                    <h4 className="font-bold text-lg text-white mb-1">Educational Qualification</h4>
-                                    <p className="text-gray-400 text-sm">10th Pass for General Duty (GD). 12th Pass required for Technical, Clerk, and Store Keeper trades (Physics/Maths required for some).</p>
+
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-3">
+                                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-2">
+                                    <Activity className="w-6 h-6" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white">Pre-Medical Examination Checkup</h3>
+                                <p className="text-gray-300 text-sm leading-relaxed">
+                                    Avoid getting rejected at the rally medical inspection. Our panel of defence medical experts screens cadets for flat foot, knock knees, eyesight (color blindness), DNS (deviated nasal septum), and ear wax prior to rally attendance.
+                                </p>
                             </div>
-                            <div className="flex gap-4 items-start">
-                                <CheckCircle className="text-gold shrink-0 mt-1" />
-                                <div>
-                                    <h4 className="font-bold text-lg text-white mb-1">Gender & Nationality</h4>
-                                    <p className="text-gray-400 text-sm">Recruitment is open to unmarried male and female candidates who are citizens of India.</p>
+
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-3">
+                                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-2">
+                                    <ShieldCheck className="w-6 h-6" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white">Specialized English for Army Clerk &amp; Air Force</h3>
+                                <p className="text-gray-300 text-sm leading-relaxed">
+                                    Army Clerk and Air Force Vayu exams require strong English cutoff scores. Abhishek Awasthi Sir leads dedicated grammar, comprehension, and vocabulary sessions ensuring even Hindi-medium students comfortably score 80%+.
+                                </p>
                             </div>
-                            <div className="flex gap-4 items-start">
-                                <CheckCircle className="text-gold shrink-0 mt-1" />
-                                <div>
-                                    <h4 className="font-bold text-lg text-white mb-1">Physical Standards</h4>
-                                    <p className="text-gray-400 text-sm">Must meet specific height, weight, and chest expansion parameters dictated by the Armed Forces.</p>
+
+                            <div className="bg-[#1B2620] p-6 rounded-xl border border-white/5 space-y-3">
+                                <div className="w-12 h-12 rounded-lg bg-gold/15 flex items-center justify-center text-gold mb-2">
+                                    <Users className="w-6 h-6" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white">Disciplined Hostel &amp; Wholesome Nutrition</h3>
+                                <p className="text-gray-400 text-sm leading-relaxed">
+                                    Outstation students stay in our secure Alambagh hostels. The mess provides protein-rich, clean diets tailored for high physical output, while ex-servicemen wardens maintain military discipline and scheduled study hours.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    {/* H2: FAQs */}
-                    <div className="mb-16">
-                        <SectionHeading title="Frequently Asked Questions" alignment="left" />
-                        <div className="space-y-6 mt-8">
-                            {[
-                                { q: "Does the academy provide physical fitness training for Agniveer rallies?", a: "Yes. Physical fitness is the most critical hurdle for Agniveer rallies. We provide daily rigorous physical training, including the 1.6 km run, pull-ups, and balance exercises, on our dedicated ground." },
-                                { q: "Can out-of-station candidates join the Agniveer batches?", a: "Absolutely. Students from villages and cities across India come to our residential campus, where we provide complete hostel and mess facilities to support their demanding daily routine." },
-                                { q: "Does the coaching cover all Agniveer trades (Army, Navy, Air Force)?", a: "Yes, our coaching structure covers General Duty (GD), Technical, Clerk, and Store Keeper trades across the Army, Navy, and Air Force, with specialized subject classes for each." },
-                                { q: "Are there mock tests for the Agniveer written examination?", a: "Yes, we conduct weekly mock tests modeled directly on the latest computer-based test (CBT) patterns for the Agnipath scheme to improve speed and accuracy." }
-                            ].map((faq, index) => (
-                                <div key={index} className="bg-[#24332B] p-6 rounded-lg">
-                                    <h3 className="text-lg font-bold text-white mb-2">{faq.q}</h3>
-                                    <p className="text-gray-400">{faq.a}</p>
+                    {/* Section: FAQs with UI */}
+                    <div className="space-y-8">
+                        <SectionHeading title="Frequently Asked Questions (Agniveer Coaching in Lucknow)" alignment="left" />
+                        <div className="space-y-4">
+                            {faqJsonLd.mainEntity.map((faq, index) => (
+                                <div key={index} className="bg-[#1B2620] border border-white/5 rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-white mb-3 flex items-start gap-2">
+                                        <span className="text-gold font-bold">Q{index + 1}.</span> {faq.name}
+                                    </h3>
+                                    <p className="text-gray-300 text-sm leading-relaxed pl-6">
+                                        {faq.acceptedAnswer.text}
+                                    </p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Closing CTA */}
-                    <div className="bg-gradient-to-r from-blue-900/50 to-transparent p-8 rounded-xl border border-blue-900 text-center md:text-left md:flex justify-between items-center">
-                        <div className="mb-6 md:mb-0 md:mr-8">
-                            <h2 className="text-2xl font-bold text-white mb-2">Serve the Nation as an Agniveer</h2>
-                            <p className="text-gray-300">
-                                Clear your written exam with high scores and conquer the physical rally with Path Finder Defence Academy's structured Agniveer training program.
+                    {/* Closing Enrollment CTA */}
+                    <div className="bg-gradient-to-r from-[#1B2620] to-[#24332B] p-8 md:p-12 rounded-2xl border border-gold/30 text-center md:text-left md:flex justify-between items-center shadow-2xl">
+                        <div className="mb-6 md:mb-0 md:mr-8 space-y-2">
+                            <h2 className="text-2xl md:text-3xl font-extrabold text-white">Wear the Uniform of the Armed Forces as an Agniveer</h2>
+                            <p className="text-gray-300 max-w-xl text-sm md:text-base">
+                                New physical training and written exam batches start every Monday at Alambagh and Indira Nagar. Register today for a free 2-day trial and fitness assessment.
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-4 shrink-0">
                             <Link href="/contact">
-                                <Button className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4">
-                                    Enroll Now
+                                <Button className="w-full sm:w-auto bg-gold hover:bg-yellow-500 text-black font-extrabold px-8 py-4 text-sm uppercase tracking-wider shadow-lg">
+                                    Enroll at Lucknow Campus
                                 </Button>
                             </Link>
+                            <a href="tel:+917505188009" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-4 rounded-xl border border-white/20 transition-all text-sm">
+                                <PhoneCall className="w-4 h-4 text-gold" /> Call Admissions Desk
+                            </a>
                         </div>
                     </div>
 

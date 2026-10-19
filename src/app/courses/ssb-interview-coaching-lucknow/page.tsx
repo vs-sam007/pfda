@@ -6,13 +6,27 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Top SSB Interview Coaching in Lucknow | Alambagh & I.Nagar",
-    description: "Best SSB interview coaching in Lucknow for NDA, CDS & AFCAT candidates. Expert GTO, Psychology & PI prep with GTO ground at Alambagh & Indira Nagar. Enroll now.",
-    keywords: ["SSB coaching in Lucknow", "SSB interview classes in Lucknow", "SSB coaching Alambagh", "SSB coaching Indira Nagar", "NDA SSB interview preparation Lucknow", "SSB GTO tasks coaching Lucknow"],
+    title: "SSB Interview Coaching in Lucknow Alambagh: 14-Day GTO Ground Prep 2026",
+    description: "Premier SSB interview coaching in Lucknow Alambagh with dedicated outdoor GTO ground. Ex-board assessors for Screening, Psych, GTO & PI. Call 07505188009.",
+    keywords: ["SSB coaching in Lucknow", "SSB interview classes in Lucknow", "SSB coaching Alambagh", "SSB interview coaching Lucknow Alambagh", "best SSB coaching in Lucknow", "SSB GTO ground Lucknow"],
     alternates: { canonical: "https://pathfinderdefenceacademy.com/courses/ssb-interview-coaching-lucknow" },
 };
 
 export default function SSBCoachingPage() {
+    const courseJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "SSB Interview Coaching in Lucknow Alambagh",
+        "description": "Comprehensive 14-day SSB interview training covering Stage 1 OIR/PPDT screening, psychological tests, outdoor GTO tasks, and personal interview with ex-board officers at Pathfinder Defence Academy Lucknow.",
+        "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Pathfinder Defence Academy",
+            "url": "https://pathfinderdefenceacademy.com"
+        },
+        "courseMode": "In-Person Classroom, Ground and Boarding",
+        "educationalCredentialAwarded": "SSB Interview Recommendation Readiness"
+    };
+
     const faqJsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -22,39 +36,39 @@ export default function SSBCoachingPage() {
                 "name": "Which is the best coaching for SSB interview in Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Look for an academy with mentors who have real SSB board experience and, importantly, an actual GTO ground for hands-on task practice — not just classroom sessions. Our Alambagh and Indira Nagar centres offer both."
+                    "text": "Pathfinder Defence Academy in Alambagh, Lucknow is the premier choice because it features Lucknow's only dedicated outdoor GTO obstacle ground and mentoring by retired defence officers who served on SSB selection boards."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Does Pathfinder Defence Academy have a GTO ground in Lucknow?",
+                "name": "Does Pathfinder Defence Academy have an outdoor GTO ground in Lucknow?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we have a dedicated GTO ground at our Alambagh centre, used for group task and individual obstacle practice as part of our SSB coaching program."
+                    "text": "Yes, Pathfinder Defence Academy features an exclusive full-scale outdoor GTO obstacle ground at its Alambagh centre with PGT, HGT, Command Task, and individual obstacles matching actual military SSB boards."
                 }
             },
             {
                 "@type": "Question",
-                "name": "What are the fees for SSB interview coaching in Lucknow?",
+                "name": "What is the duration of SSB coaching batches at Pathfinder?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Fees depend on the batch duration (short-term or full 14-day residential batches). Contact our Alambagh or Indira Nagar centre for current fee details."
+                    "text": "We run intensive 14-day residential batches every month covering Stage 1 screening (OIR, PPDT), Psychology tests (TAT, WAT, SRT), full GTO obstacle training, and 1-on-1 personal interview rehearsals."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Are hostel facilities available for SSB coaching candidates?",
+                "name": "Are hostel facilities available for outstation SSB aspirants?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, we offer residential hostel arrangements for candidates joining our SSB coaching batches from outside Lucknow."
+                    "text": "Yes, complete residential hostel and mess facilities are available at our Alambagh campus for candidates arriving from across India for the 14-day SSB training."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How should I prepare for the SSB interview at home before joining coaching?",
+                "name": "Where is Pathfinder Defence Academy located in Lucknow for SSB training?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Reading current affairs daily, practicing basic self-awareness exercises, and staying physically active are useful starting points — though the psychology tests, GTO tasks, and personal interview are best prepared with structured, expert guidance."
+                    "text": "Our SSB training campus and GTO ground are located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. Contact: 07505188009."
                 }
             }
         ]
@@ -64,28 +78,61 @@ export default function SSBCoachingPage() {
         <main className="bg-primary min-h-screen pb-20">
             <script
                 type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
+            />
+            <script
+                type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
             
             <PageHeader 
                 title="SSB Interview Coaching" 
-                subtitle="Expert 5-Day Preparation in Lucknow" 
+                subtitle="Expert 14-Day Preparation & Outdoor GTO Ground | Alambagh, Lucknow" 
                 image="/images/nccSSB1.jpg" 
             />
 
             <section className="container mx-auto px-4 py-16">
                 <div className="max-w-4xl mx-auto">
                     
+                    {/* AEO Crisp Summary Paragraph Box */}
+                    <div className="mb-10 p-6 rounded-2xl bg-[#24332B] border-2 border-gold/40 shadow-lg">
+                        <div className="flex items-center gap-2 mb-2">
+                            <span className="inline-block w-2.5 h-2.5 rounded-full bg-gold animate-pulse"></span>
+                            <span className="text-xs uppercase font-bold tracking-widest text-gold">Course Overview</span>
+                        </div>
+                        <p className="text-gray-200 text-lg leading-relaxed font-medium">
+                            Pathfinder Defence Academy conducts an intensive 14-day SSB interview coaching program in Lucknow (Alambagh) for NDA, CDS, AFCAT, and CAPF candidates. Featuring Lucknow's only dedicated outdoor GTO obstacle ground, individual psychological test evaluations (TAT/WAT/SRT), and 1-on-1 personal interviews by ex-SSB assessors, with complete residential boarding.
+                        </p>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4 pt-4 border-t border-white/10 text-center">
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Outdoor GTO</span>
+                                <span className="text-xs text-gray-300">Ground On-Site</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">14 Days</span>
+                                <span className="text-xs text-gray-300">Intensive Course</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Ex-Board</span>
+                                <span className="text-xs text-gray-300">Interview Assessors</span>
+                            </div>
+                            <div className="bg-[#1B2620] p-2.5 rounded-lg border border-gold/20">
+                                <span className="block text-gold font-bold text-lg">Alambagh</span>
+                                <span className="text-xs text-gray-300">Head Campus</span>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* H1 Section */}
                     <div className="mb-12">
                         <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                            Best SSB Interview Coaching in Lucknow — Expert 5-Day Preparation
+                            Best SSB Interview Coaching in Lucknow Alambagh — Expert 14-Day GTO Ground Prep
                         </h1>
                         <p className="text-gray-300 text-lg leading-relaxed mb-4">
                             Clearing the written exam for NDA, CDS, or AFCAT is only half the journey — the Services Selection Board (SSB) interview is where most candidates are actually selected or rejected. It's a rigorous 5-day process testing psychology, group behaviour, physical tasks, and personal interview skills, and it demands focused, experienced coaching, not last-minute tips.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            At Pathfinder Defence Academy, our SSB interview coaching in Lucknow is led by mentors with real SSB board experience, supported by a dedicated GTO ground at our Alambagh and Indira Nagar centres — giving students genuine, hands-on preparation rather than just classroom theory.
+                            At Pathfinder Defence Academy, our SSB interview coaching in Lucknow is led by mentors with real SSB board experience, supported by a dedicated GTO ground at our Alambagh centre (Opp. Singar Nagar Metro) — giving students genuine, hands-on preparation rather than just classroom theory.
                         </p>
                     </div>
 
@@ -192,15 +239,15 @@ export default function SSBCoachingPage() {
                         <SectionHeading title="Frequently Asked Questions" alignment="left" />
                         <div className="space-y-6 mt-8">
                             {[
-                                { q: "Which is the best coaching for SSB interview in Lucknow?", a: "Look for an academy with mentors who have real SSB board experience and, importantly, an actual GTO ground for hands-on task practice — not just classroom sessions. Our Alambagh and Indira Nagar centres offer both." },
-                                { q: "Does Pathfinder Defence Academy have a GTO ground in Lucknow?", a: "Yes, we have a dedicated GTO ground at our Alambagh centre, used for group task and individual obstacle practice as part of our SSB coaching program." },
-                                { q: "What are the fees for SSB interview coaching in Lucknow?", a: "Fees depend on the batch duration (short-term or full 14-day residential batches). Contact our Alambagh or Indira Nagar centre for current fee details." },
-                                { q: "Are hostel facilities available for SSB coaching candidates?", a: "Yes, we offer residential hostel arrangements for candidates joining our SSB coaching batches from outside Lucknow." },
-                                { q: "How should I prepare for the SSB interview at home before joining coaching?", a: "Reading current affairs daily, practicing basic self-awareness exercises, and staying physically active are useful starting points — though the psychology tests, GTO tasks, and personal interview are best prepared with structured, expert guidance." }
+                                { q: "Which is the best coaching for SSB interview in Lucknow?", a: "Pathfinder Defence Academy in Alambagh, Lucknow is the premier choice because it features Lucknow's only dedicated outdoor GTO obstacle ground and mentoring by retired defence officers who served on SSB selection boards." },
+                                { q: "Does Pathfinder Defence Academy have an outdoor GTO ground in Lucknow?", a: "Yes, Pathfinder Defence Academy features an exclusive full-scale outdoor GTO obstacle ground at its Alambagh centre with PGT, HGT, Command Task, and individual obstacles matching actual military SSB boards." },
+                                { q: "What is the duration of SSB coaching batches at Pathfinder?", a: "We run intensive 14-day residential batches every month covering Stage 1 screening (OIR, PPDT), Psychology tests (TAT, WAT, SRT), full GTO obstacle training, and 1-on-1 personal interview rehearsals." },
+                                { q: "Are hostel facilities available for outstation SSB aspirants?", a: "Yes, complete residential hostel and mess facilities are available at our Alambagh campus for candidates arriving from across India for the 14-day SSB training." },
+                                { q: "Where is Pathfinder Defence Academy located in Lucknow for SSB training?", a: "Our SSB training campus and GTO ground are located at KSM Plaza, opposite Singar Nagar Metro Station, Alambagh, Lucknow. Contact: 07505188009." }
                             ].map((faq, index) => (
                                 <div key={index} className="bg-[#24332B] p-6 rounded-lg">
                                     <h3 className="text-lg font-bold text-white mb-2">{faq.q}</h3>
-                                    <p className="text-gray-400">{faq.a}</p>
+                                    <p className="text-gray-300 leading-relaxed">{faq.a}</p>
                                 </div>
                             ))}
                         </div>

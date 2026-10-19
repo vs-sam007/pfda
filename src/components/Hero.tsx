@@ -27,14 +27,16 @@ export default function Hero() {
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src="/images/bg.webp"
-                    alt="Indian Army Cadets Training at Sunrise"
-                    fill
-                    className="object-cover object-center scale-[1.15] md:scale-110 transform"
-                    priority
-                    quality={90}
-                />
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="/images/bg-mobile.webp" />
+                    <img
+                        src="/images/bg.webp"
+                        alt="Indian Army Cadets Training at Sunrise"
+                        fetchPriority="high"
+                        decoding="async"
+                        className="w-full h-full object-cover object-center scale-[1.15] md:scale-110 transform"
+                    />
+                </picture>
                 {/* Dark Cinematic Overlay */}
                 <div
                     className="absolute inset-0 z-10"
@@ -52,7 +54,7 @@ export default function Hero() {
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-white/10 border border-gold/30 text-gold text-xs font-bold tracking-[0.2em] uppercase mb-6 backdrop-blur-md">
                         <TextShimmerWave className="inline-block" duration={1.5}>
-                            Path Finder Defence Academy
+                            Pathfinder Defence Academy
                         </TextShimmerWave>
                     </span>
                 </motion.div>

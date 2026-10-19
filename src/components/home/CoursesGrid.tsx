@@ -37,7 +37,7 @@ const courses = [
         desc: "Complete Class 11th & 12th schooling from dummy school along with dedicated NDA preparation.",
         details: "For Class 11th & 12th",
         image: "/images/service4.jpg",
-        href: "/courses/nda-foundation-course-lucknow"
+        href: "/courses/foundation"
     },
     {
         title: "AFCAT",
@@ -107,7 +107,7 @@ export default function CoursesGrid() {
                                         <div className="absolute inset-0 bg-gradient-to-t from-[#24332B] to-transparent z-10"></div>
                                         <Image
                                             src={course.image}
-                                            alt={course.title}
+                                            alt={`${course.title} Coaching in Lucknow at Pathfinder Defence Academy`}
                                             fill
                                             className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -124,7 +124,7 @@ export default function CoursesGrid() {
                                             <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-6">{course.details}</p>
 
                                             <Button onClick={() => router.push(course.href)} className="w-full bg-white/5 hover:bg-gold hover:text-black border border-white/10 group-hover:border-gold/50 transition-all flex items-center justify-between group-hover:font-bold">
-                                                Enroll Now
+                                                Explore {course.title} Coaching
                                                 <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                                             </Button>
                                         </div>

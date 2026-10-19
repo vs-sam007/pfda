@@ -70,6 +70,67 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             ">
                                 {children}
                             </div>
+
+                            {/* Contextual Internal Links: Related Guides & Essential Reading */}
+                            <div className="mt-14 pt-10 border-t border-gold/20">
+                                <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                                    <span className="w-2.5 h-2.5 bg-gold rounded-full"></span>
+                                    Related Guides &amp; Recommended Defence Reading
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+                                    <Link
+                                        href="/blog/nda-foundation-course-after-10th"
+                                        className="bg-[#24332B] hover:bg-[#2b3c33] border border-white/5 hover:border-gold/40 rounded-xl p-5 transition-all group block"
+                                    >
+                                        <div className="text-gold text-xs font-bold uppercase tracking-wider mb-1">Career Roadmap</div>
+                                        <h4 className="text-white group-hover:text-gold font-bold text-base transition-colors mb-2">
+                                            NDA Foundation Course After 10th: 2-Year Schooling + NDA Coaching Guide
+                                        </h4>
+                                        <p className="text-gray-400 text-xs leading-relaxed">
+                                            Integrated Class 11 &amp; 12 schooling with UPSC NDA written exam preparation and early SSB grooming.
+                                        </p>
+                                    </Link>
+
+                                    <Link
+                                        href="/blog/nda-medical-test-physical-fitness-guide"
+                                        className="bg-[#24332B] hover:bg-[#2b3c33] border border-white/5 hover:border-gold/40 rounded-xl p-5 transition-all group block"
+                                    >
+                                        <div className="text-gold text-xs font-bold uppercase tracking-wider mb-1">Medical Standards</div>
+                                        <h4 className="text-white group-hover:text-gold font-bold text-base transition-colors mb-2">
+                                            NDA Medical Fitness Requirements &amp; Physical Standards Guide
+                                        </h4>
+                                        <p className="text-gray-400 text-xs leading-relaxed">
+                                            Eyesight limits, height-weight chart, knock knees, flat foot, and complete military hospital medical guidelines.
+                                        </p>
+                                    </Link>
+
+                                    <Link
+                                        href="/blog/sainik-school-rimc-entrance-exam-guide"
+                                        className="bg-[#24332B] hover:bg-[#2b3c33] border border-white/5 hover:border-gold/40 rounded-xl p-5 transition-all group block"
+                                    >
+                                        <div className="text-gold text-xs font-bold uppercase tracking-wider mb-1">School Entrance</div>
+                                        <h4 className="text-white group-hover:text-gold font-bold text-base transition-colors mb-2">
+                                            Sainik School &amp; RIMC Entrance Exam Preparation Guide
+                                        </h4>
+                                        <p className="text-gray-400 text-xs leading-relaxed">
+                                            Class 6 &amp; 9 AISSEE exam pattern, RIMC Dehradun viva-voce syllabus, and top coaching strategy.
+                                        </p>
+                                    </Link>
+
+                                    <Link
+                                        href="/blog/ssb-interview-guide"
+                                        className="bg-[#24332B] hover:bg-[#2b3c33] border border-white/5 hover:border-gold/40 rounded-xl p-5 transition-all group block"
+                                    >
+                                        <div className="text-gold text-xs font-bold uppercase tracking-wider mb-1">Interview Prep</div>
+                                        <h4 className="text-white group-hover:text-gold font-bold text-base transition-colors mb-2">
+                                            Complete SSB Interview 5-Day Selection Process &amp; Guide
+                                        </h4>
+                                        <p className="text-gray-400 text-xs leading-relaxed">
+                                            Stage 1 Screening (OIR &amp; PPDT), Psychology tests (TAT, WAT, SRT), GTO ground tasks, and Personal Interview.
+                                        </p>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
 
                         {/* CTA Inside Article */}
@@ -78,11 +139,16 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             <div className="relative z-10">
                                 <h3 className="text-3xl md:text-4xl font-black text-white mb-6 uppercase tracking-tight">Ready To Wear The Uniform?</h3>
                                 <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                                    Join the league of extraordinary officers. Book your free demo class at Path Finder Defence Academy today and experience the difference.
+                                    Join the league of extraordinary officers. Book your free demo class at Pathfinder Defence Academy today and experience the difference.
                                 </p>
-                                <Link href="/contact" className="inline-block bg-gold text-black font-black px-10 py-5 rounded-full hover:bg-white transition-colors uppercase tracking-widest text-lg shadow-[0_0_20px_rgba(212,175,55,0.3)]">
-                                    Book Free Demo Now
-                                </Link>
+                                <div className="flex flex-wrap items-center justify-center gap-4">
+                                    <Link href="/contact" className="inline-block bg-gold text-black font-black px-8 py-4 rounded-full hover:bg-white transition-colors uppercase tracking-widest text-base shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                                        Book Free Demo Now
+                                    </Link>
+                                    <Link href="/study-material" className="inline-block border border-gold text-gold hover:bg-gold hover:text-black font-bold px-8 py-4 rounded-full transition-colors uppercase tracking-widest text-base">
+                                        Free Study Material PDF
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -97,10 +163,10 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             </div>
                             <h3 className="text-xl font-bold text-white mb-2">Written by PFDA Team</h3>
                             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                                Path Finder Defence Academy is Lucknow's premier defence coaching institute, helping aspirants crack NDA, CDS, AFCAT, and SSB with 1000+ selections.
+                                Pathfinder Defence Academy is Lucknow&apos;s premier defence coaching institute, helping aspirants crack NDA, CDS, AFCAT, and SSB with 1000+ selections.
                             </p>
                             <Link href="/about" className="text-gold text-sm font-bold uppercase tracking-wider hover:text-white transition-colors inline-flex items-center gap-1">
-                                Read More About Us <ChevronRight size={16} />
+                                About Pathfinder Defence Academy <ChevronRight size={16} />
                             </Link>
                         </div>
 
@@ -119,26 +185,44 @@ export default function BlogArticle({ title, date, readTime, heroImage, children
                             </div>
                         </div>
 
-                        {/* Quick Links */}
+                        {/* Quick Links / Popular Topics */}
                         <div className="bg-[#24332B] rounded-3xl p-8 border border-white/5 shadow-xl">
-                            <h3 className="text-lg font-bold text-white mb-6 border-b border-white/5 pb-4">Popular Topics</h3>
+                            <h3 className="text-lg font-bold text-white mb-6 border-b border-white/5 pb-4">Popular Guides &amp; Courses</h3>
                             <ul className="space-y-4">
                                 <li>
-                                    <Link href="/blog/how-to-crack-nda" className="group flex items-start gap-3">
+                                    <Link href="/blog/nda-foundation-course-after-10th" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
-                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">How to Crack NDA Exam in First Attempt</span>
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">NDA Foundation Course After 10th Guide</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/nda-medical-test-physical-fitness-guide" className="group flex items-start gap-3">
+                                        <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">NDA Medical Fitness Requirements</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blog/sainik-school-rimc-entrance-exam-guide" className="group flex items-start gap-3">
+                                        <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">Sainik School &amp; RIMC Entrance Guide</span>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/blog/ssb-interview-guide" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
-                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">Complete SSB Interview Preparation Guide</span>
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">Complete SSB Interview 5-Day Guide</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog/nda-vs-cds" className="group flex items-start gap-3">
+                                    <Link href="/courses/rms-coaching-lucknow" className="group flex items-start gap-3">
                                         <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
-                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">NDA vs CDS — Which Defence Exam Should You Choose?</span>
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">RMS Coaching in Lucknow Alambagh</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/study-material" className="group flex items-start gap-3">
+                                        <ChevronRight className="text-gold shrink-0 mt-1" size={16} />
+                                        <span className="text-gray-400 group-hover:text-gold transition-colors line-clamp-2">Free Defence Study Material &amp; Notes PDF</span>
                                     </Link>
                                 </li>
                             </ul>
